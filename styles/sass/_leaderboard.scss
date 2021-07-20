@@ -1,0 +1,11 @@
+.leaderboardWrapper {
+    button {
+        width: 100%;
+    }
+}
+
+table.leaderboard {
+    display: none;
+
+    @extend %Leaderboard;
+}
