@@ -34,7 +34,8 @@ header {
     width: 100%;
     position: sticky;
     top: 0;
-    bottom: 0;
+
+    // bottom: 0;
     z-index: 1;
     background: $callout;
 
@@ -101,6 +102,16 @@ main {
             height: 40rem;
         }
 
+        ol.how-to {
+            li {
+                img {
+                    display: block;
+                    height: 100px;
+                    margin: 2rem auto;
+                }
+            }
+        }
+
         ul.faq {
             li {
                 list-style: none;
@@ -126,6 +137,7 @@ main {
 }
 
 footer {
+    display: none;
     background: $black;
     color: $white;
     padding: $padding * 3;
