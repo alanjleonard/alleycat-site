@@ -4,6 +4,10 @@ body {
     &, button, input, select, textarea {
         color: $black;
     }
+
+    ul, ol {
+        padding: 0;
+    }
 }
 
 header {
@@ -34,8 +38,6 @@ header {
     width: 100%;
     position: sticky;
     top: 0;
-
-    // bottom: 0;
     z-index: 1;
     background: $callout;
 
@@ -58,11 +60,24 @@ header {
             padding: ($padding / 4) $padding;
         }
 
+        .insta-link {
+            display: inline;
+
+            img {
+                background: transparent;
+                display: inline-block;
+                height: clamp(15px, 3vw, 3rem); //2rem;
+                margin-bottom: -0.3rem;
+            }
+        }
+
         a {
-            color: mix($callout, white, 50%);
+            color: $white;
+            border-bottom: solid 1px $white;
+            padding-bottom: 2px;
 
             @include Hover {
-                color: $white;
+                border-bottom: solid 0px;
             }
         }
     }
@@ -97,6 +112,14 @@ main {
             margin-top: 1rem;
         }
 
+        span.clue {
+            width: 80%;
+            font-style: italic;
+            margin: 1rem auto;
+            font-variant: italic;
+            display: block;
+        }
+
         #map {
             width: 100%;
             height: 40rem;
@@ -104,11 +127,18 @@ main {
 
         ol.how-to {
             li {
+                margin: 3rem auto;
+
                 img {
                     display: block;
-                    height: 100px;
                     margin: 2rem auto;
                 }
+
+                img.test-code {
+                    height: 100px;
+                }
+
+                img.race-app {}
             }
         }
 
