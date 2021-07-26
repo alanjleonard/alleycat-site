@@ -6,7 +6,7 @@ body {
     }
 
     ul, ol {
-        padding: 0;
+        padding-left: 1rem;
     }
 }
 
@@ -46,7 +46,7 @@ header {
 
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
 
         p {
@@ -66,8 +66,8 @@ header {
             img {
                 background: transparent;
                 display: inline-block;
-                height: clamp(15px, 3vw, 3rem); //2rem;
-                margin-bottom: -0.3rem;
+                height: clamp(16px, 3vw, 3rem); //2rem;
+                margin-bottom: -0.2rem;
             }
         }
 

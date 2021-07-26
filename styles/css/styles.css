@@ -63,7 +63,7 @@ body, body button, body input, body select, body textarea {
   color: #3a3b3c;
 }
 body ul, body ol {
-  padding: 0;
+  padding-left: 1rem;
 }
 
 header {
@@ -101,7 +101,7 @@ header h1 img {
   max-width: 960px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
 .aboutWrapper div.about p {
@@ -123,8 +123,8 @@ header h1 img {
 .aboutWrapper div.about .insta-link img {
   background: transparent;
   display: inline-block;
-  height: clamp(15px, 3vw, 3rem);
-  margin-bottom: -0.3rem;
+  height: clamp(16px, 3vw, 3rem);
+  margin-bottom: -0.2rem;
 }
 .aboutWrapper div.about a {
   color: #f9f8f7;
