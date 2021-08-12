@@ -16,7 +16,8 @@ header {
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+
+    // background-attachment: fixed;
     background-image: url("../../images/map-bg.png");
     background-size: cover;
 
@@ -44,66 +45,41 @@ header {
     div.about {
         @include width;
 
+        font-size: 0;
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas: "NP NP AAW AAW SEPT SEPT" "FE FE AAW AAW IG IG";
-
-        .NP {
-            grid-area: NP;
-        }
-
-        .FE {
-            grid-area: FE;
-        }
-
-        .AAW {
-            grid-area: AAW;
-            align-self: center;
-        }
-
-        .SEPT {
-            grid-area: SEPT;
-        }
-
-        .IG {
-            grid-area: IG;
-        }
 
         p {
             @include wordup;
 
-            hyphens: none;
+            margin: 0;
+
+            span {
+                display: inline-block;
+                white-space: nowrap;
+            }
+
             font-family: "blackout_2am";
-            font-size: clamp(15px, 3vw, 3rem);
-            margin: 0.2rem 0;
+            font-size: clamp(18px, 3vw, 3rem); //1.4rem;
             color: $white;
-            line-height: 1;
             text-align: center;
             padding: ($padding / 4) $padding;
-        }
 
-        .insta-link {
-            display: inline;
+            a {
+                color: $white;
+                border-bottom: solid 1px $white;
+                padding-bottom: 1px;
 
-            img {
-                background: transparent;
-                display: inline-block;
-                height: clamp(17px, 3vw, 3rem); //2rem;
-                margin-bottom: -0.3rem;
-            }
-        }
+                @include Hover {
+                    border-bottom: solid 0px;
+                }
 
-        a {
-            color: $white;
-            border-bottom: solid 1px $white;
-            padding-bottom: 1px;
 
-            @include Hover {
-                border-bottom: solid 0px;
+                img {
+                    background: transparent;
+                    display: inline;
+                    height: clamp(19px, 3vw, 3rem); //1.4rem;
+                    margin-bottom: -0.3rem;
+                }
             }
         }
     }

@@ -72,7 +72,6 @@ header {
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-image: url("../../images/map-bg.png");
   background-size: cover;
 }
@@ -99,29 +98,8 @@ header h1 img {
   min-width: 300px;
   width: 90%;
   max-width: 960px;
+  font-size: 0;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "NP NP AAW AAW SEPT SEPT" "FE FE AAW AAW IG IG";
-}
-.aboutWrapper div.about .NP {
-  grid-area: NP;
-}
-.aboutWrapper div.about .FE {
-  grid-area: FE;
-}
-.aboutWrapper div.about .AAW {
-  grid-area: AAW;
-  align-self: center;
-}
-.aboutWrapper div.about .SEPT {
-  grid-area: SEPT;
-}
-.aboutWrapper div.about .IG {
-  grid-area: IG;
 }
 .aboutWrapper div.about p {
   overflow-wrap: break-word;
@@ -129,33 +107,32 @@ header h1 img {
   word-break: break-all;
   word-break: break-word;
   hyphens: auto;
-  hyphens: none;
+  margin: 0;
   font-family: "blackout_2am";
-  font-size: clamp(15px, 3vw, 3rem);
-  margin: 0.2rem 0;
+  font-size: clamp(18px, 3vw, 3rem);
   color: #f9f8f7;
-  line-height: 1;
   text-align: center;
   padding: 0.25rem 1rem;
 }
-.aboutWrapper div.about .insta-link {
-  display: inline;
-}
-.aboutWrapper div.about .insta-link img {
-  background: transparent;
+.aboutWrapper div.about p span {
   display: inline-block;
-  height: clamp(17px, 3vw, 3rem);
-  margin-bottom: -0.3rem;
+  white-space: nowrap;
 }
-.aboutWrapper div.about a {
+.aboutWrapper div.about p a {
   color: #f9f8f7;
   border-bottom: solid 1px #f9f8f7;
   padding-bottom: 1px;
 }
 @media (hover: hover) {
-  .aboutWrapper div.about a:hover {
+  .aboutWrapper div.about p a:hover {
     border-bottom: solid 0px;
   }
+}
+.aboutWrapper div.about p a img {
+  background: transparent;
+  display: inline;
+  height: clamp(19px, 3vw, 3rem);
+  margin-bottom: -0.3rem;
 }
 
 main {
