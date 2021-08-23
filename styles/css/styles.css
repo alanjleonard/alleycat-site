@@ -67,7 +67,7 @@ body ul, body ol {
 }
 
 header {
-  height: 100vh;
+  height: 99vh;
   width: 100%;
   background-color: transparent;
   background-position: center;
@@ -172,15 +172,15 @@ main section #map {
   width: 100%;
   height: 40rem;
 }
+main section img.spoke-cards, main section img.test-code, main section img.race-app {
+  width: 100%;
+}
 main section ol.how-to li {
   margin: 3rem auto;
 }
 main section ol.how-to li img {
   display: block;
   margin: 2rem auto;
-}
-main section ol.how-to li img.test-code {
-  height: 100px;
 }
 main section ul.faq li {
   list-style: none;

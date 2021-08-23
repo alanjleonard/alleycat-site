@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    height: 100vh;
+    height: 99vh;
     width: 100%;
     background-color: transparent;
     background-position: center;
@@ -127,6 +127,10 @@ main {
             height: 40rem;
         }
 
+        img.spoke-cards, img.test-code, img.race-app {
+            width: 100%;
+        }
+
         ol.how-to {
             li {
                 margin: 3rem auto;
@@ -135,12 +139,6 @@ main {
                     display: block;
                     margin: 2rem auto;
                 }
-
-                img.test-code {
-                    height: 100px;
-                }
-
-                img.race-app {}
             }
         }
 
