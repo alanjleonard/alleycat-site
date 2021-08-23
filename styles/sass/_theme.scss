@@ -13,6 +13,8 @@ $min-width: 3.5rem;
 $padding: 1rem;
 $smallSpacing: 0.5rem;
 $margin: 1rem;
+$blackout: "blackout_midnight", "Impact", Arial;
+$twoam: "blackout_2am", "Impact", Arial;
 
 @font-face {
     font-family: 'blackout_midnight';
@@ -36,7 +38,7 @@ $margin: 1rem;
 }
 
 @mixin Title-font {
-    font-family: 'blackout_midnight', "Impact", Arial;
+    font-family: $blackout;
 }
 
 @mixin Hover {

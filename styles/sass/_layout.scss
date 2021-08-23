@@ -16,8 +16,6 @@ header {
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-
-    // background-attachment: fixed;
     background-image: url("../../images/map-bg.png");
     background-size: cover;
 
@@ -31,55 +29,46 @@ header {
             width: 90vw;
             min-width: 300px;
             max-width: 960px;
+            max-height: 80vh;
         }
     }
 }
 
-.aboutWrapper {
+div.about {
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 1;
     background: $callout;
+    text-transform: uppercase;
 
-    div.about {
-        @include width;
+    p {
+        @include wordup;
 
-        font-size: 0;
-        margin: 0 auto;
+        margin: 0rem;
 
-        p {
-            @include wordup;
+        span {
+            display: inline-block;
+            white-space: nowrap;
+        }
 
-            margin: 0;
+        font-family: $blackout;
+        font-size: clamp(12px, 2.5vw, 3rem); //1.4rem;
+        color: $white;
+        text-align: center;
+        padding: ($padding / 4) $padding;
 
-            span {
-                display: inline-block;
-                white-space: nowrap;
+        a {
+            color: $white;
+            padding-bottom: 1px;
+
+            @include Hover {
+                text-decoration: none;
             }
 
-            font-family: "blackout_2am";
-            font-size: clamp(18px, 3vw, 3rem); //1.4rem;
-            color: $white;
-            text-align: center;
-            padding: ($padding / 4) $padding;
 
-            a {
-                color: $white;
-                border-bottom: solid 1px $white;
-                padding-bottom: 1px;
-
-                @include Hover {
-                    border-bottom: solid 0px;
-                }
-
-
-                img {
-                    background: transparent;
-                    display: inline;
-                    height: clamp(19px, 3vw, 3rem); //1.4rem;
-                    margin-bottom: -0.3rem;
-                }
+            i {
+                padding: 0 3px;
             }
         }
     }
