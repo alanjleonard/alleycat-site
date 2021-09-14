@@ -44,16 +44,28 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./styles/css/styles.css?v=3" />
+    <link rel="stylesheet" href="/styles/css/styles.css?v=3" />
   </head>
   <body id="site">
+    <div class="resultsWrapper">
+      <table class="results">
+        <thead>
+          <tr>
+            <th>RACER</th>
+            <th>PLACE</th>
+            <th>FINISH (time of day)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3">Loading Racers...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <header>
-      <div class="race-is-live">
-        <h1>The race is over</h1>
-        <p>Results will be posted soon.</p>
-      </div>
       <h1>
-        <img alt="Steel City Alleycat logo" src="images/WORDMARK.svg" />
+        <img alt="Steel City Alleycat logo" src="/images/WORDMARK.svg" />
       </h1>
     </header>
     <div class="about">
@@ -63,6 +75,10 @@
         <span>All are welcome</span>
       </p>
       <p>
+        <span>
+          <button><i class="fa fa-bicycle"></i>results</button>
+        </span>
+        -
         <span
           ><a href="https://race.steelcityalleycat.com"
             ><i class="fa fa-flag-checkered"></i>race site</a
@@ -129,7 +145,7 @@
               <img
                 alt="test code stencil"
                 class="test-code"
-                src="images/test-code.jpg"
+                src="/images/test-code.jpg"
               />
             </li>
             <li>
@@ -140,7 +156,7 @@
               <img
                 alt="screenshot of race site with question and code"
                 class="race-app"
-                src="images/photo-of-race-app.jpg"
+                src="/images/photo-of-race-app.jpg"
               />
             </li>
             <li>Answer all four questions to unlock the finish line clue</li>
@@ -191,7 +207,7 @@
             Extra special Spoke Card for DFL (Dead Fucking Last)
             <img
               class="spoke-cards"
-              src="images/spoke-cards.jpg"
+              src="/images/spoke-cards.jpg"
               alt="spoke cards as prizes"
             />
           </li>
@@ -349,25 +365,9 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <div class="footerContentWrapper">
-        <div>
-          <p>Join our mailing list to get updates to your inbox.</p>
-          <input type="text" />
-        </div>
-        <div>
-          <p>Check us out on social media</p>
-          <a href="#ig">Instagram</a>
-        </div>
-        <div>
-          <p>Check us out on social media</p>
-          <a href="#ig">Instagram</a>
-        </div>
-      </div>
-    </footer>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
     <script
       async
       defer
