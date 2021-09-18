@@ -61,6 +61,7 @@ a {
   background: #f9f8f7;
   z-index: 999;
   position: fixed;
+  height: 100vh;
 }
 .resultsWrapper table.results {
   width: 100%;
@@ -85,8 +86,6 @@ a {
   text-transform: uppercase;
 }
 .resultsWrapper table.results tr td.done {
-  background: #3a3b3c;
-  color: #f9f8f7;
   text-align: center;
 }
 .resultsWrapper table.results tr td.done.first {
