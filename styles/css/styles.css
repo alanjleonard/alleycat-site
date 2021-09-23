@@ -56,67 +56,6 @@ a {
   }
 }
 
-.resultsWrapper {
-  overflow: scroll;
-  background: #f9f8f7;
-  z-index: 999;
-  position: fixed;
-  height: 100vh;
-}
-.resultsWrapper table.results {
-  width: 100%;
-  max-width: 600px;
-  min-width: 320px;
-  table-layout: fixed;
-}
-.resultsWrapper table.results tr th {
-  position: sticky;
-  top: 0;
-  background: #f9f8f7;
-  z-index: 1000;
-}
-.resultsWrapper table.results tr td.you {
-  background: #3a3b3c;
-  color: #f9f8f7;
-}
-.resultsWrapper table.results tr td.you small {
-  display: block;
-  font-size: 1.2rem;
-  margin: 0;
-  text-transform: uppercase;
-}
-.resultsWrapper table.results tr td.done {
-  text-align: center;
-}
-.resultsWrapper table.results tr td.done.first {
-  background-color: gold;
-  color: #3a3b3c;
-}
-.resultsWrapper table.results tr td.done.second {
-  background-color: silver;
-}
-.resultsWrapper table.results tr td.done.third {
-  background-color: #cd7f32;
-}
-.resultsWrapper table.results tr td.done.dfl {
-  background-color: #5C1309;
-}
-.resultsWrapper table.results tr th {
-  text-align: center;
-  padding: 0.5em;
-  background-color: #fff;
-}
-.resultsWrapper table.results tr td {
-  height: 50px;
-  width: 66px;
-  background-color: #fff;
-}
-.resultsWrapper table.results tr td:first-child {
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: 900;
-}
-
 body {
   background: #f9f8f7 url(../../images/bg-texture.png);
 }
@@ -135,6 +74,15 @@ header {
   background-repeat: no-repeat;
   background-image: url("../../images/map-bg.png");
   background-size: cover;
+}
+header:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(249, 248, 247, 0.3);
+  content: "";
 }
 header h1 {
   display: grid;
@@ -157,7 +105,7 @@ header .race-is-live {
   text-align: center;
 }
 header .race-is-live h1 {
-  font-family: "blackout_midnight", "Impact", Arial;
+  font-family: "blackout_2am", "Impact", Arial;
 }
 header .race-is-live a {
   text-transform: uppercase;

@@ -11,7 +11,6 @@ body {
 }
 
 header {
-
     height: 99vh;
     width: 100%;
     background-color: transparent;
@@ -19,6 +18,16 @@ header {
     background-repeat: no-repeat;
     background-image: url("../../images/map-bg.png");
     background-size: cover;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($white, 0.3);
+        content: "";
+    }
 
     h1 {
         display: grid;
@@ -43,7 +52,7 @@ header {
         text-align: center;
 
         h1 {
-            font-family: $blackout;
+            font-family: $twoam;
         }
 
         a {

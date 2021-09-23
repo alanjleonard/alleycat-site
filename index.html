@@ -44,26 +44,18 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="/styles/css/styles.css?v=3" />
+    <link rel="stylesheet" href="/styles/css/styles.css?v=4" />
   </head>
   <body id="site">
-    <div class="resultsWrapper">
-      <table class="results">
-        <thead>
-          <tr>
-            <th>RACER</th>
-            <th>PLACE</th>
-            <th>FINISH (time of day)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colspan="3">Loading Racers...</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
     <header>
+      <div class="race-is-live">
+        <h1>The race is over</h1>
+        <p>
+          <a href="https://race.steelcityalleycat.com"
+            >Go to the race site to view the results</a
+          >
+        </p>
+      </div>
       <h1>
         <img alt="Steel City Alleycat logo" src="/images/WORDMARK.svg" />
       </h1>
@@ -75,13 +67,9 @@
         <span>All are welcome</span>
       </p>
       <p>
-        <span>
-          <button><i class="fa fa-bicycle"></i>results</button>
-        </span>
-        -
         <span
-          ><a href="https://race.steelcityalleycat.com"
-            ><i class="fa fa-flag-checkered"></i>race site</a
+          ><a href="https://race.steelcityalleycat.com/results.html"
+            ><i class="fa fa-flag-checkered"></i>results</a
           ></span
         >
         -
@@ -127,10 +115,8 @@
               Race goes live at 12:00 Noon on Sunday September 12<sup>th</sup>.
             </li>
             <li>
-              Go to the Race Site
-              <a href="https://race.steelcityalleycat.com"
-                >https://race.steelcityalleycat.com</a
-              >
+              Go to the
+              <a href="https://race.steelcityalleycat.com">Race Site</a>
             </li>
             <li>You’ll see a list of 4 clues. For example:</li>
 
@@ -369,7 +355,7 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
     <script src="/js/map.js"></script>
-    <script src="/js/results.js"></script>
+    <!-- <script src="/js/results.js"></script> -->
     <script
       async
       defer
