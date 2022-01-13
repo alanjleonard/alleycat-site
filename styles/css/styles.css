@@ -1,4 +1,35 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+:root {
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: #610505;
+  color: #f9f8f7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  max-width: 100%;
+}
+
+a {
+  color: #f9f8f7;
+}
+@media (hover: hover) {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
 @font-face {
   font-family: "blackout_midnight";
   src: url("../../fonts/blackout_midnight-webfont.woff2") format("woff2"), url("blackout_midnight-webfont.woff") format("woff");
@@ -17,100 +48,55 @@
   font-weight: normal;
   font-style: normal;
 }
-:root {
-  font-size: 62.5%;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-*::selection {
-  background-color: #5C1309;
-  color: #f9f8f7;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: itc-avant-garde-gothic-pro, sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
   font-size: 2rem;
   line-height: 1.5;
   font-variant-ligatures: common-ligatures;
 }
 
-p {
-  max-width: 100%;
-}
-
-a {
-  color: #5C1309;
-}
-@media (hover: hover) {
-  a:hover {
-    text-decoration: none;
-  }
-}
-
 body {
-  background: #f9f8f7 url(../../images/bg-texture.png);
+  background-color: #0c0d0e;
+  color: #f9f8f7;
 }
-body, body button, body input, body select, body textarea {
-  color: #3a3b3c;
+body,
+body button,
+body input,
+body select,
+body textarea {
+  color: #f9f8f7;
 }
-body ul, body ol {
+body ul,
+body ol {
   padding-left: 1rem;
 }
 
 header {
-  height: 99vh;
-  width: 100%;
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("../../images/map-bg.png");
-  background-size: cover;
+  min-width: 300px;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
 }
-header:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(249, 248, 247, 0.3);
-  content: "";
+header img {
+  width: 250px;
+  grid-row: 1/3;
 }
 header h1 {
-  display: grid;
-  place-items: center;
-  margin: 0;
-  height: calc(100% - 10rem);
-}
-header h1 img {
-  width: 90vw;
-  min-width: 300px;
-  max-width: 960px;
-  max-height: 80vh;
-}
-header .race-is-live {
-  background: #5C1309;
-  color: #f9f8f7;
-  margin: 40vh 0 0 0;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-}
-header .race-is-live h1 {
   font-family: "blackout_2am", "Impact", Arial;
+  font-size: 6.2rem;
+  line-height: 1;
+  margin: 0 auto;
 }
-header .race-is-live a {
-  text-transform: uppercase;
+header p {
+  font-weight: 900;
   letter-spacing: 2px;
-  color: #f9f8f7;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 div.about {
@@ -118,7 +104,7 @@ div.about {
   position: sticky;
   top: 0;
   z-index: 1;
-  background: #5C1309;
+  background: #610505;
   text-transform: uppercase;
 }
 div.about p {
@@ -162,7 +148,7 @@ main section {
   grid-template-columns: 1fr 2fr;
   margin: 0 auto;
   padding: 3rem 1rem;
-  border-bottom: solid 1rem #3a3b3c;
+  border-bottom: solid 1rem #0c0d0e;
 }
 main section:last-child {
   border: none;
@@ -174,7 +160,9 @@ main section h2 {
   font-size: clamp(40px, 7vw, 80px);
   line-height: 0.8;
 }
-main section p, main section ul, main section ol {
+main section p,
+main section ul,
+main section ol {
   margin-top: 1rem;
 }
 main section span.clue {
@@ -188,7 +176,9 @@ main section #map {
   width: 100%;
   height: 40rem;
 }
-main section img.spoke-cards, main section img.test-code, main section img.race-app {
+main section img.spoke-cards,
+main section img.test-code,
+main section img.race-app {
   width: 100%;
 }
 main section ol.how-to li {
@@ -202,7 +192,7 @@ main section ul.faq li {
   list-style: none;
 }
 main section ul.faq li summary {
-  color: #5C1309;
+  color: #610505;
   margin: 1rem 0;
   text-decoration: underline;
   cursor: pointer;
@@ -212,14 +202,15 @@ main section ul.faq li summary {
     text-decoration: none;
   }
 }
-main section ul.faq li details p, main section ul.faq li details ul {
+main section ul.faq li details p,
+main section ul.faq li details ul {
   padding: 1rem;
   padding-left: 3rem;
 }
 
 footer {
   display: none;
-  background: #3a3b3c;
+  background: #0c0d0e;
   color: #f9f8f7;
   padding: 3rem;
   margin-top: 1rem;
