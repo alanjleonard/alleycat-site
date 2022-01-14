@@ -1,10 +1,12 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap");
 :root {
   font-size: 62.5%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -49,15 +51,18 @@ a {
   font-style: normal;
 }
 body {
-  font-family: "Outfit", sans-serif;
-  font-weight: 500;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 900;
   font-size: 2rem;
   line-height: 1.5;
   font-variant-ligatures: common-ligatures;
 }
 
 body {
-  background-color: #0c0d0e;
+  background-attachment: fixed;
+  background-image: url("../../images/on-a-bike-bg.jpg");
+  background-size: cover;
+  background-position: center;
   color: #f9f8f7;
 }
 body,
@@ -71,84 +76,101 @@ body ul,
 body ol {
   padding-left: 1rem;
 }
+body .bg-overlay {
+  position: fixed;
+  z-index: -1;
+  content: "";
+  top: 0;
+  mix-blend-mode: multiply;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(-45deg, #101010, #262222);
+  background-attachment: fixed;
+}
 
 header {
   min-width: 300px;
-  width: 90%;
+  width: 95%;
   max-width: 960px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr;
-  place-items: center;
+  text-align: center;
 }
 header img {
-  width: 250px;
-  grid-row: 1/3;
+  max-width: 90vw;
+  max-height: 25rem;
+  margin: 2rem 0;
+}
+@media (max-width: 599px) {
+  header img {
+    max-height: 20rem;
+  }
 }
 header h1 {
-  font-family: "blackout_2am", "Impact", Arial;
-  font-size: 6.2rem;
+  font-family: "blackout_midnight", "Impact", Arial;
+  font-size: clamp(3rem, 9vw, 9.2rem);
   line-height: 1;
-  margin: 0 auto;
+  text-shadow: 0 0 10px white;
 }
-header p {
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-align: center;
+header h1 span {
+  white-space: nowrap;
 }
 
 div.about {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background: #610505;
+  min-width: 300px;
+  width: 95%;
+  max-width: 960px;
+  margin: 0 auto;
   text-transform: uppercase;
-}
-div.about p {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-all;
-  word-break: break-word;
-  hyphens: auto;
-  margin: 0rem;
-  font-family: "blackout_midnight", "Impact", Arial;
-  font-size: clamp(12px, 2.5vw, 3rem);
-  color: #f9f8f7;
   text-align: center;
-  padding: 0.25rem 1rem;
 }
-div.about p span {
-  display: inline-block;
-  white-space: nowrap;
+div.about h2 {
+  padding: 2rem;
+  font-size: 4rem;
+  background: rgba(249, 248, 247, 0.08);
 }
-div.about p a {
-  color: #f9f8f7;
-  padding-bottom: 1px;
-}
-@media (hover: hover) {
-  div.about p a:hover {
-    text-decoration: none;
+@media (max-width: 599px) {
+  div.about h2 {
+    font-weight: 900;
+    font-size: 2rem;
   }
 }
-div.about p a i {
-  padding: 0 3px;
+div.about div {
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+div.about div span:first-child {
+  text-align: left;
+}
+div.about div span:last-child {
+  text-align: right;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
 }
 
 main {
-  margin: 0 auto;
+  margin: 25rem auto 0 auto;
 }
 main section {
   min-width: 300px;
-  width: 90%;
+  width: 95%;
   max-width: 960px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin: 0 auto;
-  padding: 3rem 1rem;
-  border-bottom: solid 1rem #0c0d0e;
+  padding: 4rem 1rem;
 }
 main section:last-child {
   border: none;
@@ -159,6 +181,7 @@ main section h2 {
   word-spacing: 9999px;
   font-size: clamp(40px, 7vw, 80px);
   line-height: 0.8;
+  text-shadow: 0 0 10px white;
 }
 main section p,
 main section ul,
@@ -192,7 +215,7 @@ main section ul.faq li {
   list-style: none;
 }
 main section ul.faq li summary {
-  color: #610505;
+  color: #f9f8f7;
   margin: 1rem 0;
   text-decoration: underline;
   cursor: pointer;
@@ -210,7 +233,7 @@ main section ul.faq li details ul {
 
 footer {
   display: none;
-  background: #0c0d0e;
+  background: #262222;
   color: #f9f8f7;
   padding: 3rem;
   margin-top: 1rem;
@@ -219,7 +242,7 @@ footer .footerContentWrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   min-width: 300px;
-  width: 90%;
+  width: 95%;
   max-width: 960px;
   margin: 0 auto;
 }

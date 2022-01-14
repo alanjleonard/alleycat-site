@@ -1,253 +1,246 @@
 body {
-    background-color: $black;
+  background-attachment: fixed;
+  background-image: url("../../images/on-a-bike-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: $text-color;
+  &,
+  button,
+  input,
+  select,
+  textarea {
     color: $text-color;
-    &,
-    button,
-    input,
-    select,
-    textarea {
-        color: $text-color;
-    }
+  }
 
-    ul,
-    ol {
-        padding-left: 1rem;
-    }
+  ul,
+  ol {
+    padding-left: 1rem;
+  }
+  .bg-overlay {
+    position: fixed;
+    z-index: -1;
+    content: "";
+    top: 0;
+    mix-blend-mode: multiply;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(-45deg, #101010, $black);
+    background-attachment: fixed;
+  }
 }
 
 header {
-    @include width;
-    margin: 0 auto;
-    display:grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr;
-    place-items: center;
-    img{
-        width: 250px;
-        grid-row: 1 / 3;
+  @include width;
+  margin: 0 auto;
+  text-align: center;
+
+  img {
+    max-width: 90vw;
+    max-height: 25rem;
+    margin: 2rem 0;
+    @include for-phone-only {
+      max-height: 20rem;
     }
-    h1 {
-        @include blackout-twoam;
-        // color: $white;
-        font-size: 6.2rem;
-        line-height: 1;
-        margin: 0 auto;
+  }
+  h1 {
+    @include blackout-midnight;
+    font-size: clamp(3rem, 9vw, 9.2rem);
+    line-height: 1;
+    text-shadow: $spray-shadow;
+    span {
+      white-space: nowrap;
     }
-
-
-    p {
-        @include slub;
-        // color: $white;
-        text-align: center;
-    }
-
-    // .race-is-live {
-    //     background: $callout;
-    //     color: $white;
-    //     margin: 40vh 0 0 0;
-    //     position: absolute;
-    //     width: 100%;
-    //     text-align: center;
-
-    //     h1 {
-    //         @include blackout-twoam;
-    //     }
-
-    //     a {
-    //         text-transform: uppercase;
-    //         letter-spacing: 2px;
-    //         color: $white;
-    //     }
-    // }
+  }
 }
 
 div.about {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background: $callout;
-    text-transform: uppercase;
-
-    p {
-        @include wordup;
-
-        margin: 0rem;
-
-        span {
-            display: inline-block;
-            white-space: nowrap;
-        }
-
-        @include blackout-midnight;
-        font-size: clamp(12px, 2.5vw, 3rem); //1.4rem;
-        color: $white;
-        text-align: center;
-        padding: ($padding / 4) $padding;
-
-        a {
-            color: $white;
-            padding-bottom: 1px;
-
-            @include Hover {
-                text-decoration: none;
-            }
-
-
-            i {
-                padding: 0 3px;
-            }
-        }
+  @include width;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  h2 {
+    padding: 2rem;
+    font-size: 4rem;
+    background: rgba($white, 8%);
+    @include for-phone-only {
+      @include black;
+      font-size: 2rem;
     }
+  }
+  div {
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    span:first-child {
+      text-align: left;
+    }
+    span:last-child {
+      text-align: right;
+    }
+  }
+}
+.links {
+  //center on mobile
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
 }
 
 main {
+  margin: 25rem auto 0 auto;
+    // border-top: solid 5px $white;
+  section {
+    @include width;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     margin: 0 auto;
+    padding: 4rem 1rem;
+    // border-bottom: dotted 1px $white;
 
-    section {
-        @include width;
-
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        margin: 0 auto;
-        padding: 3rem 1rem;
-        border-bottom: solid 1rem $black;
-
-        &:last-child {
-            border: none;
-        }
-
-        h2 {
-            @include blackout-midnight;
-            margin-top: 1.75rem;
-            word-spacing: 9999px;
-            font-size: clamp(40px, 7vw, 80px);
-            line-height: 0.8;
-        }
-
-        p,
-        ul,
-        ol {
-            margin-top: 1rem;
-        }
-
-        span.clue {
-            width: 80%;
-            font-style: italic;
-            margin: 1rem auto;
-            font-variant: italic;
-            display: block;
-        }
-
-        #map {
-            width: 100%;
-            height: 40rem;
-        }
-
-        img.spoke-cards,
-        img.test-code,
-        img.race-app {
-            width: 100%;
-        }
-
-        ol.how-to {
-            li {
-                margin: 3rem auto;
-
-                img {
-                    display: block;
-                    margin: 2rem auto;
-                }
-            }
-        }
-
-        ul.faq {
-            li {
-                list-style: none;
-
-                summary {
-                    color: $callout;
-                    margin: $margin 0;
-                    text-decoration: underline;
-                    cursor: pointer;
-
-                    @include Hover {
-                        text-decoration: none;
-                    }
-                }
-
-                details p,
-                details ul {
-                    padding: $padding;
-                    padding-left: $padding * 3;
-                }
-            }
-        }
+    &:last-child {
+      border: none;
     }
+
+    h2 {
+      @include blackout-midnight;
+      margin-top: 1.75rem;
+      word-spacing: 9999px;
+      font-size: clamp(40px, 7vw, 80px);
+      line-height: 0.8;
+    text-shadow: $spray-shadow;
+    }
+
+    p,
+    ul,
+    ol {
+      margin-top: 1rem;
+    }
+
+    span.clue {
+      width: 80%;
+      font-style: italic;
+      margin: 1rem auto;
+      font-variant: italic;
+      display: block;
+    }
+
+    #map {
+      width: 100%;
+      height: 40rem;
+    }
+
+    img.spoke-cards,
+    img.test-code,
+    img.race-app {
+      width: 100%;
+    }
+
+    ol.how-to {
+      li {
+        margin: 3rem auto;
+
+        img {
+          display: block;
+          margin: 2rem auto;
+        }
+      }
+    }
+
+    ul.faq {
+      li {
+        list-style: none;
+
+        summary {
+          color: $text-color;
+          margin: $margin 0;
+          text-decoration: underline;
+          cursor: pointer;
+
+          @include Hover {
+            text-decoration: none;
+          }
+        }
+
+        details p,
+        details ul {
+          padding: $padding;
+          padding-left: $padding * 3;
+        }
+      }
+    }
+  }
 }
 
 footer {
-    display: none;
-    background: $black;
-    color: $white;
-    padding: $padding * 3;
-    margin-top: $margin;
+  display: none;
+  background: $black;
+  color: $white;
+  padding: $padding * 3;
+  margin-top: $margin;
 
-    .footerContentWrapper {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+  .footerContentWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-        div {
-            padding: $padding * 2;
+    div {
+      padding: $padding * 2;
 
-            a {
-                color: $white;
-            }
+      a {
+        color: $white;
+      }
 
-            &:not(:last-child) {
-                border-color: $white;
-                border-style: solid;
-                border-width: 0 1px 0 0;
-            }
-        }
-
-        @include width;
-
-        margin: 0 auto;
+      &:not(:last-child) {
+        border-color: $white;
+        border-style: solid;
+        border-width: 0 1px 0 0;
+      }
     }
+
+    @include width;
+
+    margin: 0 auto;
+  }
 }
 
 @include for-phone-only {
-    aside {
-        grid-template-columns: repeat(5, 1fr);
-    }
+  aside {
+    grid-template-columns: repeat(5, 1fr);
+  }
 
-    main {
-        section {
-            display: block;
+  main {
+    section {
+      display: block;
+    }
+  }
+
+  footer {
+    .footerContentWrapper {
+      display: block;
+
+      div {
+        &:not(:last-child) {
+          border-width: 0 0 1px 0;
         }
+      }
     }
-
-    footer {
-        .footerContentWrapper {
-            display: block;
-
-            div {
-                &:not(:last-child) {
-                    border-width: 0 0 1px 0;
-                }
-            }
-        }
-    }
+  }
 }
 
+@include for-tablet-portrait-up {
+}
 
-@include for-tablet-portrait-up {}
-
-
-@include for-tablet-landscape-up {}
-
+@include for-tablet-landscape-up {
+}
 
 @mixin questionbg($color) {
-    border-color: $color;
+  border-color: $color;
 }

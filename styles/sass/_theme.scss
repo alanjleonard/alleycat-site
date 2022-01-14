@@ -1,6 +1,6 @@
 // $callout: #5C1309;
-$callout:hsl(0,90%,20%);
-$black: #0c0d0e;
+$callout: hsl(0, 90%, 20%);
+$black: #262222;
 $white: #f9f8f7;
 $text-color: $white;
 $first: gold;
@@ -17,99 +17,101 @@ $min-width: 3.5rem;
 $padding: 1rem;
 $smallSpacing: 0.5rem;
 $margin: 1rem;
+$spray-shadow: 0 0 10px white;
 @mixin Hover {
-    @media (hover: hover) {
-        &:hover {
-            @content;
-        }
+  @media (hover: hover) {
+    &:hover {
+      @content;
     }
+  }
 }
 
 @mixin width {
-    min-width: 300px;
-    width: 90%;
-    max-width: 960px;
+  min-width: 300px;
+  width: 95%;
+  max-width: 960px;
 }
-
 
 :root {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
-*, *:before, *:after {
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 *::selection {
-    background-color: $callout;
-    color: $white;
+  background-color: $callout;
+  color: $white;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-
 p {
-    max-width: $max-width;
+  max-width: $max-width;
 }
 
 a {
-    color: $text-color;
+  color: $text-color;
 
-    @include Hover {
-        text-decoration: none;
-    }
+  @include Hover {
+    text-decoration: none;
+  }
 }
 
 @function BoxShadowColor($color) {
-    @return 5px 5px 0 mix($color, black, 90%), 4px 4px 0 mix($color, black, 90%), 3px 3px 0 mix($color, black, 90%), 2px 2px 0 mix($color, black, 90%), 1px 1px 0 mix($color, black, 100%);
+  @return 5px 5px 0 mix($color, black, 90%), 4px 4px 0 mix($color, black, 90%),
+    3px 3px 0 mix($color, black, 90%), 2px 2px 0 mix($color, black, 90%),
+    1px 1px 0 mix($color, black, 100%);
 }
 
-
 %Button {
-    transition: 0.1s;
-    outline: none;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    padding: $padding;
-    font-weight: 900;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    display: block;
-    margin: 2rem 0;
+  transition: 0.1s;
+  outline: none;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  padding: $padding;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: block;
+  margin: 2rem 0;
 
-    &:active {
-        box-shadow: none;
-    }
+  &:active {
+    box-shadow: none;
+  }
 }
 
 @mixin for-phone-only {
-    @media (max-width: 599px) {
-        @content;
-    }
+  @media (max-width: 599px) {
+    @content;
+  }
 }
 
 @mixin for-tablet-portrait-up {
-    @media (min-width: 600px) {
-        @content;
-    }
+  @media (min-width: 600px) {
+    @content;
+  }
 }
 
 @mixin for-tablet-landscape-up {
-    @media (min-width: 900px) {
-        @content;
-    }
+  @media (min-width: 900px) {
+    @content;
+  }
 }
 
 @mixin for-desktop-up {
-    @media (min-width: 1200px) {
-        @content;
-    }
+  @media (min-width: 1200px) {
+    @content;
+  }
 }
 
 @mixin for-big-desktop-up {
-    @media (min-width: 1800px) {
-        @content;
-    }
+  @media (min-width: 1800px) {
+    @content;
+  }
 }
