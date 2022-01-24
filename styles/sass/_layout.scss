@@ -1,9 +1,10 @@
 body {
   background-attachment: fixed;
   background-image: url("../../images/on-a-bike-bg.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   color: $text-color;
+
   &,
   button,
   input,
@@ -16,6 +17,7 @@ body {
   ol {
     padding-left: 1rem;
   }
+
   .bg-overlay {
     position: fixed;
     z-index: -1;
@@ -39,15 +41,18 @@ header {
     max-width: 90vw;
     max-height: 25rem;
     margin: 2rem 0;
+
     @include for-phone-only {
       max-height: 20rem;
     }
   }
+
   h1 {
     @include blackout-midnight;
-    font-size: clamp(3rem, 9vw, 9.2rem);
+    font-size: clamp(3rem, 8vw, 9.2rem);
     line-height: 1;
     text-shadow: $spray-shadow;
+
     span {
       white-space: nowrap;
     }
@@ -59,27 +64,33 @@ div.about {
   margin: 0 auto;
   text-transform: uppercase;
   text-align: center;
+
   h2 {
     padding: 2rem;
     font-size: 4rem;
     background: rgba($white, 8%);
+
     @include for-phone-only {
       @include black;
       font-size: 2rem;
     }
   }
+
   div {
     font-size: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
     span:first-child {
       text-align: left;
     }
+
     span:last-child {
       text-align: right;
     }
   }
 }
+
 .links {
   //center on mobile
   display: flex;
@@ -92,11 +103,30 @@ div.about {
   text-transform: uppercase;
   font-size: 1.2rem;
   padding: 0.5rem 0;
+
+   span {
+a{color:inherit}
+    &:nth-child(1) {
+
+      @include bounce(100ms);
+    }
+
+    &:nth-child(2) {
+
+      @include bounce(300ms);
+    }
+
+    &:nth-child(3) {
+
+      @include bounce(500ms);
+    }
+  }
 }
 
 main {
   margin: 25rem auto 0 auto;
-    // border-top: solid 5px $white;
+
+  // border-top: solid 5px $white;
   section {
     @include width;
 
@@ -116,7 +146,7 @@ main {
       word-spacing: 9999px;
       font-size: clamp(40px, 7vw, 80px);
       line-height: 0.8;
-    text-shadow: $spray-shadow;
+      text-shadow: $spray-shadow;
     }
 
     p,
@@ -235,11 +265,9 @@ footer {
   }
 }
 
-@include for-tablet-portrait-up {
-}
+@include for-tablet-portrait-up {}
 
-@include for-tablet-landscape-up {
-}
+@include for-tablet-landscape-up {}
 
 @mixin questionbg($color) {
   border-color: $color;

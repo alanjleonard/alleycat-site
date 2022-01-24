@@ -23,6 +23,32 @@ $padding: 1rem;
 $smallSpacing: 0.5rem;
 $margin: 1rem;
 $spray-shadow: 0 0 10px white;
+
+@mixin bounce($delay) {
+  animation-duration: 6s;
+  animation-name: bounce;
+  animation-iteration-count: 10;
+  animation-delay: $delay;
+
+  @keyframes bounce {
+    0% {
+      transform: translatey(0);
+    }
+
+    5% {
+      transform: translatey(-7px);
+    }
+
+    10% {
+      transform: translatey(0);
+    }
+
+    100% {
+      transform: translatey(0);
+    }
+  }
+}
+
 @mixin Hover {
   @media (hover: hover) {
     &:hover {
@@ -69,26 +95,11 @@ a {
 }
 
 @function BoxShadowColor($color) {
-  @return 5px 5px 0 mix($color, black, 90%), 4px 4px 0 mix($color, black, 90%),
-    3px 3px 0 mix($color, black, 90%), 2px 2px 0 mix($color, black, 90%),
-    1px 1px 0 mix($color, black, 100%);
-}
-
-%Button {
-  transition: 0.1s;
-  outline: none;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  padding: $padding;
-  font-weight: 900;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  display: block;
-  margin: 2rem 0;
-
-  &:active {
-    box-shadow: none;
-  }
+  @return 5px 5px 0 mix($color, black, 90%),
+  4px 4px 0 mix($color, black, 90%),
+  3px 3px 0 mix($color, black, 90%),
+  2px 2px 0 mix($color, black, 90%),
+  1px 1px 0 mix($color, black, 100%);
 }
 
 @mixin for-phone-only {
