@@ -12,17 +12,17 @@ $second: silver;
 $third: #cd7f32;
 $shadow: $white;
 $base-size: 2rem;
-
+$body-font: 'Catamaran', sans-serif;
 $primary-color: $black;
-$square: 50px;
-$header-height: 9rem;
+$iconSize: 2.5rem;
+$header-height: 5rem;
 $main-color: $black;
 $max-width: 100%;
 $min-width: 3.5rem;
 $padding: 1rem;
 $smallSpacing: 0.5rem;
 $margin: 1rem;
-$spray-shadow: 0 0 10px white;
+$spray-shadow: none;//0 0 10px white;
 
 @mixin bounce($delay) {
   animation-duration: 6s;
@@ -59,23 +59,27 @@ $spray-shadow: 0 0 10px white;
 
 @mixin width {
   min-width: 300px;
-  width: 95%;
+  width: 100vw;
   max-width: 960px;
 }
 
 :root {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 *::selection {
   background-color: $callout;
   color: $white;
+}
+*:focus{
+  outline: solid 2px $white;
 }
 
 html {

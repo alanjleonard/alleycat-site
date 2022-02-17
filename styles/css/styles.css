@@ -2,17 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap");
 :root {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 *::selection {
   background-color: #610505;
   color: #f9f8f7;
+}
+
+*:focus {
+  outline: solid 2px #f9f8f7;
 }
 
 html {
@@ -59,11 +64,9 @@ body {
 }
 
 body {
-  background-attachment: fixed;
-  background-image: url("../../images/on-a-bike-bg.jpg");
-  background-size: contain;
-  background-position: center;
   color: #f9f8f7;
+  background: linear-gradient(-45deg, #101010, #262222);
+  background-attachment: fixed;
 }
 body,
 body button,
@@ -76,25 +79,16 @@ body ul,
 body ol {
   padding-left: 1rem;
 }
-body .bg-overlay {
-  position: fixed;
-  z-index: -1;
-  content: "";
-  top: 0;
-  mix-blend-mode: multiply;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(-45deg, #101010, #262222);
-  background-attachment: fixed;
-}
 
 header {
   min-width: 300px;
-  width: 95%;
+  width: 100vw;
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 header img {
   max-width: 90vw;
@@ -106,134 +100,93 @@ header img {
     max-height: 20rem;
   }
 }
-header h1 {
-  font-family: "blackout_midnight", "Impact", Arial;
-  font-size: clamp(3rem, 8vw, 9.2rem);
-  line-height: 1;
-  text-shadow: 0 0 10px white;
-}
-header h1 span {
-  white-space: nowrap;
-}
-
-div.about {
+header div.about {
   min-width: 300px;
-  width: 95%;
+  width: 100vw;
   max-width: 960px;
   margin: 0 auto;
   text-transform: uppercase;
   text-align: center;
 }
-div.about h2 {
+header div.about h2 {
   padding: 2rem;
   font-size: 4rem;
   background: rgba(249, 248, 247, 0.08);
 }
 @media (max-width: 599px) {
-  div.about h2 {
-    font-weight: 900;
+  header div.about h2 {
+    font-weight: 100;
     font-size: 2rem;
   }
 }
-div.about div {
+header div.about h2 span {
+  font-weight: 900;
+  white-space: nowrap;
+}
+header div.about div {
   font-size: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-div.about div span:first-child {
+header div.about div span {
+  padding: 0 1rem;
+}
+header div.about div span:first-child {
   text-align: left;
 }
-div.about div span:last-child {
+header div.about div span:last-child {
   text-align: right;
 }
 
-.links {
+.link-wrapper {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+}
+.link-wrapper button.icons {
+  background: transparent;
+  border: none;
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  right: 0;
+}
+.link-wrapper button.icons .close {
+  display: none;
+}
+.link-wrapper .links {
+  display: none;
   text-transform: uppercase;
-  font-size: 1.2rem;
-  padding: 0.5rem 0;
+  outline: solid 1px white;
+  text-align: right;
+  background-color: #262222;
+  padding: 1rem;
 }
-.links span a {
+.link-wrapper .links span {
+  display: block;
+  margin: 0 0 1rem 0;
+}
+.link-wrapper .links span a {
   color: inherit;
-}
-.links span:nth-child(1) {
-  animation-duration: 6s;
-  animation-name: bounce;
-  animation-iteration-count: 10;
-  animation-delay: 100ms;
-}
-@keyframes bounce {
-  0% {
-    transform: translatey(0);
-  }
-  5% {
-    transform: translatey(-7px);
-  }
-  10% {
-    transform: translatey(0);
-  }
-  100% {
-    transform: translatey(0);
-  }
-}
-.links span:nth-child(2) {
-  animation-duration: 6s;
-  animation-name: bounce;
-  animation-iteration-count: 10;
-  animation-delay: 300ms;
-}
-@keyframes bounce {
-  0% {
-    transform: translatey(0);
-  }
-  5% {
-    transform: translatey(-7px);
-  }
-  10% {
-    transform: translatey(0);
-  }
-  100% {
-    transform: translatey(0);
-  }
-}
-.links span:nth-child(3) {
-  animation-duration: 6s;
-  animation-name: bounce;
-  animation-iteration-count: 10;
-  animation-delay: 500ms;
-}
-@keyframes bounce {
-  0% {
-    transform: translatey(0);
-  }
-  5% {
-    transform: translatey(-7px);
-  }
-  10% {
-    transform: translatey(0);
-  }
-  100% {
-    transform: translatey(0);
-  }
 }
 
 main {
-  margin: 25rem auto 0 auto;
+  margin: 20rem auto 0 auto;
+  width: 99vw;
+  margin: 0 auto;
 }
 main section {
   min-width: 300px;
-  width: 95%;
+  width: 100vw;
   max-width: 960px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin: 0 auto;
-  padding: 4rem 1rem;
+  padding: 1rem;
 }
 main section:last-child {
   border: none;
@@ -244,7 +197,7 @@ main section h2 {
   word-spacing: 9999px;
   font-size: clamp(40px, 7vw, 80px);
   line-height: 0.8;
-  text-shadow: 0 0 10px white;
+  text-shadow: none;
 }
 main section p,
 main section ul,
@@ -305,7 +258,7 @@ footer .footerContentWrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   min-width: 300px;
-  width: 95%;
+  width: 100vw;
   max-width: 960px;
   margin: 0 auto;
 }
