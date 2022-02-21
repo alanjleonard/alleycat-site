@@ -1,11 +1,6 @@
 body {
-  // background-attachment: fixed;
-  // background-image: url("../../images/on-a-bike-bg.jpg");
-  // background-size: contain;
-  // background-position: center;
   color: $text-color;
-  background: linear-gradient(-45deg, #101010, $black);
-  background-attachment: fixed;
+  // background: linear-gradient(-45deg, #101010, $black);
 
   &,
   button,
@@ -22,6 +17,18 @@ body {
 
 }
 
+.backgroundFixed {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("../../images/bg-map.png");
+}
+
 header {
   @include width;
   margin: 0 auto;
@@ -29,7 +36,6 @@ header {
   height: 100vh;
   display: grid;
   place-items: center;
-  ;
 
   img {
     max-width: 90vw;

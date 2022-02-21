@@ -65,8 +65,6 @@ body {
 
 body {
   color: #f9f8f7;
-  background: linear-gradient(-45deg, #101010, #262222);
-  background-attachment: fixed;
 }
 body,
 body button,
@@ -78,6 +76,18 @@ body textarea {
 body ul,
 body ol {
   padding-left: 1rem;
+}
+
+.backgroundFixed {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("../../images/bg-map.png");
 }
 
 header {
