@@ -29,7 +29,7 @@ p {
 }
 
 a {
-  color: #f9f8f7;
+  color: #262222;
 }
 @media (hover: hover) {
   a:hover {
@@ -64,14 +64,15 @@ body {
 }
 
 body {
-  color: #f9f8f7;
+  color: #262222;
+  background: linear-gradient(-45deg, #efefef, white);
 }
 body,
 body button,
 body input,
 body select,
 body textarea {
-  color: #f9f8f7;
+  color: #262222;
 }
 body ul,
 body ol {
@@ -85,9 +86,40 @@ body ol {
   left: 0;
   height: 100%;
   width: 100%;
+  border: solid 8px #262222;
+}
+
+header {
   background-position: center;
-  background-attachment: fixed;
-  background-image: url("../../images/bg-map.png");
+  background-size: cover;
+}
+
+h2.race-goes-live {
+  padding: 2rem 0;
+  line-height: 1;
+  font-size: clamp(2rem, 8vw, 6rem);
+  background: #262222;
+  color: #f9f8f7;
+  text-align: center;
+  margin: 0;
+  font-family: "blackout_sunrise", "Impact", Arial;
+}
+h2.race-goes-live span {
+  font-weight: 900;
+  white-space: nowrap;
+  font-family: "blackout_midnight", "Impact", Arial;
+}
+
+img.logo {
+  max-width: 90vw;
+  max-height: 50rem;
+  margin: 5rem auto;
+  display: block;
+}
+@media (max-width: 599px) {
+  img.logo {
+    max-height: 20rem;
+  }
 }
 
 header {
@@ -96,19 +128,8 @@ header {
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
-  height: 100vh;
   display: grid;
   place-items: center;
-}
-header img {
-  max-width: 90vw;
-  max-height: 25rem;
-  margin: 2rem 0;
-}
-@media (max-width: 599px) {
-  header img {
-    max-height: 20rem;
-  }
 }
 header div.about {
   min-width: 300px;
@@ -118,37 +139,25 @@ header div.about {
   text-transform: uppercase;
   text-align: center;
 }
-header div.about h2 {
-  padding: 2rem;
-  font-size: 4rem;
-  background: rgba(249, 248, 247, 0.08);
-}
-@media (max-width: 599px) {
-  header div.about h2 {
-    font-weight: 100;
-    font-size: 2rem;
-  }
-}
-header div.about h2 span {
-  font-weight: 900;
-  white-space: nowrap;
-}
 header div.about div {
   font-size: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 header div.about div span {
-  padding: 0 1rem;
+  padding: 2rem 1rem;
+  border: solid 8px #262222;
+  border-left: none;
+  border-top: none;
+  line-height: 1;
 }
 header div.about div span:first-child {
-  text-align: left;
-}
-header div.about div span:last-child {
-  text-align: right;
+  border-left: solid 8px #262222;
 }
 
 .link-wrapper {
+  background: #262222;
+  color: #f9f8f7;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -157,6 +166,7 @@ header div.about div span:last-child {
   top: 0;
   right: 0;
   padding: 0.5rem;
+  width: 100%;
 }
 .link-wrapper button.icons {
   background: transparent;
@@ -164,6 +174,7 @@ header div.about div span:last-child {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
+  color: #f9f8f7;
 }
 .link-wrapper button.icons .close {
   display: none;
@@ -174,7 +185,7 @@ header div.about div span:last-child {
   outline: solid 1px white;
   text-align: right;
   background-color: #262222;
-  padding: 1rem;
+  padding: calc(1rem + 8px);
 }
 .link-wrapper .links span {
   display: block;
@@ -196,10 +207,23 @@ main section {
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin: 0 auto;
-  padding: 1rem;
+  padding: calc(1rem + 8px);
+  border: solid 8px #262222;
+  border-top: none;
+}
+@media (max-width: 599px) {
+  main section {
+    display: block;
+  }
 }
 main section:last-child {
   border: none;
+}
+main section.again p.past-future {
+  font-family: "blackout_midnight", "Impact", Arial;
+}
+main section.again p {
+  text-align: justify;
 }
 main section h2 {
   font-family: "blackout_midnight", "Impact", Arial;
@@ -207,7 +231,6 @@ main section h2 {
   word-spacing: 9999px;
   font-size: clamp(40px, 7vw, 80px);
   line-height: 0.8;
-  text-shadow: none;
 }
 main section p,
 main section ul,
@@ -241,7 +264,7 @@ main section ul.faq li {
   list-style: none;
 }
 main section ul.faq li summary {
-  color: #f9f8f7;
+  color: #262222;
   margin: 1rem 0;
   text-decoration: underline;
   cursor: pointer;
@@ -253,52 +276,8 @@ main section ul.faq li summary {
 }
 main section ul.faq li details p,
 main section ul.faq li details ul {
-  padding: 1rem;
-  padding-left: 3rem;
-}
-
-footer {
-  display: none;
-  background: #262222;
-  color: #f9f8f7;
-  padding: 3rem;
-  margin-top: 1rem;
-}
-footer .footerContentWrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  min-width: 300px;
-  width: 100vw;
-  max-width: 960px;
-  margin: 0 auto;
-}
-footer .footerContentWrapper div {
-  padding: 2rem;
-}
-footer .footerContentWrapper div a {
-  color: #f9f8f7;
-}
-footer .footerContentWrapper div:not(:last-child) {
-  border-color: #f9f8f7;
-  border-style: solid;
-  border-width: 0 1px 0 0;
-}
-
-@media (max-width: 599px) {
-  aside {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  main section {
-    display: block;
-  }
-
-  footer .footerContentWrapper {
-    display: block;
-  }
-  footer .footerContentWrapper div:not(:last-child) {
-    border-width: 0 0 1px 0;
-  }
+  padding: calc(1rem + 8px);
+  padding-left: calc(calc(1rem + 8px) * 3);
 }
 
 /*# sourceMappingURL=styles.css.map */

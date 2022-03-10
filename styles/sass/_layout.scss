@@ -1,7 +1,6 @@
 body {
   color: $text-color;
-  // background: linear-gradient(-45deg, #101010, $black);
-
+  background: linear-gradient(-45deg, #efefef, white);
   &,
   button,
   input,
@@ -14,7 +13,6 @@ body {
   ol {
     padding-left: 1rem;
   }
-
 }
 
 .backgroundFixed {
@@ -24,50 +22,55 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+  border: solid $border-width $black;
+}
+header {
   background-position: center;
-  background-attachment: fixed;
-  background-image: url("../../images/bg-map.png");
+  background-size: cover;
 }
 
+h2.race-goes-live {
+  padding: 2rem 0;
+  line-height: 1;
+  font-size: clamp(2rem, 8vw, 6rem);
+  background: $black;
+  color: $white;
+  text-align: center;
+  margin: 0;
+  @include blackout-sunrise;
+
+  @include for-phone-only {
+  }
+
+  span {
+    @include black;
+    white-space: nowrap;
+    @include blackout-midnight;
+  }
+}
+img.logo {
+  max-width: 90vw;
+  max-height: 50rem;
+  margin: 5rem auto;
+  display: block;
+
+  @include for-phone-only {
+    max-height: 20rem;
+  }
+}
 header {
   @include width;
   margin: 0 auto;
   text-align: center;
-  height: 100vh;
+  // height: 100vh;
   display: grid;
   place-items: center;
-
-  img {
-    max-width: 90vw;
-    max-height: 25rem;
-    margin: 2rem 0;
-
-    @include for-phone-only {
-      max-height: 20rem;
-    }
-  }
 
   div.about {
     @include width;
     margin: 0 auto;
     text-transform: uppercase;
     text-align: center;
-
-    h2 {
-      padding: 2rem;
-      font-size: 4rem;
-      background: rgba($white, 8%);
-
-      @include for-phone-only {
-        @include thin;
-        font-size: 2rem;
-      }
-
-      span {
-        @include black;
-        white-space: nowrap;
-      }
-    }
 
     div {
       // non profit/free entry/all are welcome
@@ -76,22 +79,24 @@ header {
       grid-template-columns: repeat(3, 1fr);
 
       span {
-        padding: 0 1rem;
+        padding: 2rem 1rem;
+        border: solid $border-width $black;
+
+        border-left: none;
+        border-top: none;
+        line-height: 1;
       }
 
       span:first-child {
-        text-align: left;
-      }
-
-      span:last-child {
-        text-align: right;
+        border-left: solid $border-width $black;
       }
     }
   }
 }
 
-
 .link-wrapper {
+  background: $black;
+  color: $white;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -100,13 +105,14 @@ header {
   top: 0;
   right: 0;
   padding: 0.5rem;
-
+  width: 100%;
   button.icons {
     background: transparent;
     border: none;
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
+    color: $white;
 
     .close {
       display: none;
@@ -126,40 +132,47 @@ header {
       margin: 0 0 1rem 0;
 
       a {
-        color: inherit
+        color: inherit;
       }
     }
   }
 }
 
-
-
 main {
   margin: 20rem auto 0 auto;
   width: 99vw;
   margin: 0 auto;
-
-  // border-top: solid 5px $white;
   section {
     @include width;
-
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    // &:not(.again) {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      @include for-phone-only {
+        display: block;
+      }
+    // }
     margin: 0 auto;
     padding: $padding;
-    // border-bottom: dotted 1px $white;
+    border: solid $border-width $black;
+    border-top: none;
 
     &:last-child {
       border: none;
     }
-
+    &.again {
+      p.past-future {
+        @include blackout-midnight;
+      }
+      p {
+        text-align: justify;
+      }
+    }
     h2 {
       @include blackout-midnight;
       margin-top: 1.75rem;
       word-spacing: 9999px;
       font-size: clamp(40px, 7vw, 80px);
       line-height: 0.8;
-      text-shadow: $spray-shadow;
     }
 
     p,
@@ -216,72 +229,9 @@ main {
         details p,
         details ul {
           padding: $padding;
-          padding-left: $padding * 3;
+          padding-left: calc(#{$padding} * 3);
         }
       }
     }
   }
-}
-
-footer {
-  display: none;
-  background: $black;
-  color: $white;
-  padding: $padding * 3;
-  margin-top: $margin;
-
-  .footerContentWrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    div {
-      padding: $padding * 2;
-
-      a {
-        color: $white;
-      }
-
-      &:not(:last-child) {
-        border-color: $white;
-        border-style: solid;
-        border-width: 0 1px 0 0;
-      }
-    }
-
-    @include width;
-
-    margin: 0 auto;
-  }
-}
-
-@include for-phone-only {
-  aside {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  main {
-    section {
-      display: block;
-    }
-  }
-
-  footer {
-    .footerContentWrapper {
-      display: block;
-
-      div {
-        &:not(:last-child) {
-          border-width: 0 0 1px 0;
-        }
-      }
-    }
-  }
-}
-
-@include for-tablet-portrait-up {}
-
-@include for-tablet-landscape-up {}
-
-@mixin questionbg($color) {
-  border-color: $color;
 }

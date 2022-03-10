@@ -1,68 +1,74 @@
 @font-face {
-    font-family: 'blackout_midnight';
-    src: url("../../fonts/blackout_midnight-webfont.woff2") format("woff2"), url("blackout_midnight-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "blackout_midnight";
+  src: url("../../fonts/blackout_midnight-webfont.woff2") format("woff2"),
+    url("blackout_midnight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'blackout_2am';
-    src: url("../../fonts/blackout_two_am-webfont.woff2") format("woff2"), url("blackout_sunrise-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "blackout_2am";
+  src: url("../../fonts/blackout_two_am-webfont.woff2") format("woff2"),
+    url("blackout_sunrise-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'blackout_sunrise';
-    src: url("../../fonts/blackout_sunrise-webfont.woff2") format("woff2"), url("blackout_sunrise-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "blackout_sunrise";
+  src: url("../../fonts/blackout_sunrise-webfont.woff2") format("woff2"),
+    url("blackout_sunrise-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @mixin blackout-twoam {
-    font-family: "blackout_2am", "Impact", Arial;
+  font-family: "blackout_2am", "Impact", Arial;
 }
 
 @mixin blackout-midnight {
-    font-family: "blackout_midnight", "Impact", Arial;
+  font-family: "blackout_midnight", "Impact", Arial;
+}
+@mixin blackout-sunrise {
+  font-family: "blackout_sunrise", "Impact", Arial;
 }
 
 @mixin thin {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 @mixin regular {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 @mixin black {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 // @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap");
 
 @mixin wordup {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-all;
-    word-break: break-word;
-    hyphens: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+  hyphens: auto;
 }
-@mixin slub{
-    @include black;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+@mixin slub {
+  @include black;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 @mixin uppercase {
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 body {
-    font-family: 'Catamaran', sans-serif;
-    @include regular;
-    font-size: $base-size;
-    line-height: 1.5;
-    font-variant-ligatures: common-ligatures;
+  font-family: "Catamaran", sans-serif;
+  @include regular;
+  font-size: $base-size;
+  line-height: 1.5;
+  font-variant-ligatures: common-ligatures;
 }
