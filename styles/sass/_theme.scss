@@ -24,6 +24,7 @@ $min-width: 3.5rem;
 $smallSpacing: 0.5rem;
 $margin: 1rem;
 $spray-shadow: none;//0 0 10px white;
+$font-size: 2rem;
 
 @mixin bounce($delay) {
   animation-duration: 6s;
@@ -60,7 +61,7 @@ $spray-shadow: none;//0 0 10px white;
 
 @mixin width {
   min-width: 300px;
-  width: 100vw;
+  width: 99vw;
   max-width: 960px;
 }
 

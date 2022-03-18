@@ -1,6 +1,7 @@
 body {
   color: $text-color;
   background: linear-gradient(-45deg, #efefef, white);
+
   &,
   button,
   input,
@@ -15,15 +16,6 @@ body {
   }
 }
 
-.backgroundFixed {
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border: solid $border-width $black;
-}
 header {
   background-position: center;
   background-size: cover;
@@ -32,32 +24,34 @@ header {
 h2.race-goes-live {
   padding: 2rem 0;
   line-height: 1;
-  font-size: clamp(2rem, 8vw, 6rem);
+  font-size: clamp(1.9rem, 7vw, 5rem);
   background: $black;
   color: $white;
   text-align: center;
   margin: 0;
   @include blackout-sunrise;
 
-  @include for-phone-only {
+  span {
+    white-space: nowrap;
   }
 
-  span {
-    @include black;
-    white-space: nowrap;
+  span:last-child {
     @include blackout-midnight;
+    letter-spacing: 3px;
   }
 }
+
 img.logo {
   max-width: 90vw;
   max-height: 50rem;
-  margin: 5rem auto;
+  margin: calc(5rem + #{$header-height}) auto;
   display: block;
 
   @include for-phone-only {
     max-height: 20rem;
   }
 }
+
 header {
   @include width;
   margin: 0 auto;
@@ -99,13 +93,21 @@ header {
   color: $white;
   position: fixed;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  z-index: 99;
+  justify-content: space-between;
+  align-items: center;
   gap: 1rem;
   top: 0;
   right: 0;
   padding: 0.5rem;
   width: 100%;
+  height: $header-height;
+
+  img {
+    max-height: 30px;
+    float: left;
+  }
+
   button.icons {
     background: transparent;
     border: none;
@@ -121,6 +123,9 @@ header {
 
   .links {
     display: none;
+    position: fixed;
+    top: $header-height;
+    right: 0;
     text-transform: uppercase;
     outline: solid 1px white;
     text-align: right;
@@ -135,6 +140,52 @@ header {
         color: inherit;
       }
     }
+
+    #mc_embed_signup_scroll {
+      border-width: $border-width 0 0 0;
+      border-color: $white;
+      border-style: solid;
+      margin: $padding 0;
+      padding: $padding 0;
+
+      h2 {
+        margin: 0;
+        font-size: $base-size;
+      }
+
+      label {
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+        margin: 0;
+        font-size: smaller;
+
+        .astrisk {
+          color: red;
+        }
+      }
+
+      input {
+        margin: 1rem 0;
+      }
+
+      .button {
+        background: mix($callout, $white, 10%);
+        color: $black;
+        padding: 1rem;
+        font-size: 2rem;
+        font-family: "blackout_midnight";
+        border-style: solid;
+        border-color: $black;
+        border-width: 1px 3px 3px 1px;
+        transition: 0.1s;
+        ;
+      }
+
+      .indicates-required {
+        display: none;
+      }
+    }
   }
 }
 
@@ -142,14 +193,17 @@ main {
   margin: 20rem auto 0 auto;
   width: 99vw;
   margin: 0 auto;
+
   section {
     @include width;
     // &:not(.again) {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      @include for-phone-only {
-        display: block;
-      }
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    @include for-phone-only {
+      display: block;
+    }
+
     // }
     margin: 0 auto;
     padding: $padding;
@@ -157,16 +211,19 @@ main {
     border-top: none;
 
     &:last-child {
-      border: none;
+      // border: none;
     }
+
     &.again {
       p.past-future {
         @include blackout-midnight;
       }
+
       p {
         text-align: justify;
       }
     }
+
     h2 {
       @include blackout-midnight;
       margin-top: 1.75rem;

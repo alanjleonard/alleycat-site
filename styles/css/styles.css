@@ -79,16 +79,6 @@ body ol {
   padding-left: 1rem;
 }
 
-.backgroundFixed {
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border: solid 8px #262222;
-}
-
 header {
   background-position: center;
   background-size: cover;
@@ -97,7 +87,7 @@ header {
 h2.race-goes-live {
   padding: 2rem 0;
   line-height: 1;
-  font-size: clamp(2rem, 8vw, 6rem);
+  font-size: clamp(1.9rem, 7vw, 5rem);
   background: #262222;
   color: #f9f8f7;
   text-align: center;
@@ -105,15 +95,17 @@ h2.race-goes-live {
   font-family: "blackout_sunrise", "Impact", Arial;
 }
 h2.race-goes-live span {
-  font-weight: 900;
   white-space: nowrap;
+}
+h2.race-goes-live span:last-child {
   font-family: "blackout_midnight", "Impact", Arial;
+  letter-spacing: 3px;
 }
 
 img.logo {
   max-width: 90vw;
   max-height: 50rem;
-  margin: 5rem auto;
+  margin: calc(5rem + 5rem) auto;
   display: block;
 }
 @media (max-width: 599px) {
@@ -124,7 +116,7 @@ img.logo {
 
 header {
   min-width: 300px;
-  width: 100vw;
+  width: 99vw;
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
@@ -133,7 +125,7 @@ header {
 }
 header div.about {
   min-width: 300px;
-  width: 100vw;
+  width: 99vw;
   max-width: 960px;
   margin: 0 auto;
   text-transform: uppercase;
@@ -160,13 +152,19 @@ header div.about div span:first-child {
   color: #f9f8f7;
   position: fixed;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  z-index: 99;
+  justify-content: space-between;
+  align-items: center;
   gap: 1rem;
   top: 0;
   right: 0;
   padding: 0.5rem;
   width: 100%;
+  height: 5rem;
+}
+.link-wrapper img {
+  max-height: 30px;
+  float: left;
 }
 .link-wrapper button.icons {
   background: transparent;
@@ -181,6 +179,9 @@ header div.about div span:first-child {
 }
 .link-wrapper .links {
   display: none;
+  position: fixed;
+  top: 5rem;
+  right: 0;
   text-transform: uppercase;
   outline: solid 1px white;
   text-align: right;
@@ -194,6 +195,44 @@ header div.about div span:first-child {
 .link-wrapper .links span a {
   color: inherit;
 }
+.link-wrapper .links #mc_embed_signup_scroll {
+  border-width: 8px 0 0 0;
+  border-color: #f9f8f7;
+  border-style: solid;
+  margin: calc(1rem + 8px) 0;
+  padding: calc(1rem + 8px) 0;
+}
+.link-wrapper .links #mc_embed_signup_scroll h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+.link-wrapper .links #mc_embed_signup_scroll label {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin: 0;
+  font-size: smaller;
+}
+.link-wrapper .links #mc_embed_signup_scroll label .astrisk {
+  color: red;
+}
+.link-wrapper .links #mc_embed_signup_scroll input {
+  margin: 1rem 0;
+}
+.link-wrapper .links #mc_embed_signup_scroll .button {
+  background: #eae0df;
+  color: #262222;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: "blackout_midnight";
+  border-style: solid;
+  border-color: #262222;
+  border-width: 1px 3px 3px 1px;
+  transition: 0.1s;
+}
+.link-wrapper .links #mc_embed_signup_scroll .indicates-required {
+  display: none;
+}
 
 main {
   margin: 20rem auto 0 auto;
@@ -202,7 +241,7 @@ main {
 }
 main section {
   min-width: 300px;
-  width: 100vw;
+  width: 99vw;
   max-width: 960px;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -215,9 +254,6 @@ main section {
   main section {
     display: block;
   }
-}
-main section:last-child {
-  border: none;
 }
 main section.again p.past-future {
   font-family: "blackout_midnight", "Impact", Arial;
