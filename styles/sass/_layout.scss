@@ -21,6 +21,29 @@ header {
   background-size: cover;
 }
 
+.race-is-live {
+  position: absolute;
+  background-color: rgba($red, 0.9);
+  color: $white;
+  width: 100vw;
+  text-align: center;
+  @include blackout-midnight;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    span {
+      display: block;
+      font-family: 'Catamaran';
+      text-transform: uppercase;
+      letter-spacing: -1px;
+
+    }
+  }
+}
+
 h2.race-goes-live {
   padding: 2rem 0;
   line-height: 1;

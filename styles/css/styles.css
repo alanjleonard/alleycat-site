@@ -84,6 +84,24 @@ header {
   background-size: cover;
 }
 
+.race-is-live {
+  position: absolute;
+  background-color: rgba(152, 0, 0, 0.9);
+  color: #f9f8f7;
+  width: 100vw;
+  text-align: center;
+  font-family: "blackout_midnight", "Impact", Arial;
+}
+.race-is-live h1 {
+  font-size: 4rem;
+}
+.race-is-live p span {
+  display: block;
+  font-family: "Catamaran";
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
 h2.race-goes-live {
   padding: 2rem 0;
   line-height: 1;
