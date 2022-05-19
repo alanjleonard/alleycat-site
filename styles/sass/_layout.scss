@@ -34,6 +34,10 @@ header {
   }
 
   p {
+    a {
+      color: $white;
+    }
+
     span {
       display: block;
       font-family: 'Catamaran';

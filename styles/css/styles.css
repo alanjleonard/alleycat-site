@@ -95,6 +95,9 @@ header {
 .race-is-live h1 {
   font-size: 4rem;
 }
+.race-is-live p a {
+  color: #f9f8f7;
+}
 .race-is-live p span {
   display: block;
   font-family: "Catamaran";
