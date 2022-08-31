@@ -29,7 +29,7 @@ p {
 }
 
 a {
-  color: #262222;
+  color: #09002D;
 }
 @media (hover: hover) {
   a:hover {
@@ -64,7 +64,7 @@ body {
 }
 
 body {
-  color: #262222;
+  color: #09002D;
   background: linear-gradient(-45deg, #efefef, white);
 }
 body,
@@ -72,7 +72,7 @@ body button,
 body input,
 body select,
 body textarea {
-  color: #262222;
+  color: #09002D;
 }
 body ul,
 body ol {
@@ -109,7 +109,7 @@ h2.race-goes-live {
   padding: 2rem 0;
   line-height: 1;
   font-size: clamp(1.9rem, 7vw, 5rem);
-  background: #262222;
+  background: #09002D;
   color: #f9f8f7;
   text-align: center;
   margin: 0;
@@ -159,17 +159,17 @@ header div.about div {
 }
 header div.about div span {
   padding: 2rem 1rem;
-  border: solid 8px #262222;
+  border: solid 8px #09002D;
   border-left: none;
   border-top: none;
   line-height: 1;
 }
 header div.about div span:first-child {
-  border-left: solid 8px #262222;
+  border-left: solid 8px #09002D;
 }
 
 .link-wrapper {
-  background: #262222;
+  background: #09002D;
   color: #f9f8f7;
   position: fixed;
   display: flex;
@@ -206,7 +206,7 @@ header div.about div span:first-child {
   text-transform: uppercase;
   outline: solid 1px white;
   text-align: right;
-  background-color: #262222;
+  background-color: #09002D;
   padding: calc(1rem + 8px);
 }
 .link-wrapper .links span {
@@ -242,12 +242,12 @@ header div.about div span:first-child {
 }
 .link-wrapper .links #mc_embed_signup_scroll .button {
   background: #eae0df;
-  color: #262222;
+  color: #09002D;
   padding: 1rem;
   font-size: 2rem;
   font-family: "blackout_midnight";
   border-style: solid;
-  border-color: #262222;
+  border-color: #09002D;
   border-width: 1px 3px 3px 1px;
   transition: 0.1s;
 }
@@ -268,7 +268,7 @@ main section {
   grid-template-columns: 1fr 2fr;
   margin: 0 auto;
   padding: calc(1rem + 8px);
-  border: solid 8px #262222;
+  border: solid 8px #09002D;
   border-top: none;
 }
 @media (max-width: 599px) {
@@ -321,7 +321,7 @@ main section ul.faq li {
   list-style: none;
 }
 main section ul.faq li summary {
-  color: #262222;
+  color: #09002D;
   margin: 1rem 0;
   text-decoration: underline;
   cursor: pointer;
