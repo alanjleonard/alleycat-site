@@ -108,7 +108,7 @@ map.on("load", function () {
     source: "bounds",
     layout: {},
     paint: {
-      "fill-color": "#09002D",
+      "fill-color": "#610505",
       "fill-opacity": 0.5,
     },
   });

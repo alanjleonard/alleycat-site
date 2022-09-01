@@ -29,7 +29,7 @@ p {
 }
 
 a {
-  color: #09002D;
+  color: #262222;
 }
 @media (hover: hover) {
   a:hover {
@@ -63,16 +63,20 @@ body {
   font-variant-ligatures: common-ligatures;
 }
 
+h1, h2, h3, h4 {
+  color: #610505;
+}
+
 body {
-  color: #09002D;
-  background: linear-gradient(-45deg, #efefef, white);
+  color: #262222;
+  background: linear-gradient(-45deg, #efefef, #f9f8f7);
 }
 body,
 body button,
 body input,
 body select,
 body textarea {
-  color: #09002D;
+  color: #262222;
 }
 body ul,
 body ol {
@@ -86,7 +90,7 @@ header {
 
 .race-is-live {
   position: absolute;
-  background-color: rgba(152, 0, 0, 0.9);
+  background-color: rgba(97, 5, 5, 0.9);
   color: #f9f8f7;
   width: 100vw;
   text-align: center;
@@ -109,7 +113,7 @@ h2.race-goes-live {
   padding: 2rem 0;
   line-height: 1;
   font-size: clamp(1.9rem, 7vw, 5rem);
-  background: #09002D;
+  background: #262222;
   color: #f9f8f7;
   text-align: center;
   margin: 0;
@@ -159,17 +163,17 @@ header div.about div {
 }
 header div.about div span {
   padding: 2rem 1rem;
-  border: solid 8px #09002D;
+  border: solid 8px #262222;
   border-left: none;
   border-top: none;
   line-height: 1;
 }
 header div.about div span:first-child {
-  border-left: solid 8px #09002D;
+  border-left: solid 8px #262222;
 }
 
 .link-wrapper {
-  background: #09002D;
+  background: #262222;
   color: #f9f8f7;
   position: fixed;
   display: flex;
@@ -204,9 +208,9 @@ header div.about div span:first-child {
   top: 5rem;
   right: 0;
   text-transform: uppercase;
-  outline: solid 1px white;
+  outline: solid 1px #f9f8f7;
   text-align: right;
-  background-color: #09002D;
+  background-color: #262222;
   padding: calc(1rem + 8px);
 }
 .link-wrapper .links span {
@@ -242,12 +246,12 @@ header div.about div span:first-child {
 }
 .link-wrapper .links #mc_embed_signup_scroll .button {
   background: #eae0df;
-  color: #09002D;
+  color: #262222;
   padding: 1rem;
   font-size: 2rem;
   font-family: "blackout_midnight";
   border-style: solid;
-  border-color: #09002D;
+  border-color: #262222;
   border-width: 1px 3px 3px 1px;
   transition: 0.1s;
 }
@@ -268,7 +272,7 @@ main section {
   grid-template-columns: 1fr 2fr;
   margin: 0 auto;
   padding: calc(1rem + 8px);
-  border: solid 8px #09002D;
+  border: solid 8px #262222;
   border-top: none;
 }
 @media (max-width: 599px) {
@@ -321,7 +325,7 @@ main section ul.faq li {
   list-style: none;
 }
 main section ul.faq li summary {
-  color: #09002D;
+  color: #262222;
   margin: 1rem 0;
   text-decoration: underline;
   cursor: pointer;

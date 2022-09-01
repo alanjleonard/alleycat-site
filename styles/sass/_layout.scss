@@ -1,6 +1,6 @@
 body {
   color: $text-color;
-  background: linear-gradient(-45deg, #efefef, white);
+  background: linear-gradient(-45deg, #efefef, $white);
 
   &,
   button,
@@ -154,7 +154,7 @@ header {
     top: $header-height;
     right: 0;
     text-transform: uppercase;
-    outline: solid 1px white;
+    outline: solid 1px $white;
     text-align: right;
     background-color: $black;
     padding: $padding;
@@ -223,7 +223,6 @@ main {
 
   section {
     @include width;
-    // &:not(.again) {
     display: grid;
     grid-template-columns: 1fr 2fr;
 
@@ -231,7 +230,6 @@ main {
       display: block;
     }
 
-    // }
     margin: 0 auto;
     padding: $padding;
     border: solid $border-width $black;
