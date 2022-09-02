@@ -135,7 +135,7 @@ img.logo {
 }
 @media (max-width: 599px) {
   img.logo {
-    max-height: 20rem;
+    max-width: 90vw;
   }
 }
 
