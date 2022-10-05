@@ -191,6 +191,13 @@ header div.about div span:first-child {
   max-height: 30px;
   float: left;
 }
+.link-wrapper a {
+  color: #f9f8f7;
+  font-size: smaller;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
 .link-wrapper button.icons {
   background: transparent;
   border: none;
@@ -209,9 +216,10 @@ header div.about div span:first-child {
   right: 0;
   text-transform: uppercase;
   outline: solid 1px #f9f8f7;
-  text-align: right;
+  text-align: left;
   background-color: #262222;
   padding: calc(1rem + 8px);
+  color: #f9f8f7;
 }
 .link-wrapper .links span {
   display: block;
@@ -219,6 +227,7 @@ header div.about div span:first-child {
 }
 .link-wrapper .links span a {
   color: inherit;
+  display: inline;
 }
 .link-wrapper .links #mc_embed_signup_scroll {
   border-width: 8px 0 0 0;
@@ -230,11 +239,12 @@ header div.about div span:first-child {
 .link-wrapper .links #mc_embed_signup_scroll h2 {
   margin: 0;
   font-size: 2rem;
+  color: inherit;
 }
 .link-wrapper .links #mc_embed_signup_scroll label {
   display: flex;
   gap: 1rem;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin: 0;
   font-size: smaller;
 }

@@ -134,7 +134,13 @@ header {
     max-height: 30px;
     float: left;
   }
-
+  a{
+    color: $white;
+    font-size: smaller;
+    text-transform: uppercase;
+    display: block;
+    text-align: center; 
+  }
   button.icons {
     background: transparent;
     border: none;
@@ -155,9 +161,10 @@ header {
     right: 0;
     text-transform: uppercase;
     outline: solid 1px $white;
-    text-align: right;
+    text-align: left;
     background-color: $black;
     padding: $padding;
+    color: $white;
 
     span {
       display: block;
@@ -165,6 +172,7 @@ header {
 
       a {
         color: inherit;
+        display: inline;
       }
     }
 
@@ -178,12 +186,13 @@ header {
       h2 {
         margin: 0;
         font-size: $base-size;
+        color: inherit;
       }
 
       label {
         display: flex;
         gap: 1rem;
-        justify-content: flex-end;
+        justify-content: flex-start;
         margin: 0;
         font-size: smaller;
 
