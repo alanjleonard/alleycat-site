@@ -40,14 +40,27 @@ header {
 
     span {
       display: block;
-      font-family: 'Catamaran';
+      font-family: "Catamaran";
       text-transform: uppercase;
       letter-spacing: -1px;
-
     }
   }
 }
-
+h1.cu24 {
+  @include blackout-midnight;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: $white;
+  background-color: $black;
+  span {
+    @include blackout-sunrise;
+    letter-spacing: 3px;
+  }
+}
 h2.race-goes-live {
   padding: 2rem 0;
   line-height: 1;
@@ -69,9 +82,9 @@ h2.race-goes-live {
 }
 
 img.logo {
-  max-width: 90vw;
-  max-height: 50rem;
-  margin: calc(5rem + #{$header-height}) auto;
+  width: 80vw;
+  max-width: 80vh;
+  margin: 0 auto;
   display: block;
 
   @include for-phone-only {
@@ -134,12 +147,12 @@ header {
     max-height: 30px;
     float: left;
   }
-  a{
+  a {
     color: $white;
     font-size: smaller;
     text-transform: uppercase;
     display: block;
-    text-align: center; 
+    text-align: center;
   }
   button.icons {
     background: transparent;
@@ -215,7 +228,6 @@ header {
         border-color: $black;
         border-width: 1px 3px 3px 1px;
         transition: 0.1s;
-        ;
       }
 
       .indicates-required {
@@ -226,9 +238,10 @@ header {
 }
 
 main {
-  margin: 20rem auto 0 auto;
-  width: 99vw;
-  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
 
   section {
     @include width;

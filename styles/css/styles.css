@@ -109,6 +109,22 @@ header {
   letter-spacing: -1px;
 }
 
+h1.cu24 {
+  font-family: "blackout_midnight", "Impact", Arial;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #f9f8f7;
+  background-color: #262222;
+}
+h1.cu24 span {
+  font-family: "blackout_sunrise", "Impact", Arial;
+  letter-spacing: 3px;
+}
+
 h2.race-goes-live {
   padding: 2rem 0;
   line-height: 1;
@@ -128,9 +144,9 @@ h2.race-goes-live span:last-child {
 }
 
 img.logo {
-  max-width: 90vw;
-  max-height: 50rem;
-  margin: calc(5rem + 5rem) auto;
+  width: 80vw;
+  max-width: 80vh;
+  margin: 0 auto;
   display: block;
 }
 @media (max-width: 599px) {
@@ -270,9 +286,10 @@ header div.about div span:first-child {
 }
 
 main {
-  margin: 20rem auto 0 auto;
-  width: 99vw;
-  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 main section {
   min-width: 300px;
