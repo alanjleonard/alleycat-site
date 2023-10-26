@@ -58,243 +58,119 @@ a {
 body {
   font-family: "Catamaran", sans-serif;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   font-variant-ligatures: common-ligatures;
 }
 
 h1, h2, h3, h4 {
-  color: #610505;
+  color: #262222;
 }
 
 body {
   color: #262222;
-  background: linear-gradient(-45deg, #efefef, #f9f8f7);
+  background: #262222;
 }
 body,
+body a,
 body button,
 body input,
 body select,
 body textarea {
-  color: #262222;
+  color: inherit;
 }
 body ul,
 body ol {
-  padding-left: 1rem;
-}
-
-header {
-  background-position: center;
-  background-size: cover;
-}
-
-.race-is-live {
-  position: absolute;
-  background-color: rgba(97, 5, 5, 0.9);
-  color: #f9f8f7;
-  width: 100vw;
-  text-align: center;
-  font-family: "blackout_midnight", "Impact", Arial;
-}
-.race-is-live h1 {
-  font-size: 4rem;
-}
-.race-is-live p a {
-  color: #f9f8f7;
-}
-.race-is-live p span {
-  display: block;
-  font-family: "Catamaran";
-  text-transform: uppercase;
-  letter-spacing: -1px;
-}
-
-h2.race-goes-live {
-  padding: 2rem 0;
-  line-height: 1;
-  font-size: clamp(1.9rem, 7vw, 5rem);
-  background: #262222;
-  color: #f9f8f7;
-  text-align: center;
-  margin: 0;
-  font-family: "blackout_sunrise", "Impact", Arial;
-}
-h2.race-goes-live span {
-  white-space: nowrap;
-}
-h2.race-goes-live span:last-child {
-  font-family: "blackout_midnight", "Impact", Arial;
-  letter-spacing: 3px;
-}
-
-img.logo {
-  max-width: 90vw;
-  max-height: 50rem;
-  margin: calc(5rem + 5rem) auto;
-  display: block;
-}
-@media (max-width: 599px) {
-  img.logo {
-    max-width: 90vw;
-  }
-}
-
-header {
-  min-width: 300px;
-  width: 99vw;
-  max-width: 960px;
-  margin: 0 auto;
-  text-align: center;
-  display: grid;
-  place-items: center;
-}
-header div.about {
-  min-width: 300px;
-  width: 99vw;
-  max-width: 960px;
-  margin: 0 auto;
-  text-transform: uppercase;
-  text-align: center;
-}
-header div.about div {
-  font-size: 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-header div.about div span {
-  padding: 2rem 1rem;
-  border: solid 8px #262222;
-  border-left: none;
-  border-top: none;
-  line-height: 1;
-}
-header div.about div span:first-child {
-  border-left: solid 8px #262222;
-}
-
-.link-wrapper {
-  background: #262222;
-  color: #f9f8f7;
-  position: fixed;
-  display: flex;
-  z-index: 99;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  top: 0;
-  right: 0;
-  padding: 0.5rem;
-  width: 100%;
-  height: 5rem;
-}
-.link-wrapper img {
-  max-height: 30px;
-  float: left;
-}
-.link-wrapper a {
-  color: #f9f8f7;
-  font-size: smaller;
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
-}
-.link-wrapper button.icons {
-  background: transparent;
-  border: none;
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
-  color: #f9f8f7;
-}
-.link-wrapper button.icons .close {
-  display: none;
-}
-.link-wrapper .links {
-  display: none;
-  position: fixed;
-  top: 5rem;
-  right: 0;
-  text-transform: uppercase;
-  outline: solid 1px #f9f8f7;
-  text-align: left;
-  background-color: #262222;
-  padding: calc(1rem + 8px);
-  color: #f9f8f7;
-}
-.link-wrapper .links span {
-  display: block;
-  margin: 0 0 1rem 0;
-}
-.link-wrapper .links span a {
-  color: inherit;
-  display: inline;
-}
-.link-wrapper .links #mc_embed_signup_scroll {
-  border-width: 8px 0 0 0;
-  border-color: #f9f8f7;
-  border-style: solid;
-  margin: calc(1rem + 8px) 0;
-  padding: calc(1rem + 8px) 0;
-}
-.link-wrapper .links #mc_embed_signup_scroll h2 {
-  margin: 0;
-  font-size: 2rem;
-  color: inherit;
-}
-.link-wrapper .links #mc_embed_signup_scroll label {
-  display: flex;
-  gap: 1rem;
-  justify-content: flex-start;
-  margin: 0;
-  font-size: smaller;
-}
-.link-wrapper .links #mc_embed_signup_scroll label .astrisk {
-  color: red;
-}
-.link-wrapper .links #mc_embed_signup_scroll input {
-  margin: 1rem 0;
-}
-.link-wrapper .links #mc_embed_signup_scroll .button {
-  background: #eae0df;
-  color: #262222;
-  padding: 1rem;
-  font-size: 2rem;
-  font-family: "blackout_midnight";
-  border-style: solid;
-  border-color: #262222;
-  border-width: 1px 3px 3px 1px;
-  transition: 0.1s;
-}
-.link-wrapper .links #mc_embed_signup_scroll .indicates-required {
-  display: none;
+  padding-left: 0.25rem;
 }
 
 main {
-  margin: 20rem auto 0 auto;
-  width: 99vw;
+  position: relative;
   margin: 0 auto;
+  max-width: 1200px;
+  background: linear-gradient(-45deg, #efefef, #f9f8f7);
+  border-left: solid 1px #f9f8f7;
+}
+main > div.static {
+  width: clamp(50px, 40vw, 500px);
+}
+main > div.scroll {
+  margin-left: clamp(50px, 40vw, 500px);
+}
+main > div.static {
+  background: #262222;
+  color: #f9f8f7;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  gap: 1rem;
+  align-items: stretch;
+  justify-items: center;
+  grid-template-rows: repeat(4, auto);
+}
+main > div.static img.logo {
+  width: calc(100% - 1rem);
+  max-height: 400px;
+  display: block;
+}
+main > div.static h2.race-goes-live {
+  background: #f9f8f7;
+  color: #262222;
+  padding: 1rem;
+  width: 100%;
+  line-height: 1;
+  text-align: right;
+  letter-spacing: 1px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: "blackout_midnight", "Impact", Arial;
+  color: #610505;
+  white-space: nowrap;
+}
+main > div.static h2.race-goes-live span {
+  display: block;
+}
+main > div.static h2.race-goes-live span:nth-child(1) {
+  font-size: clamp(14px, 13vw, 12.5rem);
+  font-family: "blackout_sunrise", "Impact", Arial;
+}
+main > div.static h2.race-goes-live span:nth-child(2) {
+  font-size: clamp(14px, 5.9vw, 5.9rem);
+}
+main > div.static h2.race-goes-live span:nth-child(3) {
+  font-size: clamp(14px, 5vw, 5rem);
+}
+main > div.static .about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main > div.static .about p {
+  font-size: clamp(14px, 5vw, 5rem);
+  font-family: "blackout_midnight", "Impact", Arial;
+  font-size: 2.2rem;
+  margin: 0;
+  text-align: end;
+}
+main > div.static .about p a {
+  text-decoration: none;
+}
+main > div.scroll {
+  border-left: solid 3px #262222;
 }
 main section {
-  min-width: 300px;
-  width: 99vw;
-  max-width: 960px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
   margin: 0 auto;
   padding: calc(1rem + 8px);
-  border: solid 8px #262222;
   border-top: none;
 }
 @media (max-width: 599px) {
   main section {
     display: block;
   }
-}
-main section.again p.past-future {
-  font-family: "blackout_midnight", "Impact", Arial;
-}
-main section.again p {
-  text-align: justify;
 }
 main section h2 {
   font-family: "blackout_midnight", "Impact", Arial;
@@ -307,6 +183,7 @@ main section p,
 main section ul,
 main section ol {
   margin-top: 1rem;
+  text-align: justify;
 }
 main section span.clue {
   width: 80%;
