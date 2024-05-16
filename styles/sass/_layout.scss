@@ -1,8 +1,13 @@
-$leftCol: 40vw;
-$rightCol: 40vw;
 body {
   color: $text-color;
-  background: $black;
+  // background: $black;
+  // background: linear-gradient(-45deg, #efefef, $white);
+  background-image: url("../../images/bg-map-toner-20.png");
+  background-attachment: fixed;
+  background-size:cover;
+  // background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 100dvh;
 
   &,
   a,
@@ -15,99 +20,89 @@ body {
 
   ul,
   ol {
-    padding-left: 0.25rem;
+    padding-left: 2rem;
   }
 }
-
+iframe{
+  width: 100%;
+  max-width: 78ch;
+  height: 45rem;
+}
 main {
   position: relative;
-  margin: 0 auto;
-  max-width: 1200px;
-  background: linear-gradient(-45deg, #efefef, $white);
-  border-left: solid 1px $white;
-  > div {
-    &.static {
-      // width: 40vw;
-      // max-width: 500px;
-      width: clamp(50px, 40vw, 500px); // clamp($leftCol, $leftCol, 500px);
-    }
-    &.scroll {
-      // margin-left: 40vw;
-      margin-left: clamp(
-        50px,
-        40vw,
-        500px
-      ); // clamp($leftCol, $leftCol, 500px);
-    }
-    &.static {
-      background: $black;
-      color: $white;
-      position: fixed;
-      top: 0;
-      height: 100vh;
-      text-align: center;
-      display: grid;
-      gap: 1rem;
-      align-items: stretch;
-      justify-items: center;
-      grid-template-rows: repeat(4, auto);
-      img.logo {
-        width: calc(100% - 1rem);
-        max-height: 400px;
-        display: block;
+  // margin: 0 auto;
+  // background: $white;
+  max-width: 1440px;
+  img.logo {
+    width: calc(100% - 1rem);
+    height: calc( 100dvh - #{$header-height * 2});
+    // max-height: 400px;
+    display: block;
 
-        @include for-phone-only {
-        }
-      }
-      h2.race-goes-live {
-        background: $white;
-        color: $black;
-        padding: 1rem;
-        width: 100%;
-        line-height: 1;
-        text-align: right;
-        letter-spacing: 1px;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        @include blackout-midnight;
-        color: $red;
-        white-space: nowrap;
-        span {
-          display: block;
-        }
-        span:nth-child(1) {
-          font-size: clamp(14px, 13vw, 12.5rem);
-          @include blackout-sunrise;
-        }
-        span:nth-child(2) {
-          font-size: clamp(14px, 5.9vw, 5.9rem);
-        }
-        span:nth-child(3) {
-          font-size: clamp(14px, 5vw, 5rem);
-        }
-      }
-      .about {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        p {
-          font-size: clamp(14px, 5vw, 5rem);
-          @include blackout-midnight;
-          font-size: 2.2rem;
-          margin: 0;
-          text-align: end;
-          // border-bottom: solid 1px rgba($white,0.5);
-          a {
-            text-decoration: none;
-          }
-        }
+    @include for-phone-only {
+    }
+  }
+  .sticky{
+    position: sticky;
+    top: 0;
+    footer{
+      position: absolute;
+    }
+  }
+  h2.race-goes-live {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background: $red;
+    padding: 1rem;
+    // height: $header-height;
+    width: 100%;
+    line-height: 1;
+    gap: 5px;
+    // justify-content: center;
+    margin: 0;
+    @include blackout-midnight;
+    white-space: nowrap;
+    span {
+      display: block;
+      font-size: clamp(14px, 5.9vw, 5.9rem);
+    }
+    span:nth-child(1) {
+      // font-size: clamp(14px, 13vw, 12.5rem);
+      @include blackout-sunrise;
+    }
+    span:nth-child(2) {
+      // font-size: clamp(14px, 5.9vw, 5.9rem);
+    }
+    span:nth-child(3) {
+      @include blackout-sunrise;
+      // font-size: clamp(14px, 5vw, 5rem);
+    }
+  }
+  .about {
+    background: $black;
+    color: $white;
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    p {
+      font-size: clamp(14px, 4vw, 5rem);
+      @include blackout-midnight;
+      // font-size: 2.2rem;
+      white-space: nowrap;
+      margin: 0;
+      text-align: end;
+      // border-bottom: solid 1px rgba($white,0.5);
+      a {
+        text-decoration: none;
       }
     }
-    &.scroll {
-      border-left: solid 3px $black;
-    }
+  }
+  .section-wrapper{
+    background: rgba($white,0.9);
+    margin-left: $side-bar-width;
   }
   section {
     @include for-phone-only {
@@ -117,11 +112,12 @@ main {
     margin: 0 auto;
     padding: $padding;
     border-top: none;
+    // display: flex;
 
     h2 {
       @include blackout-midnight;
       margin-top: 1.75rem;
-      word-spacing: 9999px;
+      // word-spacing: 9999px;
       font-size: clamp(40px, 7vw, 80px);
       line-height: 0.8;
     }
@@ -130,7 +126,7 @@ main {
     ul,
     ol {
       margin-top: 1rem;
-      text-align: justify;
+      // text-align: justify;
     }
 
     span.clue {
@@ -185,5 +181,15 @@ main {
         }
       }
     }
+  }
+  footer {
+    padding: 1rem;
+    width: $side-bar-width;
+    background: $black;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100dvh;
   }
 }

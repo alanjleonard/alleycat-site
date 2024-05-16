@@ -12,7 +12,7 @@
 }
 
 *::selection {
-  background-color: #610505;
+  background-color: #336105;
   color: #f9f8f7;
 }
 
@@ -58,7 +58,7 @@ a {
 body {
   font-family: "Catamaran", sans-serif;
   font-weight: 900;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   line-height: 1.5;
   font-variant-ligatures: common-ligatures;
 }
@@ -69,7 +69,11 @@ h1, h2, h3, h4 {
 
 body {
   color: #262222;
-  background: #262222;
+  background-image: url("../../images/bg-map-toner-20.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100dvh;
 }
 body,
 body a,
@@ -81,86 +85,75 @@ body textarea {
 }
 body ul,
 body ol {
-  padding-left: 0.25rem;
+  padding-left: 2rem;
+}
+
+iframe {
+  width: 100%;
+  max-width: 78ch;
+  height: 45rem;
 }
 
 main {
   position: relative;
-  margin: 0 auto;
-  max-width: 1200px;
-  background: linear-gradient(-45deg, #efefef, #f9f8f7);
-  border-left: solid 1px #f9f8f7;
+  max-width: 1440px;
 }
-main > div.static {
-  width: clamp(50px, 40vw, 500px);
-}
-main > div.scroll {
-  margin-left: clamp(50px, 40vw, 500px);
-}
-main > div.static {
-  background: #262222;
-  color: #f9f8f7;
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  text-align: center;
-  display: grid;
-  gap: 1rem;
-  align-items: stretch;
-  justify-items: center;
-  grid-template-rows: repeat(4, auto);
-}
-main > div.static img.logo {
+main img.logo {
   width: calc(100% - 1rem);
-  max-height: 400px;
+  height: calc( 100dvh - 10rem);
   display: block;
 }
-main > div.static h2.race-goes-live {
-  background: #f9f8f7;
-  color: #262222;
+main .sticky {
+  position: sticky;
+  top: 0;
+}
+main .sticky footer {
+  position: absolute;
+}
+main h2.race-goes-live {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background: #336105;
   padding: 1rem;
   width: 100%;
   line-height: 1;
-  text-align: right;
-  letter-spacing: 1px;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+  gap: 5px;
   margin: 0;
   font-family: "blackout_midnight", "Impact", Arial;
-  color: #610505;
   white-space: nowrap;
 }
-main > div.static h2.race-goes-live span {
+main h2.race-goes-live span {
   display: block;
-}
-main > div.static h2.race-goes-live span:nth-child(1) {
-  font-size: clamp(14px, 13vw, 12.5rem);
-  font-family: "blackout_sunrise", "Impact", Arial;
-}
-main > div.static h2.race-goes-live span:nth-child(2) {
   font-size: clamp(14px, 5.9vw, 5.9rem);
 }
-main > div.static h2.race-goes-live span:nth-child(3) {
-  font-size: clamp(14px, 5vw, 5rem);
+main h2.race-goes-live span:nth-child(1) {
+  font-family: "blackout_sunrise", "Impact", Arial;
 }
-main > div.static .about {
+main h2.race-goes-live span:nth-child(3) {
+  font-family: "blackout_sunrise", "Impact", Arial;
+}
+main .about {
+  background: #262222;
+  color: #f9f8f7;
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
   width: 100%;
+  justify-content: space-between;
 }
-main > div.static .about p {
-  font-size: clamp(14px, 5vw, 5rem);
+main .about p {
+  font-size: clamp(14px, 4vw, 5rem);
   font-family: "blackout_midnight", "Impact", Arial;
-  font-size: 2.2rem;
+  white-space: nowrap;
   margin: 0;
   text-align: end;
 }
-main > div.static .about p a {
+main .about p a {
   text-decoration: none;
 }
-main > div.scroll {
-  border-left: solid 3px #262222;
+main .section-wrapper {
+  background: rgba(249, 248, 247, 0.9);
+  margin-left: 5rem;
 }
 main section {
   margin: 0 auto;
@@ -175,7 +168,6 @@ main section {
 main section h2 {
   font-family: "blackout_midnight", "Impact", Arial;
   margin-top: 1.75rem;
-  word-spacing: 9999px;
   font-size: clamp(40px, 7vw, 80px);
   line-height: 0.8;
 }
@@ -183,7 +175,6 @@ main section p,
 main section ul,
 main section ol {
   margin-top: 1rem;
-  text-align: justify;
 }
 main section span.clue {
   width: 80%;
@@ -226,6 +217,16 @@ main section ul.faq li details p,
 main section ul.faq li details ul {
   padding: calc(1rem + 8px);
   padding-left: calc(calc(1rem + 8px) * 3);
+}
+main footer {
+  padding: 1rem;
+  width: 5rem;
+  background: #262222;
+  color: #f9f8f7;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100dvh;
 }
 
 /*# sourceMappingURL=styles.css.map */
