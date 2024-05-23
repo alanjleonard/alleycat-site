@@ -1,12 +1,11 @@
 body {
-  color: $text-color;
-  // background: $black;
+  background: $background;
   // background: linear-gradient(-45deg, #efefef, $white);
-  background-image: url("../../images/bg-map-toner-20.png");
-  background-attachment: fixed;
-  background-size:cover;
+  // background-image: url("../../images/bg-map-toner-20.png");
+  // background-attachment: fixed;
+  // background-size:cover;
   // background-position: 0 0;
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
   height: 100dvh;
 
   &,
@@ -15,7 +14,7 @@ body {
   input,
   select,
   textarea {
-    color: inherit;
+    color: $text-color;
   }
 
   ul,
@@ -33,14 +32,17 @@ main {
   // margin: 0 auto;
   // background: $white;
   max-width: 1440px;
+  h1{
+    padding: 5vh 5vw;
   img.logo {
     width: calc(100% - 1rem);
-    height: calc( 85dvh - #{$header-height * 2});
+    min-height: calc( 55dvh - #{$header-height * 2});
     // max-height: 400px;
     display: block;
 
     @include for-phone-only {
     }
+  }
   }
   .sticky{
     position: sticky;
@@ -101,7 +103,7 @@ main {
     }
   }
   .section-wrapper{
-    background: rgba($white,0.9);
+    background: $background;
     margin-left: $side-bar-width;
   }
   section {

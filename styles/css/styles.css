@@ -12,7 +12,7 @@
 }
 
 *::selection {
-  background-color: #610505;
+  background-color: #DD6305;
   color: #f9f8f7;
 }
 
@@ -29,7 +29,7 @@ p {
 }
 
 a {
-  color: #262222;
+  color: #f9f8f7;
 }
 @media (hover: hover) {
   a:hover {
@@ -57,22 +57,19 @@ a {
 }
 body {
   font-family: "Catamaran", sans-serif;
-  font-weight: 900;
+  font-weight: 300;
   font-size: 1.9rem;
   line-height: 1.5;
   font-variant-ligatures: common-ligatures;
+  color: #f9f8f7;
 }
 
 h1, h2, h3, h4 {
-  color: #262222;
+  color: #f9f8f7;
 }
 
 body {
-  color: #262222;
-  background-image: url("../../images/bg-map-toner-20.png");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: radial-gradient(#262222, #382e2e);
   height: 100dvh;
 }
 body,
@@ -81,7 +78,7 @@ body button,
 body input,
 body select,
 body textarea {
-  color: inherit;
+  color: #f9f8f7;
 }
 body ul,
 body ol {
@@ -98,9 +95,12 @@ main {
   position: relative;
   max-width: 1440px;
 }
-main img.logo {
+main h1 {
+  padding: 5vh 5vw;
+}
+main h1 img.logo {
   width: calc(100% - 1rem);
-  height: calc( 85dvh - 10rem);
+  min-height: calc( 55dvh - 10rem);
   display: block;
 }
 main .sticky {
@@ -114,7 +114,7 @@ main h2.race-goes-live {
   display: flex;
   justify-content: space-around;
   color: white;
-  background: #610505;
+  background: #DD6305;
   padding: 1rem;
   width: 100%;
   line-height: 1;
@@ -152,7 +152,7 @@ main .about p a {
   text-decoration: none;
 }
 main .section-wrapper {
-  background: rgba(249, 248, 247, 0.9);
+  background: radial-gradient(#262222, #382e2e);
   margin-left: 5rem;
 }
 main section {
@@ -202,7 +202,7 @@ main section ul.faq li {
   list-style: none;
 }
 main section ul.faq li summary {
-  color: #262222;
+  color: #f9f8f7;
   margin: 1rem 0;
   text-decoration: underline;
   cursor: pointer;
