@@ -1,8 +1,3 @@
-$(document).ready(function () {
-  $("button.icons").click(function () {
-    $(".links, .button-icon, .close").toggle();
-  });
-});
 //blank
 // const styleURL = "mapbox://styles/alnrd/ckqwdc4ey095c17nzcwo96s3u";
 // dark

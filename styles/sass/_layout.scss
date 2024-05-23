@@ -25,7 +25,7 @@ body {
 }
 iframe{
   width: 100%;
-  max-width: 78ch;
+  max-width: $max-text-width;
   height: 45rem;
 }
 main {
@@ -35,7 +35,7 @@ main {
   max-width: 1440px;
   img.logo {
     width: calc(100% - 1rem);
-    height: calc( 100dvh - #{$header-height * 2});
+    height: calc( 85dvh - #{$header-height * 2});
     // max-height: 400px;
     display: block;
 
@@ -142,9 +142,11 @@ main {
       height: 40rem;
     }
 
-    img.spoke-cards,
-    img.test-code,
-    img.race-app {
+    // img.spoke-cards,
+    // img.test-code,
+    // img.race-app {
+    img{
+      max-width: $max-text-width;
       width: 100%;
     }
 
