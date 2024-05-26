@@ -7,7 +7,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-size: 80%;
+  background-size:calc(#{$max-width} -100px);
   height: 100dvh;
   &,
   a,
