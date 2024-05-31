@@ -1,4 +1,5 @@
-$callout: hsl(0, 90%, 20%);
+$callout: #DD6305;
+// $callout: hsl(0, 90%, 20%);
 $black: #262222;
 $white: #f9f8f7;
 $red: $callout;
@@ -6,50 +7,27 @@ $yellow: #F5DD00;
 $blue: #000098;
 $green: #009800;
 $finish: $black;
-$text-color: $black;
 $border-width: 8px;
 $padding: calc(1rem + #{$border-width});
 $first: gold;
 $second: silver;
 $third: #cd7f32;
 $shadow: $white;
-$base-size: 2rem;
+$base-size: 1.9rem;
 $body-font: 'Catamaran', sans-serif;
-$primary-color: $black;
 $iconSize: 2.5rem;
 $header-height: 5rem;
-$main-color: $black;
-$max-width: 100%;
+$max-width: 1080px;
+$max-text-width: 78ch;
 $min-width: 3.5rem;
 $smallSpacing: 0.5rem;
+$side-bar-width: 5rem;
 $margin: 1rem;
 $spray-shadow: none;//0 0 10px white;
 $font-size: 2rem;
+$text-color: $white;
+$background: radial-gradient($black, hsl(0,10,20));
 
-@mixin bounce($delay) {
-  animation-duration: 6s;
-  animation-name: bounce;
-  animation-iteration-count: 10;
-  animation-delay: $delay;
-
-  @keyframes bounce {
-    0% {
-      transform: translatey(0);
-    }
-
-    5% {
-      transform: translatey(-7px);
-    }
-
-    10% {
-      transform: translatey(0);
-    }
-
-    100% {
-      transform: translatey(0);
-    }
-  }
-}
 
 @mixin Hover {
   @media (hover: hover) {
@@ -59,11 +37,6 @@ $font-size: 2rem;
   }
 }
 
-@mixin width {
-  min-width: 300px;
-  width: 99vw;
-  max-width: 960px;
-}
 
 :root {
   font-size: 62.5%;
