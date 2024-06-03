@@ -121,6 +121,17 @@ main {
   margin: 0 auto;
   max-width: 1080px;
 }
+main header {
+  background-image: url("/images/here-we-go-again.png");
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+main header img {
+  margin: calc(1rem + 8px);
+  max-width: 78ch;
+  width: 90vw;
+}
 main h1 {
   padding: 5vh 7rem;
   padding-left: clamp(14px, 5.9vw, 5.9rem);
@@ -172,7 +183,7 @@ main .about {
   justify-content: space-around;
 }
 main .about p {
-  font-size: clamp(14px, 4vw, 5rem);
+  font-size: clamp(14px, 4vw, 4.75rem);
   font-family: "blackout_midnight", "Impact", Arial;
   white-space: nowrap;
   margin: 0;
