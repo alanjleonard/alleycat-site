@@ -157,7 +157,7 @@ main .about {
   justify-content: space-around;
 }
 main .about p {
-  font-size: clamp(14px, 3vw, 4.75rem);
+  font-size: clamp(14px, 3.5vw, 3.75rem);
   font-family: "blackout_midnight", "Impact", Arial;
   white-space: nowrap;
   margin: 0;
@@ -208,16 +208,14 @@ main section ol {
   margin-top: 1rem;
 }
 main section .results-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-main section .results-wrapper a {
-  outline: solid 1px red;
   columns: 150px;
 }
+main section .results-wrapper a {
+  display: block;
+  outline: solid 1px red;
+}
 main section .results-wrapper img {
-  width: 150px;
+  width: 100px;
 }
 main section .results-wrapper h3 {
   font-family: "blackout_midnight", "Impact", Arial;

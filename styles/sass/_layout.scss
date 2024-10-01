@@ -1,9 +1,11 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: black;
   height: 100dvh;
+
   &,
   a,
   button,
@@ -12,29 +14,35 @@ body {
   textarea {
     color: $text-color;
   }
+
   ul,
   ol {
     padding-left: 2rem;
   }
+
   ul {
     list-style-type: " ✖ ";
   }
 }
+
 main {
   background: $background;
   margin: 0 auto;
   max-width: $max-width;
-  header{
+
+  header {
     background-image: url("/images/here-we-go-again.png");
     background-size: cover;
     background-position: center center;
     text-align: center;
-    img{
+
+    img {
       margin: $padding;
       max-width: $max-text-width;
       width: 90vw;
     }
   }
+
   h1 {
     padding: 5vh 7rem;
     padding-left: clamp(14px, 5.9vw, 5.9rem);
@@ -47,13 +55,16 @@ main {
     margin: 0;
     font-size: clamp(9rem, 20vw, 19rem);
   }
+
   .sticky {
     position: sticky;
     top: 0;
+
     nav {
       position: absolute;
     }
   }
+
   h2.race-goes-live {
     display: flex;
     justify-content: space-around;
@@ -66,14 +77,17 @@ main {
     margin: 0;
     @include blackout-midnight;
     white-space: nowrap;
+
     span {
       display: block;
       font-size: clamp(14px, 7.9vw, 5.9rem);
     }
+
     span:nth-child(odd) {
       @include blackout-sunrise;
     }
   }
+
   .about {
     background: $black;
     color: $white;
@@ -83,16 +97,18 @@ main {
     justify-content: space-around;
 
     p {
-      font-size: clamp(14px, 3vw, 4.75rem);
+      font-size: clamp(14px, 3.5vw, 3.75rem);
       @include blackout-midnight;
       white-space: nowrap;
       margin: 0;
       text-align: end;
+
       a {
         text-decoration: none;
       }
     }
   }
+
   nav {
     padding: 1rem;
     width: $side-bar-width;
@@ -102,17 +118,21 @@ main {
     flex-direction: column;
     gap: 4rem;
     height: 100dvh;
+
     p {
       margin: 0;
     }
+
     img {
       width: 100%;
     }
   }
+
   .section-wrapper {
     background: $background;
     margin-left: $side-bar-width;
   }
+
   section {
     @include for-phone-only {
       display: block;
@@ -135,21 +155,22 @@ main {
       margin-top: 1rem;
     }
 
-    .results-wrapper{
-      display:flex;
-      flex-direction: column;
-      gap: 1rem;
-      a{
+    .results-wrapper {
+      columns: 150px;
+      a {
+        display: block;
         outline: solid 1px red;
-        columns: 150px;
       }
-      img{
-        width: 150px;
+
+      img {
+        width: 100px;
       }
-      h3{
+
+      h3 {
         @include blackout-midnight;
       }
     }
+
     #map {
       width: 100%;
       height: 40rem;
@@ -189,6 +210,7 @@ main {
         details p,
         details ul {
           padding-left: $padding;
+
           li {
             list-style-type: disc;
             margin-left: $padding;
