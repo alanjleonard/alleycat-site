@@ -207,18 +207,24 @@ main section ul,
 main section ol {
   margin-top: 1rem;
 }
-main section .results-wrapper {
-  columns: 150px;
-}
 main section .results-wrapper a {
-  display: block;
-  outline: solid 1px red;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  max-width: 450px;
+  margin: 3rem 1rem;
 }
 main section .results-wrapper img {
-  width: 100px;
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+  margin: 0 3rem;
 }
-main section .results-wrapper h3 {
+main section .results-wrapper div p,
+main section .results-wrapper div h3 {
   font-family: "blackout_midnight", "Impact", Arial;
+  white-space: nowrap;
+  margin: 0;
 }
 main section #map {
   width: 100%;
@@ -256,6 +262,23 @@ main section ul.faq li details p li,
 main section ul.faq li details ul li {
   list-style-type: disc;
   margin-left: calc(1rem + 8px);
+}
+
+p[name] {
+  position: relative;
+}
+@media (hover: hover) {
+  p[name]:hover::after {
+    content: attr(name);
+    position: absolute;
+    background: #262222;
+    color: #f9f8f7;
+    padding: 0.5rem;
+    left: 5rem;
+    top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

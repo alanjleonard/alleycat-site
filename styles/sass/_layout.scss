@@ -156,18 +156,31 @@ main {
     }
 
     .results-wrapper {
-      columns: 150px;
       a {
-        display: block;
-        outline: solid 1px red;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        max-width: 450px;
+        margin: 3rem 1rem;
+        // outline: solid 1px;
+        @include Hover {
+          // outline: solid $border-width $callout;
+        }
       }
 
       img {
-        width: 100px;
+        width: 100%;
+        max-width: 100px;
+        height: 100px;
+        margin: 0 3rem;
       }
-
-      h3 {
-        @include blackout-midnight;
+      div {
+        p,
+        h3 {
+          @include blackout-midnight;
+          white-space: nowrap;
+          margin: 0;
+        }
       }
     }
 
@@ -217,6 +230,22 @@ main {
           }
         }
       }
+    }
+  }
+}
+p[name]{
+  position: relative;
+  @include Hover {
+    &::after {
+      content: attr(name);
+      position: absolute;
+      background: $black;
+      color: $white;
+      padding: 0.5rem;
+      left: $side-bar-width;
+      top: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
   }
 }
