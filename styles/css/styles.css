@@ -13,7 +13,7 @@
 }
 
 *::selection {
-  background-color: #DD6305;
+  background-color: #212121;
   color: #f9f8f7;
 }
 
@@ -34,7 +34,7 @@ a {
 }
 @media (hover: hover) {
   a:hover {
-    color: #DD6305;
+    color: #212121;
   }
 }
 
@@ -113,7 +113,7 @@ main h1 {
   padding: 5vh 7rem;
   padding-left: clamp(14px, 5.9vw, 5.9rem);
   font-family: "blackout_midnight", "Impact", Arial;
-  color: #DD6305;
+  color: #212121;
   line-height: 0.8;
   background-image: url("/images/here-we-go-again.png");
   background-size: cover;
@@ -132,7 +132,7 @@ main h2.race-goes-live {
   display: flex;
   justify-content: space-around;
   color: #f9f8f7;
-  background: #DD6305;
+  background: #212121;
   padding: 0.25rem;
   width: 100%;
   line-height: 1;
@@ -251,7 +251,7 @@ main section ul.faq li summary {
 @media (hover: hover) {
   main section ul.faq li summary:hover {
     text-decoration: none;
-    color: #DD6305;
+    color: #212121;
   }
 }
 main section ul.faq li details p,
