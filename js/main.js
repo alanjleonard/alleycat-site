@@ -1,80 +1,66 @@
+function toggleRows(className) {
+  const rows = document.querySelectorAll(`table tr.${className}`);
+
+  rows.forEach((row) => {
+    if (row.style.display === "none") {
+      row.style.display = "";
+    } else {
+      row.style.display = "none";
+    }
+  });
+}
+function getOrdinalSuffix(place) {
+  if (place % 10 === 1 && place % 100 !== 11) return place + "st";
+  if (place % 10 === 2 && place % 100 !== 12) return place + "nd";
+  if (place % 10 === 3 && place % 100 !== 13) return place + "rd";
+  return place + "th";
+}
+
 function unixToHHMM(timestamp) {
   const date = new Date(timestamp);
   const hours = date.getHours().toString().padStart(2, "0");
   const minutes = date.getMinutes().toString().padStart(2, "0");
-  return `${hours}:${minutes}`;
+  const seconds = date.getSeconds().toString().padStart(2, "0");
+  return `${hours}:${minutes}:${seconds}`;
 }
+function generateTableFromData(data) {
+  const racers = Object.values(data);
+  const sortedData = racers
+    .filter((racer) => racer.finishTime > 0)
+    .sort((a, b) => a.finishTime - b.finishTime)
+    .concat(racers.filter((racer) => racer.finishTime === 0));
 
-function jsonToTable(jsonData) {
-  let table = '<table border="1"><thead><tr>';
-  table += `<th>Place</th>`;
-  table += `<th>Racer Name</th>`;
-  table += `<th>Racer #</th>`;
-  table += `<th>Finish Time of day</th>`;
-  table += "</tr></thead><tbody>";
+  // Create the table and header row
+  let table = `<table><tr>
+    <th>Place</th>
+    <th>Racer Name / #</th>
+    <th>Time</th>
+  </tr>`;
 
-  // Create table rows
-  let i = 0;
-  for (let key in jsonData) {
-    table += `<tr>`;
-    table += `<td>${++i}</td>`;
-    table += `<td>${jsonData[key]["racerName"]}</td>`;
-    table += `<td>${jsonData[key]["racerNo"]}</td>`;
-    if (jsonData[key]["finishTime"] != 0) {
-      table += `<td>${unixToHHMM(jsonData[key]["finishTime"])}</td>`;
-    } else {
-      table += `<td>dnf</td>`;
+  // Populate table rows
+  let place = 1;
+  sortedData.forEach((racer) => {
+    if (racer.finishTime > 0) {
+      table += `<tr ${place > 3 ? "class='toggle1' style='display:none'" : ""}>
+      <td>${getOrdinalSuffix(place++)}</td>
+      <td><span>${racer.racerNo}</span> ${racer.racerName}</td>
+      <td>${racer.finishTime ? unixToHHMM(racer.finishTime) : "DNF"}</td>
+    </tr>`;
     }
-    table += `</tr>`;
-  }
+  });
 
-  table += "</tbody></table>";
+  // Close the table tag
+  table += "</table>";
+
+  // Return the generated HTML table
   return table;
 }
-const data = {
-  "-NEWWVLZYkrwaSl4oLi5": {
-    circle: false,
-    diamond: false,
-    finish: false,
-    finishTime: 0,
-    racerName: "Motorhead",
-    racerNo: 4,
-    square: false,
-    startTime: 1665936000419,
-    triangle: false,
-  },
-  "-NEWWVMROlUgMY4T74lf": {
-    circle: true,
-    diamond: true,
-    finish: true,
-    finishTime: 1665939352135,
-    racerName: "The Biking Lawyer",
-    racerNo: 1,
-    square: true,
-    startTime: 1665936002544,
-    triangle: true,
-  },
-  "-NEWWVNEeo_PxQrGjY_U": {
-    circle: true,
-    diamond: true,
-    finish: true,
-    finishTime: 1665939255244,
-    racerName: "Craig, from the grave",
-    racerNo: 7,
-    square: true,
-    startTime: 1665936000526,
-    triangle: true,
-  },
-  "-NEWWVRIVcTsvyGk-EIC": {
-    circle: true,
-    diamond: true,
-    finish: true,
-    finishTime: 1665939943633,
-    racerName: "Katherine, Brenden, Jake",
-    racerNo: 2,
-    square: true,
-    startTime: 1665936001829,
-    triangle: true,
-  },
-};
-// document.body.innerHTML = jsonToTable(data);
+
+// fetch("/results/results-ii.json")
+fetch("/results/results-3.json")
+  .then((response) => response.json())
+  .then((data) => {
+    document.getElementById("table-wrapper-1").innerHTML =
+      generateTableFromData(data);
+  })
+  .catch((error) => console.error("Error fetching the data:", error));

@@ -102,12 +102,33 @@ main header {
   background-image: url("/images/here-we-go-again.png");
   background-size: cover;
   background-position: center center;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  justify-content: center;
+  gap: 3rem;
 }
 main header img {
   margin: calc(1rem + 8px);
   max-width: 78ch;
-  width: 90vw;
+  width: 50%;
+}
+main header h2.race-goes-live {
+  justify-content: space-around;
+  color: #f9f8f7;
+  padding: 0.25rem;
+  width: 100%;
+  line-height: 1;
+  gap: 0px;
+  margin: 0;
+  font-family: "blackout_midnight", "Impact", Arial;
+}
+main header h2.race-goes-live span {
+  display: block;
+  font-size: clamp(14px, 7.9vw, 5.9rem);
+}
+main header h2.race-goes-live span:nth-child(odd) {
+  font-family: "blackout_sunrise", "Impact", Arial;
 }
 main h1 {
   padding: 5vh 7rem;
@@ -127,26 +148,6 @@ main .sticky {
 }
 main .sticky nav {
   position: absolute;
-}
-main h2.race-goes-live {
-  display: flex;
-  justify-content: space-around;
-  color: #f9f8f7;
-  background: #212121;
-  padding: 0.25rem;
-  width: 100%;
-  line-height: 1;
-  gap: 0px;
-  margin: 0;
-  font-family: "blackout_midnight", "Impact", Arial;
-  white-space: nowrap;
-}
-main h2.race-goes-live span {
-  display: block;
-  font-size: clamp(14px, 7.9vw, 5.9rem);
-}
-main h2.race-goes-live span:nth-child(odd) {
-  font-family: "blackout_sunrise", "Impact", Arial;
 }
 main .about {
   background: #262222;
@@ -207,24 +208,67 @@ main section ul,
 main section ol {
   margin-top: 1rem;
 }
-main section .results-wrapper a {
+main section .results-wrapper {
+  max-width: 78ch;
+}
+main section .results-wrapper div {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  text-decoration: none;
-  max-width: 450px;
-  margin: 3rem 1rem;
 }
-main section .results-wrapper img {
-  width: 100%;
-  max-width: 100px;
-  height: 100px;
-  margin: 0 3rem;
-}
-main section .results-wrapper div p,
 main section .results-wrapper div h3 {
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 1;
   font-family: "blackout_midnight", "Impact", Arial;
   white-space: nowrap;
   margin: 0;
+}
+main section .results-wrapper div p {
+  font-family: "blackout_sunrise", "Impact", Arial;
+  margin: 0;
+  font-size: 2.5rem;
+}
+main section .results-wrapper table {
+  border-collapse: collapse;
+  width: 100%;
+}
+main section .results-wrapper table tr:nth-child(even) {
+  background: rgba(252, 252, 252, 0.1);
+}
+@media (hover: hover) {
+  main section .results-wrapper table tr:hover {
+    background: rgba(255, 250, 250, 0.2);
+  }
+}
+main section .results-wrapper table th,
+main section .results-wrapper table td {
+  text-align: left;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #fff8;
+  padding: 0.5rem;
+  vertical-align: top;
+}
+main section .results-wrapper table th:nth-child(1),
+main section .results-wrapper table td:nth-child(1) {
+  text-align: right;
+  white-space: nowrap;
+  font-weight: 700;
+}
+main section .results-wrapper table th:nth-child(2) span,
+main section .results-wrapper table td:nth-child(2) span {
+  float: right;
+  display: inline-block;
+  text-align: right;
+  margin: 0 0.5rem 0 0;
+  font-weight: 700;
+  color: #fff8;
+}
+main section .results-wrapper table th:nth-child(3),
+main section .results-wrapper table td:nth-child(3) {
+  text-align: right;
 }
 main section #map {
   width: 100%;

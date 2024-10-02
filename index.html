@@ -43,24 +43,24 @@
     <main>
       <header>
         <img alt="Steel City Alleycat 4" src="images/logos/main-logo.svg" />
-      </header>
-      <div class="sticky">
-        <h2 class="race-goes-live">
-          <span>Free</span>
-          <span>Alleycat</span>
-          <span>Bike race</span>
-        </h2>
-        <div class="about">
-          <p title="If I feel like it.">
-            Usually the sunday after Labour Day. Hamilton, Ontario.
+        <div>
+          <h2 class="race-goes-live">
+            <span>Free Alleycat</span>
+            <span>Bike race</span>
+            <span>In HamOnt</span>
+          </h2>
+          <p class="about" title="If I feel like it.">
+            Usually the sunday after Labour Day
           </p>
         </div>
+      </header>
+      <div class="sticky">
         <nav>
           <p class="title-hover" name="top">
             <a href="#top">
               <img
                 class="floating-logo"
-                src="/images/logos/4-white.svg"
+                src="/images/logos/main-logo.svg"
                 alt="Steel city alley cat 4 logo"
               />
             </a>
@@ -101,34 +101,36 @@
           <section>
             <h2 id="results">Results</h2>
             <div class="results-wrapper">
-              <a href="#results">
-                <img src="images/logos/main-logo.svg" />
-                <div>
-                  <h3>Steel City Alleycat</h3>
-                  <p>September 12<sup>th</sup>, 2021</p>
-                </div>
-              </a>
-              <a href="#results">
-                <img src="images/logos/alleycat-ii-white.svg" />
-                <div>
-                  <h3>Steel City Alleycat II</h3>
-                  <p>May 15<sup>th</sup>, 2022</p>
-                </div>
-              </a>
-              <a href="#results">
-                <img src="images/logos/alleycat-iii-white.svg" />
-                <div>
-                  <h3>Steel City Alleycat 3</h3>
-                  <p>October 16<sup>th</sup>, 2022</p>
-                </div>
-              </a>
-              <a href="#results">
-                <img src="images/logos/4-logo.svg" />
-                <div>
-                  <h3>Steel City Alleycat 4</h3>
-                  <p>September 8<sup>th</sup>, 2024</p>
-                </div>
-              </a>
+              <div class="results-header">
+                <h3>Steel City Alleycat</h3>
+                <p>September 12, 2021</p>
+              </div>
+              <div id="table-wrapper-1"></div>
+              <button onclick="toggleRows('toggle1')">Show 78 results</button>
+            </div>
+            <div class="results-wrapper">
+              <div class="results-header">
+                <h3>Steel City Alleycat II</h3>
+                <p>May 34, 2022</p>
+              </div>
+              <div id="table-wrapper-2"></div>
+              <button onclick="toggleRows('toggle2')">Show 78 results</button>
+            </div>
+            <div class="results-wrapper">
+              <div class="results-header">
+                <h3>Steel City Alleycat 3</h3>
+                <p>October 18, 2022</p>
+              </div>
+              <div id="table-wrapper-3"></div>
+              <button onclick="toggleRows('toggle3')">Show 34 results</button>
+            </div>
+            <div class="results-wrapper">
+              <div class="results-header">
+                <h3>Steel City Alleycat 4</h3>
+                <p>September 8, 2024</p>
+              </div>
+              <div id="table-wrapper-4"></div>
+              <button onclick="toggleRows('toggle4')">Show 78 results</button>
             </div>
           </section>
           <section>
