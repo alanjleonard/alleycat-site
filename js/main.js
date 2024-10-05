@@ -8,7 +8,7 @@ function toggleRows(className) {
       row.style.display = "none";
     }
   });
-  location = "#table-wrapper-1";
+  // location = "#table-wrapper-1";
 }
 function getOrdinalSuffix(place) {
   if (place % 10 === 1 && place % 100 !== 11) return place + "st";
@@ -59,7 +59,7 @@ function getResults(file, raceno) {
       table += "</table>";
 
       // Return the generated HTML table
-      document.getElementById(`table-wrapper-${raceno}`).innerHTML = table;
+      // document.getElementById(`table-wrapper-${raceno}`).innerHTML = table;
       // console.log(table);
     });
 }
@@ -68,3 +68,41 @@ getResults("/results/results.json", 1);
 getResults("/results/results-ii.json", 2);
 getResults("/results/results-3.json", 3);
 // getResults("/results/results-4.json", 4);
+
+function nav(href) {
+  let template = href.split("/")[1];
+  if (!template) {
+    template = "home";
+    location = "#/home";
+  }
+  console.log(template);
+  //load hbs
+  fetch(`../templates/${template}.hbs`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`error ${response.status}`);
+      }
+      return response.text();
+    })
+    .then((fileContent) => {
+      const template = Handlebars.compile(fileContent);
+      const html = template({});
+      document.getElementById("content").innerHTML = html;
+    });
+}
+// all that's done, scroll up to the tippy top
+window.scrollTo(0, 0);
+// handle the navigation
+$(document).ready(function () {
+  nav(window.location.hash);
+  // MAGIC!!
+  window.onpopstate = function () {
+    nav(window.location.hash);
+  };
+  history.pushState({}, "");
+  // do the nav thing
+  // $("nav a").click(function () {
+  //   $("nav a").removeClass("active");
+  //   $(this).addClass("active");
+  // });
+});
