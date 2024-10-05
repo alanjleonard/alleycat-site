@@ -145,9 +145,31 @@ main {
 
     h2 {
       @include blackout-midnight;
-      margin-top: 1.75rem;
+      margin: 1.75rem 0 0 0;
       font-size: clamp(40px, 7vw, 80px);
       line-height: 0.8;
+      padding: 8rem 1rem;
+      background-size: cover;
+      background-position: center center;
+      &#what {
+        background-image: url("/images/headers/what.jpg");
+      }
+      &#free-entry{
+        background-image: url("/images/headers/free-entry.jpg");
+      }
+      &#all-are-welcome{
+        background-image: url("/images/here-we-go-again.png");
+      }
+      &#anonymous{
+        background-image: url("/images/headers/anonymous.jpg");
+      }
+      &#not-sponsored{
+        background-image: url("/images/headers/not-sponsored.jpg");
+      }
+      &#shout-out{
+        background-image: url("/images/headers/shout-out.jpg");
+      background-position: center 25%;
+      }
     }
 
     p,
@@ -181,7 +203,7 @@ main {
         border-collapse: collapse;
         width: 100%;
         tr {
-          &.toggle1{
+          &.toggle1 {
             // display:none;
           }
           &:nth-child(even) {
@@ -223,7 +245,7 @@ main {
           border-width: 0 0 1px 0;
           border-style: solid;
           border-color: #fff8;
-          padding: 0.5rem;// 1.5rem;
+          padding: 0.5rem; // 1.5rem;
           vertical-align: top;
         }
       }

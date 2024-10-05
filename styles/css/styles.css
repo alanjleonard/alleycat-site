@@ -199,9 +199,31 @@ main section {
 }
 main section h2 {
   font-family: "blackout_midnight", "Impact", Arial;
-  margin-top: 1.75rem;
+  margin: 1.75rem 0 0 0;
   font-size: clamp(40px, 7vw, 80px);
   line-height: 0.8;
+  padding: 8rem 1rem;
+  background-size: cover;
+  background-position: center center;
+}
+main section h2#what {
+  background-image: url("/images/headers/what.jpg");
+}
+main section h2#free-entry {
+  background-image: url("/images/headers/free-entry.jpg");
+}
+main section h2#all-are-welcome {
+  background-image: url("/images/here-we-go-again.png");
+}
+main section h2#anonymous {
+  background-image: url("/images/headers/anonymous.jpg");
+}
+main section h2#not-sponsored {
+  background-image: url("/images/headers/not-sponsored.jpg");
+}
+main section h2#shout-out {
+  background-image: url("/images/headers/shout-out.jpg");
+  background-position: center 25%;
 }
 main section p,
 main section ul,

@@ -8,6 +8,7 @@ function toggleRows(className) {
       row.style.display = "none";
     }
   });
+  location = "#table-wrapper-1";
 }
 function getOrdinalSuffix(place) {
   if (place % 10 === 1 && place % 100 !== 11) return place + "st";
@@ -23,44 +24,47 @@ function unixToHHMM(timestamp) {
   const seconds = date.getSeconds().toString().padStart(2, "0");
   return `${hours}:${minutes}:${seconds}`;
 }
-function generateTableFromData(data) {
-  const racers = Object.values(data);
-  const sortedData = racers
-    .filter((racer) => racer.finishTime > 0)
-    .sort((a, b) => a.finishTime - b.finishTime)
-    .concat(racers.filter((racer) => racer.finishTime === 0));
+function getResults(file, raceno) {
+  fetch(file)
+    .then((response) => response.json())
+    .then((data) => {
+      const racers = Object.values(data);
+      const sortedData = racers
+        .filter((racer) => racer.finishTime > 0)
+        .sort((a, b) => a.finishTime - b.finishTime)
+        .concat(racers.filter((racer) => racer.finishTime === 0));
 
-  // Create the table and header row
-  let table = `<table><tr>
+      // Create the table and header row
+      let table = `<table><tr>
     <th>Place</th>
     <th>Racer Name / #</th>
     <th>Time</th>
   </tr>`;
 
-  // Populate table rows
-  let place = 1;
-  sortedData.forEach((racer) => {
-    if (racer.finishTime > 0) {
-      table += `<tr ${place > 3 ? "class='toggle1' style='display:none'" : ""}>
+      // Populate table rows
+      let place = 1;
+      sortedData.forEach((racer) => {
+        if (racer.finishTime > 0) {
+          table += `<tr ${
+            place > 3 ? "class='toggle1' style='display:none'" : ""
+          }>
       <td>${getOrdinalSuffix(place++)}</td>
       <td><span>${racer.racerNo}</span> ${racer.racerName}</td>
       <td>${racer.finishTime ? unixToHHMM(racer.finishTime) : "DNF"}</td>
     </tr>`;
-    }
-  });
+        }
+      });
 
-  // Close the table tag
-  table += "</table>";
+      // Close the table tag
+      table += "</table>";
 
-  // Return the generated HTML table
-  return table;
+      // Return the generated HTML table
+      document.getElementById(`table-wrapper-${raceno}`).innerHTML = table;
+      // console.log(table);
+    });
 }
 
-// fetch("/results/results-ii.json")
-fetch("/results/results-3.json")
-  .then((response) => response.json())
-  .then((data) => {
-    document.getElementById("table-wrapper-1").innerHTML =
-      generateTableFromData(data);
-  })
-  .catch((error) => console.error("Error fetching the data:", error));
+getResults("/results/results.json", 1);
+getResults("/results/results-ii.json", 2);
+getResults("/results/results-3.json", 3);
+// getResults("/results/results-4.json", 4);
