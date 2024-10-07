@@ -69,40 +69,39 @@ getResults("/results/results-ii.json", 2);
 getResults("/results/results-3.json", 3);
 // getResults("/results/results-4.json", 4);
 
-function nav(href) {
-  let template = href.split("/")[1];
-  if (!template) {
-    template = "home";
-    location = "#/home";
-  }
-  console.log(template);
-  //load hbs
-  fetch(`../templates/${template}.hbs`)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`error ${response.status}`);
-      }
-      return response.text();
-    })
-    .then((fileContent) => {
-      const template = Handlebars.compile(fileContent);
-      const html = template({});
-      document.getElementById("content").innerHTML = html;
-    });
-}
-// all that's done, scroll up to the tippy top
-window.scrollTo(0, 0);
-// handle the navigation
-$(document).ready(function () {
-  nav(window.location.hash);
-  // MAGIC!!
-  window.onpopstate = function () {
-    nav(window.location.hash);
-  };
-  history.pushState({}, "");
-  // do the nav thing
-  // $("nav a").click(function () {
-  //   $("nav a").removeClass("active");
-  //   $(this).addClass("active");
-  // });
-});
+// function nav(href) {
+//   let template = href.split("/")[1];
+//   if (!template) {
+//     template = "home";
+//     location = "#/home";
+//   }
+//   //load hbs
+//   fetch(`../templates/${template}.hbs`)
+//     .then((response) => {
+//       if (!response.ok) {
+//         throw new Error(`error ${response.status}`);
+//       }
+//       return response.text();
+//     })
+//     .then((fileContent) => {
+//       const template = Handlebars.compile(fileContent);
+//       const html = template({});
+//       document.getElementById("content").innerHTML = html;
+//     });
+// }
+// // all that's done, scroll up to the tippy top
+// window.scrollTo(0, 0);
+// // handle the navigation
+// $(document).ready(function () {
+//   nav(window.location.hash);
+//   // MAGIC!!
+//   window.onpopstate = function () {
+//     nav(window.location.hash);
+//   };
+//   history.pushState({}, "");
+//   // do the nav thing
+//   // $("nav a").click(function () {
+//   //   $("nav a").removeClass("active");
+//   //   $(this).addClass("active");
+//   // });
+// });
