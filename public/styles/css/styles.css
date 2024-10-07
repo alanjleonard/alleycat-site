@@ -239,33 +239,41 @@ main section .results-wrapper div {
   justify-content: space-between;
   align-items: center;
 }
-main section .results-wrapper div h3 {
+main section .results-header {
+  position: sticky;
+  top: 1rem;
+  margin: 0.5rem 0;
+  background: radial-gradient(#262222, #382e2e);
+}
+main section .results-header h3 {
   font-size: 2.5rem;
-  margin: 0;
-  line-height: 1;
+  margin: 0.25rem;
+  line-height: 1.2;
   font-family: "blackout_midnight", "Impact", Arial;
   white-space: nowrap;
-  margin: 0;
 }
-main section .results-wrapper div p {
+main section .results-header p {
   font-family: "blackout_sunrise", "Impact", Arial;
   margin: 0;
   font-size: 2.5rem;
 }
-main section .results-wrapper table {
+main section .results-header p.aboutRace {
+  font: initial;
+}
+main section table {
   border-collapse: collapse;
   width: 100%;
 }
-main section .results-wrapper table tr:nth-child(even) {
+main section table tr:nth-child(even) {
   background: rgba(252, 252, 252, 0.1);
 }
 @media (hover: hover) {
-  main section .results-wrapper table tr:hover {
+  main section table tr:hover {
     background: rgba(255, 250, 250, 0.2);
   }
 }
-main section .results-wrapper table th,
-main section .results-wrapper table td {
+main section table th,
+main section table td {
   text-align: left;
   border-width: 0 0 1px 0;
   border-style: solid;
@@ -273,14 +281,14 @@ main section .results-wrapper table td {
   padding: 0.5rem;
   vertical-align: top;
 }
-main section .results-wrapper table th:nth-child(1),
-main section .results-wrapper table td:nth-child(1) {
+main section table th:nth-child(1),
+main section table td:nth-child(1) {
   text-align: right;
   white-space: nowrap;
   font-weight: 700;
 }
-main section .results-wrapper table th:nth-child(2) span,
-main section .results-wrapper table td:nth-child(2) span {
+main section table th:nth-child(2) span,
+main section table td:nth-child(2) span {
   float: right;
   display: inline-block;
   text-align: right;
@@ -288,8 +296,8 @@ main section .results-wrapper table td:nth-child(2) span {
   font-weight: 700;
   color: #fff8;
 }
-main section .results-wrapper table th:nth-child(3),
-main section .results-wrapper table td:nth-child(3) {
+main section table th:nth-child(3),
+main section table td:nth-child(3) {
   text-align: right;
 }
 main section #map {
