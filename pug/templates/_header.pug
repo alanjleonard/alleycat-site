@@ -23,13 +23,13 @@ html(lang="en")
     meta(name="application-name" content="Steel City Alleycat")
     meta(name="msapplication-TileColor" content="#262222")
     meta(name="theme-color" content="#262222")
-
+    include _scripts.pug
     title STEEL CITY ALLEYCAT - Free alleycat bike race in Hamilton, Ontario
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="stylesheet" href="/styles/css/styles.css?v=4.0")
-  body
+  body 
     main
-      header
+      header 
         img(alt="Steel City Alleycat" src="images/logos/main-logo.svg")
         div
           h2(class="race-goes-live")
@@ -37,5 +37,6 @@ html(lang="en")
             span Bike race
             span In HamOnt
           p.about(title="If I feel like it.") Usually the sunday after Labour Day 
-          div(class="sticky")
-            div(id="content") 
+      div(class="sticky")
+        include _nav.pug
+      div(id="content") 
