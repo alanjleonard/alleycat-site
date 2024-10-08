@@ -1,6 +1,6 @@
 // $callout: #DD6305;
-$callout: #212121;
 $black: #262222;
+$callout:#75a983;
 $white: #f9f8f7;
 $border-width: 8px;
 $padding: calc(1rem + #{$border-width});
@@ -9,8 +9,13 @@ $max-width: 1080px;
 $max-text-width: 78ch;
 $side-bar-width: 5rem;
 $margin: 1rem;
-$text-color: $white;
-$background: radial-gradient($black, hsl(0,10,20));
+$text-color: $black;
+$background: $white; // radial-gradient($black, hsl(0,10,20));
+
+// table colours
+$half-white: hsl(0 0 100 / 0.5);
+$table-row-even: hsl(0 0 99 / 0.1);
+$table-row-hover: hsl(0 100 99 / 0.2);
 
 @mixin Hover {
   @media (hover: hover) {
@@ -19,7 +24,6 @@ $background: radial-gradient($black, hsl(0,10,20));
     }
   }
 }
-
 
 :root {
   font-size: 62.5%;
@@ -36,7 +40,7 @@ $background: radial-gradient($black, hsl(0,10,20));
   background-color: $callout;
   color: $white;
 }
-*:focus{
+*:focus {
   outline: solid 2px $white;
 }
 
@@ -56,15 +60,17 @@ a {
 }
 
 @function BoxShadowColor($color) {
-  @return 5px 5px 0 mix($color, black, 90%),
-  4px 4px 0 mix($color, black, 90%),
-  3px 3px 0 mix($color, black, 90%),
-  2px 2px 0 mix($color, black, 90%),
-  1px 1px 0 mix($color, black, 100%);
+  @return 5px 5px 0 mix($color, black, 90%), 4px 4px 0 mix($color, black, 90%),
+    3px 3px 0 mix($color, black, 90%), 2px 2px 0 mix($color, black, 90%),
+    1px 1px 0 mix($color, black, 100%);
 }
 
 @mixin for-phone-only {
   @media (max-width: 599px) {
     @content;
   }
+}
+@mixin blend {
+  color: $callout;
+  mix-blend-mode: screen;
 }

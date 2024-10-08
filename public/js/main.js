@@ -12,22 +12,22 @@ const races = {
   1: {
     title: "Steel City Alleycat",
     date: "September 12, 2021",
-    about: "something something",
+    finish: "Bandshell",
   },
   2: {
     title: "Steel City Alleycat II",
     date: "May 15, 2022",
-    about: "something something",
+    finish: "Gazebo @ Bayfront",
   },
   3: {
     title: "Steel City Alleycat 3",
     date: "October 16, 2022",
-    about: "something something",
+    finish: "Victoria Park",
   },
   4: {
     title: "Steel City Alleycat 4",
     date: "September 8, 2024",
-    about: "something something",
+    finish: "Eastwood Park",
   },
 };
 fetch("../results/all-results.json")
@@ -39,24 +39,26 @@ fetch("../results/all-results.json")
 
     let table = "";
 
-    let race = 1;
+    let race = 4;
     racers.forEach((racer) => {
       if (race === racer.sca) {
-        race++;
+        --race;
         console.log(`show header ${racer.sca}`);
-        if (race !== 1) {
+        if (race !== 4) {
           table += "</table>";
         }
         table += `
           <div class='results-header'>
             <h3>${races[racer.sca].title}</h3>
-            <p>${races[racer.sca].date}</p>
-            <p class='aboutRace'>${races[racer.sca].about}</p>
+            <p class='date'>${races[racer.sca].date}</p>
+            <p class='finish-location'>Finish line: ${
+              races[racer.sca].finish
+            }</p>
           </div>
           <table>
           <tr>
             <th>Place</th>
-            <th>Racer Name / #</th>
+            <th>Racer Name <span>#</span> </th>
             <th>Time</th>
           </tr>`;
       }
@@ -64,7 +66,7 @@ fetch("../results/all-results.json")
       <tr>
         <td>${getOrdinalSuffix(racer.place++)}</td>
         <td><span>${racer.number}</span> ${racer.name}</td>
-        <td>${racer.time === 0 ? "DNF" : racer.time}</td>
+        <td class='time'>${racer.time === 0 ? "DNF" : racer.time}</td>
       </tr>`;
     });
 

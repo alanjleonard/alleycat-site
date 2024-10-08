@@ -3,8 +3,8 @@ html {
 }
 
 body {
-  background-color: black;
   height: 100dvh;
+  background: $white;
 
   &,
   a,
@@ -26,44 +26,41 @@ body {
 }
 
 main {
-  background: $background;
-  margin: 0 auto;
+  // background: $white;
+  color: $black;
+  // margin: 0 auto;
   max-width: $max-width;
 
   header {
-    background-image: url("/images/here-we-go-again.png");
-    background-size: cover;
-    background-position: center center;
     display: flex;
     align-items: center;
-    height: 50vh;
-    justify-content: center;
     gap: 3rem;
+    padding: 7rem 0;
+    margin: 0 0 20px 0;
 
     img {
       margin: $padding;
-      max-width: $max-text-width;
-      width: 50%;
+      max-height: 20rem;
+      width: clamp(2rem, 28vw, 25rem);
     }
     h2.race-goes-live {
-      justify-content: space-around;
-      color: $white;
       padding: 0.25rem;
       width: 100%;
       line-height: 1;
-      gap: 0px;
-      margin: 0;
+      margin: 1rem 0 0 0;
+      font-weight: 100;
       @include blackout-midnight;
-      // white-space: nowrap;
-
       span {
         display: block;
         font-size: clamp(14px, 7.9vw, 5.9rem);
       }
-
       span:nth-child(odd) {
         @include blackout-sunrise;
       }
+    }
+    p.about {
+      font-size: small;
+      margin: 0;
     }
   }
 
@@ -71,7 +68,6 @@ main {
     padding: 5vh 7rem;
     padding-left: clamp(14px, 5.9vw, 5.9rem);
     @include blackout-midnight;
-    color: $callout;
     line-height: 0.8;
     background-image: url("/images/here-we-go-again.png");
     background-size: cover;
@@ -89,32 +85,11 @@ main {
     }
   }
 
-  .about {
-    background: $black;
-    color: $white;
-    padding: 0.5rem;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-
-    p {
-      font-size: clamp(14px, 3.5vw, 3.75rem);
-      @include blackout-midnight;
-      white-space: nowrap;
-      margin: 0;
-      text-align: end;
-
-      a {
-        text-decoration: none;
-      }
-    }
-  }
-
   nav {
     padding: 1rem;
     width: $side-bar-width;
-    background: $black;
-    color: $white;
+    // background: $callout;
+    color: $black;
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -130,27 +105,15 @@ main {
   }
 
   .section-wrapper {
-    background: $background;
+    // background: $background;
     margin-left: $side-bar-width;
   }
 
   section {
-    @include for-phone-only {
-      display: block;
-    }
-
-    margin: 0 auto;
-    padding: $padding;
-    border-top: none;
-
-    h2 {
-      @include blackout-midnight;
-      margin: 1.75rem 0 0 0;
-      font-size: clamp(40px, 7vw, 80px);
-      line-height: 0.8;
-      padding: 8rem 1rem;
+    .header-wrapper {
       background-size: cover;
       background-position: center center;
+      // mix-blend-mode: luminosity;
       &#what {
         background-image: url("/images/headers/what.jpg");
       }
@@ -158,7 +121,7 @@ main {
         background-image: url("/images/headers/free-entry.jpg");
       }
       &#all-are-welcome {
-        background-image: url("/images/here-we-go-again.png");
+        background-image: url("/images/headers/all-are-welcome.jpg");
       }
       &#anonymous {
         background-image: url("/images/headers/anonymous.jpg");
@@ -166,9 +129,22 @@ main {
       &#not-sponsored {
         background-image: url("/images/headers/not-sponsored.jpg");
       }
+      &#results {
+        background-image: url("/images/headers/not-sponsored.jpg");
+      }
       &#shout-out {
         background-image: url("/images/headers/shout-out.jpg");
         background-position: center 25%;
+      }
+      h2 {
+        @include blackout-midnight;
+        margin: 0;
+        font-size: clamp(40px, 7vw, 80px);
+        line-height: 0.8;
+        padding: 4rem 2rem;
+        position: relative;
+        text-shadow: 2px 2px 0 $white;
+        color: $callout;
       }
     }
 
@@ -176,6 +152,11 @@ main {
     ul,
     ol {
       margin-top: 1rem;
+    }
+    p.body-text {
+      padding: 8rem 1rem 12rem 1rem;
+      max-width: 52ch;
+      margin: 0 auto;
     }
 
     .results-wrapper {
@@ -199,13 +180,15 @@ main {
         @include blackout-midnight;
         white-space: nowrap;
       }
-      p {
+      .date {
         @include blackout-sunrise;
         margin: 0;
         font-size: 2.5rem;
       }
-      p.aboutRace{
-        font: initial;
+      .finish-location {
+        @include slub;
+        font-size: 1.2rem;
+        // color: blue;
       }
     }
     table {
@@ -216,10 +199,10 @@ main {
           // display:none;
         }
         &:nth-child(even) {
-          background: hsl(0 0 99 / 0.1);
+          background: $table-row-even;
         }
         @include Hover {
-          background: hsl(0 100 99 / 0.2);
+          background: $table-row-hover;
         }
       }
       th {
@@ -244,24 +227,22 @@ main {
             text-align: right;
             margin: 0 0.5rem 0 0;
             font-weight: 700;
-            color: #fff8;
+            color: $half-white;
           }
         }
         &:nth-child(3) {
           text-align: right;
         }
+        &.time {
+          font-family: monospace;
+        }
         text-align: left;
         border-width: 0 0 1px 0;
         border-style: solid;
-        border-color: #fff8;
+        border-color: $half-white;
         padding: 0.5rem; // 1.5rem;
         vertical-align: top;
       }
-    }
-
-    #map {
-      width: 100%;
-      height: 40rem;
     }
 
     img {
@@ -312,6 +293,7 @@ p[name] {
   position: relative;
   @include Hover {
     &::after {
+      z-index: 99;
       content: attr(name);
       position: absolute;
       background: $black;
