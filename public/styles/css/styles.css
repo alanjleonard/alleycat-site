@@ -13,12 +13,12 @@
 }
 
 *::selection {
-  background-color: #75a983;
-  color: #f9f8f7;
+  background-color: #e72412;
+  color: #ebe2e2;
 }
 
 *:focus {
-  outline: solid 2px #f9f8f7;
+  outline: solid 2px #ebe2e2;
 }
 
 html {
@@ -26,15 +26,15 @@ html {
 }
 
 p {
-  max-width: 1080px;
+  max-width: 550px;
 }
 
 a {
-  color: #262222;
+  color: #2a1f1e;
 }
 @media (hover: hover) {
   a:hover {
-    color: #75a983;
+    color: #e72412;
   }
 }
 
@@ -62,11 +62,11 @@ body {
   font-size: 1.9rem;
   line-height: 1.5;
   font-variant-ligatures: common-ligatures;
-  color: #262222;
+  color: #2a1f1e;
 }
 
 h1, h2, h3, h4 {
-  color: #262222;
+  color: #2a1f1e;
 }
 
 html {
@@ -75,7 +75,7 @@ html {
 
 body {
   height: 100dvh;
-  background: #f9f8f7;
+  background: #e72412;
 }
 body,
 body a,
@@ -83,7 +83,7 @@ body button,
 body input,
 body select,
 body textarea {
-  color: #262222;
+  color: #2a1f1e;
 }
 body ul,
 body ol {
@@ -94,50 +94,39 @@ body ul {
 }
 
 main {
-  color: #262222;
-  max-width: 1080px;
+  color: #2a1f1e;
+  background: #ebe2e2;
+  max-width: 550px;
 }
 main header {
-  display: flex;
   align-items: center;
+  text-align: center;
   gap: 3rem;
   padding: 7rem 0;
   margin: 0 0 20px 0;
 }
 main header img {
   margin: calc(1rem + 8px);
-  max-height: 20rem;
-  width: clamp(2rem, 28vw, 25rem);
+  width: clamp(2rem, 68vw, 25rem);
 }
-main header h2.race-goes-live {
+main header h1 {
   padding: 0.25rem;
+  color: #e72412;
+  text-shadow: 2px 2px 0 #2a1f1e;
   width: 100%;
   line-height: 1;
   margin: 1rem 0 0 0;
-  font-weight: 100;
+  font-size: clamp(14px, 12vw, 5.9rem);
+  letter-spacing: 1px;
   font-family: "blackout_midnight", "Impact", Arial;
-}
-main header h2.race-goes-live span {
-  display: block;
-  font-size: clamp(14px, 7.9vw, 5.9rem);
-}
-main header h2.race-goes-live span:nth-child(odd) {
-  font-family: "blackout_sunrise", "Impact", Arial;
 }
 main header p.about {
-  font-size: small;
-  margin: 0;
-}
-main h1 {
-  padding: 5vh 7rem;
-  padding-left: clamp(14px, 5.9vw, 5.9rem);
-  font-family: "blackout_midnight", "Impact", Arial;
-  line-height: 0.8;
-  background-image: url("/images/here-we-go-again.png");
-  background-size: cover;
-  background-position: center center;
-  margin: 0;
-  font-size: clamp(9rem, 20vw, 19rem);
+  font-size: x-small;
+  display: inline-block;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 main .sticky {
   position: sticky;
@@ -149,17 +138,26 @@ main .sticky nav {
 main nav {
   padding: 1rem;
   width: 5rem;
-  color: #262222;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   height: 100dvh;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: #2a1f1e;
+}
+main nav hr {
+  width: 100%;
+}
+main nav img,
+main nav svg {
+  width: 100%;
+}
+main nav a svg {
+  fill: #2a1f1e;
 }
 main nav p {
   margin: 0;
-}
-main nav img {
-  width: 100%;
 }
 main .section-wrapper {
   margin-left: 5rem;
@@ -184,7 +182,7 @@ main section .header-wrapper#not-sponsored {
   background-image: url("/images/headers/not-sponsored.jpg");
 }
 main section .header-wrapper#results {
-  background-image: url("/images/headers/not-sponsored.jpg");
+  background-image: url("/images/headers/results.jpg");
 }
 main section .header-wrapper#shout-out {
   background-image: url("/images/headers/shout-out.jpg");
@@ -193,12 +191,13 @@ main section .header-wrapper#shout-out {
 main section .header-wrapper h2 {
   font-family: "blackout_midnight", "Impact", Arial;
   margin: 0;
-  font-size: clamp(40px, 7vw, 80px);
-  line-height: 0.8;
+  font-size: clamp(40px, 14vw, 80px);
+  line-height: 0.9;
   padding: 4rem 2rem;
   position: relative;
-  text-shadow: 2px 2px 0 #f9f8f7;
-  color: #75a983;
+  text-shadow: 2px 2px 0 #2a1f1e;
+  letter-spacing: 1px;
+  color: #e72412;
 }
 main section p,
 main section ul,
@@ -206,9 +205,8 @@ main section ol {
   margin-top: 1rem;
 }
 main section p.body-text {
-  padding: 8rem 1rem 12rem 1rem;
+  padding: 4rem 1rem 8rem 2rem;
   max-width: 52ch;
-  margin: 0 auto;
 }
 main section .results-wrapper {
   max-width: 78ch;
@@ -221,9 +219,11 @@ main section .results-wrapper div {
 }
 main section .results-header {
   position: sticky;
-  top: 1rem;
+  top: 0;
   margin: 0.5rem 0;
-  background: #f9f8f7;
+  padding: 1rem;
+  border-bottom: solid 1px #2a1f1e;
+  background: #ebe2e2;
 }
 main section .results-header h3 {
   font-size: 2.5rem;
@@ -233,9 +233,7 @@ main section .results-header h3 {
   white-space: nowrap;
 }
 main section .results-header .date {
-  font-family: "blackout_sunrise", "Impact", Arial;
   margin: 0;
-  font-size: 2.5rem;
 }
 main section .results-header .finish-location {
   font-family: "Catamaran", sans-serif;
@@ -243,17 +241,18 @@ main section .results-header .finish-location {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 1.2rem;
+  margin: 0;
 }
 main section table {
   border-collapse: collapse;
   width: 100%;
 }
 main section table tr:nth-child(even) {
-  background: rgba(252, 252, 252, 0.1);
+  background: #eeeded;
 }
 @media (hover: hover) {
   main section table tr:hover {
-    background: rgba(255, 250, 250, 0.2);
+    background: #dfdddd;
   }
 }
 main section table th,
@@ -261,7 +260,7 @@ main section table td {
   text-align: left;
   border-width: 0 0 1px 0;
   border-style: solid;
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(0, 0, 0, 0.2);
   padding: 0.5rem;
   vertical-align: top;
 }
@@ -278,7 +277,7 @@ main section table td:nth-child(2) span {
   text-align: right;
   margin: 0 0.5rem 0 0;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.2);
 }
 main section table th:nth-child(3),
 main section table td:nth-child(3) {
@@ -300,7 +299,7 @@ main section ul.faq li {
   list-style: none;
 }
 main section ul.faq li summary {
-  color: #262222;
+  color: #2a1f1e;
   margin: 1rem 0;
   padding: 0;
   text-decoration: underline;
@@ -309,7 +308,7 @@ main section ul.faq li summary {
 @media (hover: hover) {
   main section ul.faq li summary:hover {
     text-decoration: none;
-    color: #75a983;
+    color: #e72412;
   }
 }
 main section ul.faq li details p,
@@ -324,14 +323,14 @@ main section ul.faq li details ul li {
 
 p[name] {
   position: relative;
+  z-index: 99;
 }
 @media (hover: hover) {
   p[name]:hover::after {
-    z-index: 99;
     content: attr(name);
     position: absolute;
-    background: #262222;
-    color: #f9f8f7;
+    background: #2a1f1e;
+    color: #ebe2e2;
     padding: 0.5rem;
     left: 5rem;
     top: 0;

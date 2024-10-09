@@ -4,8 +4,7 @@ html {
 
 body {
   height: 100dvh;
-  background: $white;
-
+  background: $callout;
   &,
   a,
   button,
@@ -26,54 +25,37 @@ body {
 }
 
 main {
-  // background: $white;
   color: $black;
-  // margin: 0 auto;
+  background: $white;
   max-width: $max-width;
 
   header {
-    display: flex;
     align-items: center;
+    text-align: center;
     gap: 3rem;
     padding: 7rem 0;
     margin: 0 0 20px 0;
 
     img {
       margin: $padding;
-      max-height: 20rem;
-      width: clamp(2rem, 28vw, 25rem);
+      width: clamp(2rem, 68vw, 25rem);
     }
-    h2.race-goes-live {
+    h1 {
       padding: 0.25rem;
+      color: $callout;
+      text-shadow: 2px 2px 0 $black;
       width: 100%;
       line-height: 1;
       margin: 1rem 0 0 0;
-      font-weight: 100;
+      font-size: clamp(14px, 12vw, 5.9rem);
+      letter-spacing: 1px;
       @include blackout-midnight;
-      span {
-        display: block;
-        font-size: clamp(14px, 7.9vw, 5.9rem);
-      }
-      span:nth-child(odd) {
-        @include blackout-sunrise;
-      }
     }
     p.about {
-      font-size: small;
-      margin: 0;
+      font-size: x-small;
+      display: inline-block;
+      @include slub;
     }
-  }
-
-  h1 {
-    padding: 5vh 7rem;
-    padding-left: clamp(14px, 5.9vw, 5.9rem);
-    @include blackout-midnight;
-    line-height: 0.8;
-    background-image: url("/images/here-we-go-again.png");
-    background-size: cover;
-    background-position: center center;
-    margin: 0;
-    font-size: clamp(9rem, 20vw, 19rem);
   }
 
   .sticky {
@@ -88,24 +70,31 @@ main {
   nav {
     padding: 1rem;
     width: $side-bar-width;
-    // background: $callout;
-    color: $black;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
     height: 100dvh;
-
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: $black;
+    hr {
+      width: 100%;
+    }
+    img,
+    svg {
+      width: 100%;
+    }
+    a {
+      svg {
+        fill: $black;
+      }
+    }
     p {
       margin: 0;
-    }
-
-    img {
-      width: 100%;
     }
   }
 
   .section-wrapper {
-    // background: $background;
     margin-left: $side-bar-width;
   }
 
@@ -130,7 +119,7 @@ main {
         background-image: url("/images/headers/not-sponsored.jpg");
       }
       &#results {
-        background-image: url("/images/headers/not-sponsored.jpg");
+        background-image: url("/images/headers/results.jpg");
       }
       &#shout-out {
         background-image: url("/images/headers/shout-out.jpg");
@@ -139,11 +128,12 @@ main {
       h2 {
         @include blackout-midnight;
         margin: 0;
-        font-size: clamp(40px, 7vw, 80px);
-        line-height: 0.8;
+        font-size: clamp(40px, 14vw, 80px);
+        line-height: 0.9;
         padding: 4rem 2rem;
         position: relative;
-        text-shadow: 2px 2px 0 $white;
+        text-shadow: 2px 2px 0 $black;
+        letter-spacing: 1px;
         color: $callout;
       }
     }
@@ -154,9 +144,8 @@ main {
       margin-top: 1rem;
     }
     p.body-text {
-      padding: 8rem 1rem 12rem 1rem;
+      padding: 4rem 1rem 8rem 2rem;
       max-width: 52ch;
-      margin: 0 auto;
     }
 
     .results-wrapper {
@@ -170,8 +159,10 @@ main {
     }
     .results-header {
       position: sticky;
-      top: 1rem;
+      top: 0;
       margin: 0.5rem 0;
+      padding: 1rem;
+      border-bottom: solid 1px $black;
       background: $background;
       h3 {
         font-size: 2.5rem;
@@ -181,34 +172,23 @@ main {
         white-space: nowrap;
       }
       .date {
-        @include blackout-sunrise;
         margin: 0;
-        font-size: 2.5rem;
       }
       .finish-location {
         @include slub;
         font-size: 1.2rem;
-        // color: blue;
+        margin: 0;
       }
     }
     table {
       border-collapse: collapse;
       width: 100%;
       tr {
-        &.toggle1 {
-          // display:none;
-        }
         &:nth-child(even) {
           background: $table-row-even;
         }
         @include Hover {
           background: $table-row-hover;
-        }
-      }
-      th {
-        &:nth-child(3) {
-          // white-space: nowrap;
-          // line-height: 0;
         }
       }
       th,
@@ -222,8 +202,6 @@ main {
           span {
             float: right;
             display: inline-block;
-            // background: blue;
-            // width: 2ch;
             text-align: right;
             margin: 0 0.5rem 0 0;
             font-weight: 700;
@@ -240,7 +218,7 @@ main {
         border-width: 0 0 1px 0;
         border-style: solid;
         border-color: $half-white;
-        padding: 0.5rem; // 1.5rem;
+        padding: 0.5rem;
         vertical-align: top;
       }
     }
@@ -291,9 +269,9 @@ main {
 }
 p[name] {
   position: relative;
+  z-index: 99;
   @include Hover {
     &::after {
-      z-index: 99;
       content: attr(name);
       position: absolute;
       background: $black;

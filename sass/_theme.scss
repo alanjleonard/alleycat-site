@@ -1,11 +1,18 @@
 // $callout: #DD6305;
-$black: #262222;
-$callout:#75a983;
-$white: #f9f8f7;
+// $black: hsl(0, 5.56%, 14.12%);
+// $callout: hsl(136.15, 23.21%, 56.08%);//#75a983;
+// $white: hsl(30, 14.29%, 97.25%);
+
+// $hue: 201.13;
+$hue: 5;
+$black: hsl($hue, 15.56%, 14.12%);
+$callout:hsl($hue, 85.54%, 48.82%);
+$white: hsl($hue, 18.29%, 90.25%);
+
 $border-width: 8px;
 $padding: calc(1rem + #{$border-width});
 $base-size: 1.9rem;
-$max-width: 1080px;
+$max-width: 550px;
 $max-text-width: 78ch;
 $side-bar-width: 5rem;
 $margin: 1rem;
@@ -13,9 +20,9 @@ $text-color: $black;
 $background: $white; // radial-gradient($black, hsl(0,10,20));
 
 // table colours
-$half-white: hsl(0 0 100 / 0.5);
-$table-row-even: hsl(0 0 99 / 0.1);
-$table-row-hover: hsl(0 100 99 / 0.2);
+$half-white: hsl(0 0 0 / 0.2);
+$table-row-even: mix($black, white, 8%);
+$table-row-hover: mix($black, white, 15%);
 
 @mixin Hover {
   @media (hover: hover) {

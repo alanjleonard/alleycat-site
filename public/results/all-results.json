@@ -1,1834 +1,1834 @@
 [
-    {
-        "sca": 4,
-        "place": 0,
-        "number": 32,
-        "name": "Johnathan",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 4,
-        "place": 1,
-        "number": 141,
-        "name": "Dale Chippendale",
-        "time": "12:45:53",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 2,
-        "number": 30,
-        "name": "High Grade",
-        "time": "12:49:44",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 3,
-        "number": 20,
-        "name": "Jamie",
-        "time": "12:50:35",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 4,
-        "number": 7,
-        "name": "Oranje",
-        "time": "12:51:43",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 5,
-        "number": 1,
-        "name": "",
-        "time": "12:52:52",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 6,
-        "number": 37,
-        "name": "",
-        "time": "12:52:59",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 7,
-        "number": 10,
-        "name": "Phil",
-        "time": "12:55:49",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 8,
-        "number": 36,
-        "name": "Tom",
-        "time": "12:56:49",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 9,
-        "number": 143,
-        "name": "Jordan G.",
-        "time": "12:57:29",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 10,
-        "number": 110,
-        "name": "Not Really",
-        "time": "12:58:44",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 11,
-        "number": 39,
-        "name": "Robert",
-        "time": "13:00:37",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 12,
-        "number": 145,
-        "name": "Where's Ali (found)",
-        "time": "13:01:38",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 13,
-        "number": 28,
-        "name": "Punk Rock Barbie",
-        "time": "13:01:42",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 15,
-        "number": 147,
-        "name": "Team Shepherd",
-        "time": "13:01:59",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 14,
-        "number": 41,
-        "name": "Johnathon",
-        "time": "13:02:18",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 16,
-        "number": 5,
-        "name": "Terry & Pam",
-        "time": "13:03:07",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 17,
-        "number": 47,
-        "name": "Raf",
-        "time": "13:03:33",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 18,
-        "number": 144,
-        "name": "Rainy Day",
-        "time": "13:04:40",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 20,
-        "number": 14,
-        "name": "Alumimum & Carbon City (John)",
-        "time": "13:04:42",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 19,
-        "number": 15,
-        "name": "80s Brunch",
-        "time": "13:04:43",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 21,
-        "number": 2,
-        "name": "SoBiSexual",
-        "time": "13:04:50",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 22,
-        "number": 12,
-        "name": "AL's Pals",
-        "time": "13:06:35",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 23,
-        "number": 4,
-        "name": "AL's Pals",
-        "time": "13:06:35",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 24,
-        "number": 35,
-        "name": "Juniper & the Jimmies",
-        "time": "13:07:14",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 25,
-        "number": 3,
-        "name": "Team Cherry & the Tandem",
-        "time": "13:08:20",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 26,
-        "number": 36,
-        "name": "",
-        "time": "13:08:48",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 27,
-        "number": 19,
-        "name": "Orange (mostly orange)",
-        "time": "13:08:55",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 29,
-        "number": 27,
-        "name": "It's up to you",
-        "time": "13:12:00",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 28,
-        "number": 44,
-        "name": "Team J. Dawgggg",
-        "time": "13:12:43",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 30,
-        "number": 127,
-        "name": "Grass Touchers",
-        "time": "13:13:50",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 31,
-        "number": 24,
-        "name": "Too Busy Biking",
-        "time": "13:16:04",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 32,
-        "number": 38,
-        "name": "Zach",
-        "time": "13:16:58",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 33,
-        "number": 148,
-        "name": "Bitches",
-        "time": "13:18:15",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 34,
-        "number": 129,
-        "name": "Track Dawg",
-        "time": "13:18:22",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 35,
-        "number": 34,
-        "name": "Pulling Sadie",
-        "time": "13:18:27",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 36,
-        "number": 7,
-        "name": "Lightning McQueen",
-        "time": "13:19:03",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 37,
-        "number": 21,
-        "name": "MTBD Dub (tandem)",
-        "time": "13:19:12",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 38,
-        "number": 43,
-        "name": "",
-        "time": "13:19:28",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 39,
-        "number": 142,
-        "name": "Cirque du velos",
-        "time": "13:19:38",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 40,
-        "number": 131,
-        "name": "Lost KOMs",
-        "time": "13:20:36",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 41,
-        "number": 148,
-        "name": "",
-        "time": "13:20:41",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 42,
-        "number": 132,
-        "name": "Z & N",
-        "time": "13:21:02",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 43,
-        "number": 128,
-        "name": "Manifest Dion (Chris & Jack)",
-        "time": "13:21:27",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 44,
-        "number": 6,
-        "name": "Aaron",
-        "time": "13:22:06",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 45,
-        "number": 25,
-        "name": "Victory Blue",
-        "time": "13:22:43",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 46,
-        "number": 23,
-        "name": "Ash",
-        "time": "13:22:54",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 47,
-        "number": 22,
-        "name": "Camron & Devon",
-        "time": "13:22:56",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 48,
-        "number": 33,
-        "name": "Ducktectives",
-        "time": "13:24:36",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 49,
-        "number": 13,
-        "name": "Steven",
-        "time": "13:26:02",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 50,
-        "number": 46,
-        "name": "Hell Riderz",
-        "time": "13:28:48",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 51,
-        "number": 42,
-        "name": "Wagners Collective",
-        "time": "13:32:33",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 52,
-        "number": 29,
-        "name": "Flat & tired",
-        "time": "13:37:31",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 53,
-        "number": 26,
-        "name": "Oh!",
-        "time": "13:43:42",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 54,
-        "number": 45,
-        "name": "Sparkle Motion",
-        "time": "14:09:36",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 4,
-        "place": 55,
-        "number": 137,
-        "name": "Team Turtle",
-        "time": "14:10:43",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 1,
-        "number": 21,
-        "name": "Squeak76",
-        "time": "12:33:01",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 2,
-        "number": 31,
-        "name": "Fredhead",
-        "time": "12:34:56",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 3,
-        "number": 33,
-        "name": "Jonathan",
-        "time": "12:36:16",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 4,
-        "number": 18,
-        "name": "Ryan, still riding OranjeFixie",
-        "time": "12:36:20",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 5,
-        "number": 13,
-        "name": "TEAM NorthSpeedCycle",
-        "time": "12:39:40",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 6,
-        "number": 8,
-        "name": "Sharpieguy",
-        "time": "12:44:01",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 7,
-        "number": 22,
-        "name": "Jbob 420",
-        "time": "12:44:50",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 8,
-        "number": 61,
-        "name": "Reid The Speed",
-        "time": "12:44:55",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 9,
-        "number": 35,
-        "name": "The Bald and the Beautiful",
-        "time": "12:50:08",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 10,
-        "number": 30,
-        "name": "Jdavey",
-        "time": "12:50:31",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 11,
-        "number": 48,
-        "name": "SoBisexual",
-        "time": "12:51:24",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 12,
-        "number": 45,
-        "name": "Flying voles",
-        "time": "12:53:36",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 13,
-        "number": 10,
-        "name": "Worst Pace Scenario",
-        "time": "12:53:43",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 14,
-        "number": 23,
-        "name": "Chasing Tail (winds)",
-        "time": "12:54:13",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 15,
-        "number": 7,
-        "name": "Craig, from the grave",
-        "time": "12:54:15",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 16,
-        "number": 25,
-        "name": "Adam",
-        "time": "12:54:30",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 17,
-        "number": 1,
-        "name": "The Biking Lawyer",
-        "time": "12:55:52",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 18,
-        "number": 51,
-        "name": "evan SZczucinski",
-        "time": "12:55:53",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 19,
-        "number": 15,
-        "name": "Dirty Duff Divers",
-        "time": "13:01:04",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 20,
-        "number": 27,
-        "name": "Mike J",
-        "time": "13:02:16",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 21,
-        "number": 56,
-        "name": "Erin and Drew",
-        "time": "13:02:56",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 22,
-        "number": 17,
-        "name": "Surly farmer",
-        "time": "13:03:20",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 23,
-        "number": 26,
-        "name": "Rat King",
-        "time": "13:03:47",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 24,
-        "number": 29,
-        "name": "Mortal Kombat",
-        "time": "13:05:34",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 25,
-        "number": 2,
-        "name": "Katherine, Brenden, Jake",
-        "time": "13:05:44",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 26,
-        "number": 9,
-        "name": "Edugan",
-        "time": "13:06:25",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 27,
-        "number": 41,
-        "name": "",
-        "time": "13:09:05",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 28,
-        "number": 24,
-        "name": "Veld Crew",
-        "time": "13:12:22",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 29,
-        "number": 36,
-        "name": "Mich",
-        "time": "13:18:41",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 30,
-        "number": 19,
-        "name": "I'm so hungover right now",
-        "time": "13:19:05",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 31,
-        "number": 42,
-        "name": "Nick",
-        "time": "13:24:37",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 32,
-        "number": 40,
-        "name": "Losers Club",
-        "time": "13:33:13",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 33,
-        "number": 38,
-        "name": "BashBug",
-        "time": "13:37:58",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 34,
-        "number": 43,
-        "name": "Megan Davis",
-        "time": "13:39:39",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 3,
-        "place": 0,
-        "number": 57,
-        "name": "#57",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 3,
-        "place": 0,
-        "number": 16,
-        "name": "Ash",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 3,
-        "place": 0,
-        "number": 3,
-        "name": "Burner phone",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 3,
-        "place": 0,
-        "number": 14,
-        "name": "Evan Szczucinski",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 3,
-        "place": 0,
-        "number": 4,
-        "name": "Motorhead",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 3,
-        "place": 0,
-        "number": 47,
-        "name": "officiAL",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 3,
-        "place": 0,
-        "number": 32,
-        "name": "Patrick DeJong’s Bad Back",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 3,
-        "place": 0,
-        "number": 20,
-        "name": "R We There Yet???",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 3,
-        "place": 0,
-        "number": 6,
-        "name": "Reid The Speed",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 3,
-        "place": 0,
-        "number": 60,
-        "name": "Ron1619",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 3,
-        "place": 0,
-        "number": 75,
-        "name": "Sharpieguy",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 3,
-        "place": 0,
-        "number": 39,
-        "name": "Sometimeperhaps",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 3,
-        "place": 0,
-        "number": 12,
-        "name": "TAKES2ToTANDEM",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 3,
-        "place": 0,
-        "number": 11,
-        "name": "Two Ton Tonys",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 1,
-        "number": 59,
-        "name": "Mick Ultra",
-        "time": "12:29:33",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 2,
-        "number": 23,
-        "name": "Ryan is riding an Oranje Bike",
-        "time": "12:32:55",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 3,
-        "number": 30,
-        "name": "Chad",
-        "time": "12:32:57",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 4,
-        "number": 18,
-        "name": "B Goodwill",
-        "time": "12:33:34",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 5,
-        "number": 58,
-        "name": "Squeek76",
-        "time": "12:38:31",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 6,
-        "number": 8,
-        "name": "Older Things",
-        "time": "12:38:57",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 7,
-        "number": 52,
-        "name": "Vivian's Revenge",
-        "time": "12:40:51",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 8,
-        "number": 47,
-        "name": "Over Achievers",
-        "time": "12:42:14",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 9,
-        "number": 11,
-        "name": "Old Man Marko",
-        "time": "12:42:16",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 10,
-        "number": 3,
-        "name": "Sam Walton",
-        "time": "12:45:11",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 11,
-        "number": 48,
-        "name": "Jamie P",
-        "time": "12:45:14",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 12,
-        "number": 45,
-        "name": "Daniil",
-        "time": "12:47:24",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 13,
-        "number": 20,
-        "name": "Are we there yet?",
-        "time": "12:47:29",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 14,
-        "number": 28,
-        "name": "Rat Queen",
-        "time": "12:47:38",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 15,
-        "number": 74,
-        "name": "bootsey",
-        "time": "12:47:38",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 16,
-        "number": 65,
-        "name": "Kiloma Eaters",
-        "time": "12:49:39",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 17,
-        "number": 41,
-        "name": "G-MONEY",
-        "time": "12:50:30",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 18,
-        "number": 22,
-        "name": "Jdawg",
-        "time": "12:50:40",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 19,
-        "number": 1,
-        "name": "Ad El",
-        "time": "12:52:15",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 20,
-        "number": 7,
-        "name": "Aaron N",
-        "time": "12:52:31",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 21,
-        "number": 24,
-        "name": "Yasir A",
-        "time": "12:53:08",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 22,
-        "number": 82,
-        "name": "Adam B",
-        "time": "12:53:30",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 23,
-        "number": 26,
-        "name": "Adam F",
-        "time": "12:54:51",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 24,
-        "number": 67,
-        "name": "Dan S.",
-        "time": "12:54:53",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 25,
-        "number": 15,
-        "name": "Ashton",
-        "time": "12:57:09",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 26,
-        "number": 85,
-        "name": "Watermotz",
-        "time": "12:59:55",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 27,
-        "number": 81,
-        "name": "Tommy boy",
-        "time": "13:00:14",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 28,
-        "number": 44,
-        "name": "Dane Assault",
-        "time": "13:04:16",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 29,
-        "number": 12,
-        "name": "Grande",
-        "time": "13:05:36",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 30,
-        "number": 10,
-        "name": "63 Ossington",
-        "time": "13:05:36",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 31,
-        "number": 54,
-        "name": "Mike Hawk",
-        "time": "13:06:26",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 32,
-        "number": 107,
-        "name": "RS",
-        "time": "13:06:34",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 33,
-        "number": 16,
-        "name": "TAKES2TOTANDEM",
-        "time": "13:07:22",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 34,
-        "number": 9,
-        "name": "Cam",
-        "time": "13:07:51",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 35,
-        "number": 27,
-        "name": "Beer Babes on Bikes",
-        "time": "13:09:04",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 36,
-        "number": 77,
-        "name": "Grosfelds",
-        "time": "13:11:23",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 37,
-        "number": 21,
-        "name": "Sam's Cycles",
-        "time": "13:11:38",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 38,
-        "number": 13,
-        "name": "RADimmers",
-        "time": "13:13:08",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 39,
-        "number": 35,
-        "name": "Tom & Sarah",
-        "time": "13:15:40",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 40,
-        "number": 32,
-        "name": "Orange Crush",
-        "time": "13:15:56",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 41,
-        "number": 25,
-        "name": "@DaveLikesBikes",
-        "time": "13:18:25",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 42,
-        "number": 89,
-        "name": "Biking Lawyer",
-        "time": "13:18:44",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 43,
-        "number": 56,
-        "name": "contracycle",
-        "time": "13:18:46",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 44,
-        "number": 61,
-        "name": "UncleMarcus",
-        "time": "13:19:13",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 45,
-        "number": 84,
-        "name": "Sm0knGT",
-        "time": "13:22:00",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 46,
-        "number": 112,
-        "name": "The Two Tone Tonys",
-        "time": "13:23:10",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 47,
-        "number": 118,
-        "name": "",
-        "time": "13:23:33",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 48,
-        "number": 55,
-        "name": "CNC",
-        "time": "13:27:51",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 49,
-        "number": 49,
-        "name": "Rock Hardwell the 3rd",
-        "time": "13:27:58",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 50,
-        "number": 5,
-        "name": "Lion Leaves",
-        "time": "13:32:32",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 51,
-        "number": 106,
-        "name": "Jfiveisdead",
-        "time": "13:42:24",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 52,
-        "number": 57,
-        "name": "Surprise!Hamilton",
-        "time": "13:42:30",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 53,
-        "number": 34,
-        "name": "Sharpieguy",
-        "time": "13:52:03",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 54,
-        "number": 62,
-        "name": "TBBB",
-        "time": "13:53:19",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 55,
-        "number": 129,
-        "name": "",
-        "time": "13:54:53",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 56,
-        "number": 88,
-        "name": "Smashin Good Bike Times",
-        "time": "13:56:17",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 57,
-        "number": 6,
-        "name": "Vaughn",
-        "time": "13:56:33",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 58,
-        "number": 2,
-        "name": "Westbound",
-        "time": "14:06:18",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 59,
-        "number": 90,
-        "name": "TeamShohei",
-        "time": "14:06:24",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 60,
-        "number": 95,
-        "name": "Andrew!",
-        "time": "14:14:28",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 61,
-        "number": 91,
-        "name": "Maybr mark",
-        "time": "14:14:54",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 62,
-        "number": 117,
-        "name": "Juniper’s Big Day Out",
-        "time": "14:18:23",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 63,
-        "number": 80,
-        "name": "Rabout",
-        "time": "14:37:08",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 64,
-        "number": 122,
-        "name": "",
-        "time": "14:46:37",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 65,
-        "number": 105,
-        "name": "Bre and Kyle",
-        "time": "15:01:30",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 66,
-        "number": 51,
-        "name": "PNP",
-        "time": "15:16:31",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 67,
-        "number": 14,
-        "name": "Mich",
-        "time": "15:24:12",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 68,
-        "number": 97,
-        "name": "slow and unsteady",
-        "time": "16:35:33",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 33,
-        "name": "Adamisonfire",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 40,
-        "name": "Auj",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 124,
-        "name": "Ben c",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 94,
-        "name": "Corona shirts",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 37,
-        "name": "Edspeed",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 4,
-        "name": "Fixed M8",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 104,
-        "name": "Ory",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 68,
-        "name": "RileyS",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 138,
-        "name": "Sharpieguy",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 73,
-        "name": "Team Sminch",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 53,
-        "name": "Team Valemount",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 31,
-        "name": "The Biking Lawyer",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 19,
-        "name": "The Biking Vet",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 93,
-        "name": "The Biking Vet",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 29,
-        "name": "The Two Tone Tonys",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 42,
-        "name": "thena smokes",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 64,
-        "name": "Vikram",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 2,
-        "place": 0,
-        "number": 36,
-        "name": "Worst Pace Scenario",
-        "time": 0,
-        "complete": "FALSE"
-    },
-    {
-        "sca": 1,
-        "place": 1,
-        "number": 14,
-        "name": "",
-        "time": "12:38:35",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 2,
-        "number": 22,
-        "name": "",
-        "time": "12:42:20",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 3,
-        "number": 19,
-        "name": "",
-        "time": "12:49:05",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 4,
-        "number": 31,
-        "name": "",
-        "time": "12:50:45",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 5,
-        "number": 27,
-        "name": "",
-        "time": "12:52:47",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 6,
-        "number": 4,
-        "name": "",
-        "time": "12:55:08",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 7,
-        "number": 6,
-        "name": "",
-        "time": "12:57:35",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 8,
-        "number": 10,
-        "name": "",
-        "time": "12:57:47",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 9,
-        "number": 17,
-        "name": "",
-        "time": "12:58:20",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 10,
-        "number": 8,
-        "name": "",
-        "time": "12:59:29",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 11,
-        "number": 23,
-        "name": "",
-        "time": "13:03:42",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 12,
-        "number": 29,
-        "name": "",
-        "time": "13:03:47",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 13,
-        "number": 26,
-        "name": "",
-        "time": "13:04:02",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 14,
-        "number": 21,
-        "name": "",
-        "time": "13:05:07",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 15,
-        "number": 5,
-        "name": "",
-        "time": "13:05:25",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 16,
-        "number": 68,
-        "name": "",
-        "time": "13:13:11",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 17,
-        "number": 71,
-        "name": "",
-        "time": "13:13:18",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 18,
-        "number": 24,
-        "name": "",
-        "time": "13:14:47",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 19,
-        "number": 11,
-        "name": "",
-        "time": "13:15:09",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 20,
-        "number": 62,
-        "name": "",
-        "time": "13:16:28",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 21,
-        "number": 35,
-        "name": "",
-        "time": "13:19:06",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 22,
-        "number": 40,
-        "name": "",
-        "time": "13:20:18",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 23,
-        "number": 58,
-        "name": "",
-        "time": "13:22:12",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 24,
-        "number": 72,
-        "name": "",
-        "time": "13:22:54",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 25,
-        "number": 41,
-        "name": "",
-        "time": "13:23:26",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 26,
-        "number": 28,
-        "name": "",
-        "time": "13:28:01",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 27,
-        "number": 42,
-        "name": "",
-        "time": "13:33:28",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 28,
-        "number": 18,
-        "name": "",
-        "time": "13:33:33",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 29,
-        "number": 49,
-        "name": "",
-        "time": "13:35:50",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 30,
-        "number": 50,
-        "name": "",
-        "time": "13:42:27",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 31,
-        "number": 9,
-        "name": "",
-        "time": "13:43:41",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 32,
-        "number": 12,
-        "name": "",
-        "time": "13:47:17",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 33,
-        "number": 65,
-        "name": "",
-        "time": "13:51:23",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 34,
-        "number": 73,
-        "name": "",
-        "time": "14:07:48",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 35,
-        "number": 63,
-        "name": "",
-        "time": "14:08:15",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 36,
-        "number": 33,
-        "name": "",
-        "time": "14:09:00",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 37,
-        "number": 69,
-        "name": "",
-        "time": "14:09:48",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 38,
-        "number": 7,
-        "name": "",
-        "time": "14:25:14",
-        "complete": "TRUE"
-    },
-    {
-        "sca": 1,
-        "place": 39,
-        "number": 32,
-        "name": "",
-        "time": "14:31:18",
-        "complete": "TRUE"
-    }
+  {
+    "sca": 4,
+    "place": 0,
+    "number": 32,
+    "name": "Johnathan",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 4,
+    "place": 1,
+    "number": 141,
+    "name": "Dale Chippendale",
+    "time": "12:45:53",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 2,
+    "number": 30,
+    "name": "High Grade",
+    "time": "12:49:44",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 3,
+    "number": 20,
+    "name": "Jamie",
+    "time": "12:50:35",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 4,
+    "number": 7,
+    "name": "Oranje",
+    "time": "12:51:43",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 5,
+    "number": 1,
+    "name": "",
+    "time": "12:52:52",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 6,
+    "number": 37,
+    "name": "",
+    "time": "12:52:59",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 7,
+    "number": 10,
+    "name": "Phil",
+    "time": "12:55:49",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 8,
+    "number": 36,
+    "name": "Tom",
+    "time": "12:56:49",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 9,
+    "number": 143,
+    "name": "Jordan G.",
+    "time": "12:57:29",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 10,
+    "number": 110,
+    "name": "Not Really",
+    "time": "12:58:44",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 11,
+    "number": 39,
+    "name": "Robert",
+    "time": "13:00:37",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 12,
+    "number": 145,
+    "name": "Where's Ali (found)",
+    "time": "13:01:38",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 13,
+    "number": 28,
+    "name": "Punk Rock Barbie",
+    "time": "13:01:42",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 15,
+    "number": 147,
+    "name": "Team Shepherd",
+    "time": "13:01:59",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 14,
+    "number": 41,
+    "name": "Johnathon",
+    "time": "13:02:18",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 16,
+    "number": 5,
+    "name": "Terry & Pam",
+    "time": "13:03:07",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 17,
+    "number": 47,
+    "name": "Raf",
+    "time": "13:03:33",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 18,
+    "number": 144,
+    "name": "Rainy Day",
+    "time": "13:04:40",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 20,
+    "number": 14,
+    "name": "Alumimum & Carbon City (John)",
+    "time": "13:04:42",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 19,
+    "number": 15,
+    "name": "80s Brunch",
+    "time": "13:04:43",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 21,
+    "number": 2,
+    "name": "SoBiSexual",
+    "time": "13:04:50",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 22,
+    "number": 12,
+    "name": "AL's Pals",
+    "time": "13:06:35",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 23,
+    "number": 4,
+    "name": "AL's Pals",
+    "time": "13:06:35",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 24,
+    "number": 35,
+    "name": "Juniper & the Jimmies",
+    "time": "13:07:14",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 25,
+    "number": 3,
+    "name": "Team Cherry & the Tandem",
+    "time": "13:08:20",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 26,
+    "number": 36,
+    "name": "",
+    "time": "13:08:48",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 27,
+    "number": 19,
+    "name": "Orange (mostly orange)",
+    "time": "13:08:55",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 29,
+    "number": 27,
+    "name": "It's up to you",
+    "time": "13:12:00",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 28,
+    "number": 44,
+    "name": "Team J. Dawgggg",
+    "time": "13:12:43",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 30,
+    "number": 127,
+    "name": "Grass Touchers",
+    "time": "13:13:50",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 31,
+    "number": 24,
+    "name": "Too Busy Biking",
+    "time": "13:16:04",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 32,
+    "number": 38,
+    "name": "Zach",
+    "time": "13:16:58",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 33,
+    "number": 148,
+    "name": "Bitches",
+    "time": "13:18:15",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 34,
+    "number": 129,
+    "name": "Track Dawg",
+    "time": "13:18:22",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 35,
+    "number": 34,
+    "name": "Pulling Sadie",
+    "time": "13:18:27",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 36,
+    "number": 7,
+    "name": "Lightning McQueen",
+    "time": "13:19:03",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 37,
+    "number": 21,
+    "name": "MTBD Dub (tandem)",
+    "time": "13:19:12",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 38,
+    "number": 43,
+    "name": "",
+    "time": "13:19:28",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 39,
+    "number": 142,
+    "name": "Cirque du velos",
+    "time": "13:19:38",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 40,
+    "number": 131,
+    "name": "Lost KOMs",
+    "time": "13:20:36",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 41,
+    "number": 148,
+    "name": "",
+    "time": "13:20:41",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 42,
+    "number": 132,
+    "name": "Z & N",
+    "time": "13:21:02",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 43,
+    "number": 128,
+    "name": "Manifest Dion (Chris & Jack)",
+    "time": "13:21:27",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 44,
+    "number": 6,
+    "name": "Aaron",
+    "time": "13:22:06",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 45,
+    "number": 25,
+    "name": "Victory Blue",
+    "time": "13:22:43",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 46,
+    "number": 23,
+    "name": "Ash",
+    "time": "13:22:54",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 47,
+    "number": 22,
+    "name": "Camron & Devon",
+    "time": "13:22:56",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 48,
+    "number": 33,
+    "name": "Ducktectives",
+    "time": "13:24:36",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 49,
+    "number": 13,
+    "name": "Steven",
+    "time": "13:26:02",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 50,
+    "number": 46,
+    "name": "Hell Riderz",
+    "time": "13:28:48",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 51,
+    "number": 42,
+    "name": "Wagners Collective",
+    "time": "13:32:33",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 52,
+    "number": 29,
+    "name": "Flat & tired",
+    "time": "13:37:31",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 53,
+    "number": 26,
+    "name": "Oh!",
+    "time": "13:43:42",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 54,
+    "number": 45,
+    "name": "Sparkle Motion",
+    "time": "14:09:36",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 4,
+    "place": 55,
+    "number": 137,
+    "name": "Team Turtle",
+    "time": "14:10:43",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 1,
+    "number": 21,
+    "name": "Squeak76",
+    "time": "12:33:01",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 2,
+    "number": 31,
+    "name": "Fredhead",
+    "time": "12:34:56",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 3,
+    "number": 33,
+    "name": "Jonathan",
+    "time": "12:36:16",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 4,
+    "number": 18,
+    "name": "Ryan, still riding OranjeFixie",
+    "time": "12:36:20",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 5,
+    "number": 13,
+    "name": "TEAM NorthSpeedCycle",
+    "time": "12:39:40",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 6,
+    "number": 8,
+    "name": "Sharpieguy",
+    "time": "12:44:01",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 7,
+    "number": 22,
+    "name": "Jbob 420",
+    "time": "12:44:50",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 8,
+    "number": 61,
+    "name": "Reid The Speed",
+    "time": "12:44:55",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 9,
+    "number": 35,
+    "name": "The Bald and the Beautiful",
+    "time": "12:50:08",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 10,
+    "number": 30,
+    "name": "Jdavey",
+    "time": "12:50:31",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 11,
+    "number": 48,
+    "name": "SoBisexual",
+    "time": "12:51:24",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 12,
+    "number": 45,
+    "name": "Flying voles",
+    "time": "12:53:36",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 13,
+    "number": 10,
+    "name": "Worst Pace Scenario",
+    "time": "12:53:43",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 14,
+    "number": 23,
+    "name": "Chasing Tail (winds)",
+    "time": "12:54:13",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 15,
+    "number": 7,
+    "name": "Craig, from the grave",
+    "time": "12:54:15",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 16,
+    "number": 25,
+    "name": "Adam",
+    "time": "12:54:30",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 17,
+    "number": 1,
+    "name": "The Biking Lawyer",
+    "time": "12:55:52",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 18,
+    "number": 51,
+    "name": "evan SZczucinski",
+    "time": "12:55:53",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 19,
+    "number": 15,
+    "name": "Dirty Duff Divers",
+    "time": "13:01:04",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 20,
+    "number": 27,
+    "name": "Mike J",
+    "time": "13:02:16",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 21,
+    "number": 56,
+    "name": "Erin and Drew",
+    "time": "13:02:56",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 22,
+    "number": 17,
+    "name": "Surly farmer",
+    "time": "13:03:20",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 23,
+    "number": 26,
+    "name": "Rat King",
+    "time": "13:03:47",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 24,
+    "number": 29,
+    "name": "Mortal Kombat",
+    "time": "13:05:34",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 25,
+    "number": 2,
+    "name": "Katherine, Brenden, Jake",
+    "time": "13:05:44",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 26,
+    "number": 9,
+    "name": "Edugan",
+    "time": "13:06:25",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 27,
+    "number": 41,
+    "name": "",
+    "time": "13:09:05",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 28,
+    "number": 24,
+    "name": "Veld Crew",
+    "time": "13:12:22",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 29,
+    "number": 36,
+    "name": "Mich",
+    "time": "13:18:41",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 30,
+    "number": 19,
+    "name": "I'm so hungover right now",
+    "time": "13:19:05",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 31,
+    "number": 42,
+    "name": "Nick",
+    "time": "13:24:37",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 32,
+    "number": 40,
+    "name": "Losers Club",
+    "time": "13:33:13",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 33,
+    "number": 38,
+    "name": "BashBug",
+    "time": "13:37:58",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 34,
+    "number": 43,
+    "name": "Megan Davis",
+    "time": "13:39:39",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 3,
+    "place": 0,
+    "number": 57,
+    "name": "#57",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 3,
+    "place": 0,
+    "number": 16,
+    "name": "Ash",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 3,
+    "place": 0,
+    "number": 3,
+    "name": "Burner phone",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 3,
+    "place": 0,
+    "number": 14,
+    "name": "Evan Szczucinski",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 3,
+    "place": 0,
+    "number": 4,
+    "name": "Motorhead",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 3,
+    "place": 0,
+    "number": 47,
+    "name": "officiAL",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 3,
+    "place": 0,
+    "number": 32,
+    "name": "Patrick DeJong’s Bad Back",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 3,
+    "place": 0,
+    "number": 20,
+    "name": "R We There Yet???",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 3,
+    "place": 0,
+    "number": 6,
+    "name": "Reid The Speed",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 3,
+    "place": 0,
+    "number": 60,
+    "name": "Ron1619",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 3,
+    "place": 0,
+    "number": 75,
+    "name": "Sharpieguy",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 3,
+    "place": 0,
+    "number": 39,
+    "name": "Sometimeperhaps",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 3,
+    "place": 0,
+    "number": 12,
+    "name": "TAKES2ToTANDEM",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 3,
+    "place": 0,
+    "number": 11,
+    "name": "Two Ton Tonys",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 1,
+    "number": 59,
+    "name": "Mick Ultra",
+    "time": "12:29:33",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 2,
+    "number": 23,
+    "name": "Ryan is riding an Oranje Bike",
+    "time": "12:32:55",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 3,
+    "number": 30,
+    "name": "Chad",
+    "time": "12:32:57",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 4,
+    "number": 18,
+    "name": "B Goodwill",
+    "time": "12:33:34",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 5,
+    "number": 58,
+    "name": "Squeek76",
+    "time": "12:38:31",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 6,
+    "number": 8,
+    "name": "Older Things",
+    "time": "12:38:57",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 7,
+    "number": 52,
+    "name": "Vivian's Revenge",
+    "time": "12:40:51",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 8,
+    "number": 47,
+    "name": "Over Achievers",
+    "time": "12:42:14",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 9,
+    "number": 11,
+    "name": "Old Man Marko",
+    "time": "12:42:16",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 10,
+    "number": 3,
+    "name": "Sam Walton",
+    "time": "12:45:11",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 11,
+    "number": 48,
+    "name": "Jamie P",
+    "time": "12:45:14",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 12,
+    "number": 45,
+    "name": "Daniil",
+    "time": "12:47:24",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 13,
+    "number": 20,
+    "name": "Are we there yet?",
+    "time": "12:47:29",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 14,
+    "number": 28,
+    "name": "Rat Queen",
+    "time": "12:47:38",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 15,
+    "number": 74,
+    "name": "bootsey",
+    "time": "12:47:38",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 16,
+    "number": 65,
+    "name": "Kiloma Eaters",
+    "time": "12:49:39",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 17,
+    "number": 41,
+    "name": "G-MONEY",
+    "time": "12:50:30",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 18,
+    "number": 22,
+    "name": "Jdawg",
+    "time": "12:50:40",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 19,
+    "number": 1,
+    "name": "Ad El",
+    "time": "12:52:15",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 20,
+    "number": 7,
+    "name": "Aaron N",
+    "time": "12:52:31",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 21,
+    "number": 24,
+    "name": "Yasir A",
+    "time": "12:53:08",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 22,
+    "number": 82,
+    "name": "Adam B",
+    "time": "12:53:30",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 23,
+    "number": 26,
+    "name": "Adam F",
+    "time": "12:54:51",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 24,
+    "number": 67,
+    "name": "Dan S.",
+    "time": "12:54:53",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 25,
+    "number": 15,
+    "name": "Ashton",
+    "time": "12:57:09",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 26,
+    "number": 85,
+    "name": "Watermotz",
+    "time": "12:59:55",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 27,
+    "number": 81,
+    "name": "Tommy boy",
+    "time": "13:00:14",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 28,
+    "number": 44,
+    "name": "Dane Assault",
+    "time": "13:04:16",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 29,
+    "number": 12,
+    "name": "Grande",
+    "time": "13:05:36",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 30,
+    "number": 10,
+    "name": "63 Ossington",
+    "time": "13:05:36",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 31,
+    "number": 54,
+    "name": "Mike Hawk",
+    "time": "13:06:26",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 32,
+    "number": 107,
+    "name": "RS",
+    "time": "13:06:34",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 33,
+    "number": 16,
+    "name": "TAKES2TOTANDEM",
+    "time": "13:07:22",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 34,
+    "number": 9,
+    "name": "Cam",
+    "time": "13:07:51",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 35,
+    "number": 27,
+    "name": "Beer Babes on Bikes",
+    "time": "13:09:04",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 36,
+    "number": 77,
+    "name": "Grosfelds",
+    "time": "13:11:23",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 37,
+    "number": 21,
+    "name": "Sam's Cycles",
+    "time": "13:11:38",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 38,
+    "number": 13,
+    "name": "RADimmers",
+    "time": "13:13:08",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 39,
+    "number": 35,
+    "name": "Tom & Sarah",
+    "time": "13:15:40",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 40,
+    "number": 32,
+    "name": "Orange Crush",
+    "time": "13:15:56",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 41,
+    "number": 25,
+    "name": "@DaveLikesBikes",
+    "time": "13:18:25",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 42,
+    "number": 89,
+    "name": "Biking Lawyer",
+    "time": "13:18:44",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 43,
+    "number": 56,
+    "name": "contracycle",
+    "time": "13:18:46",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 44,
+    "number": 61,
+    "name": "UncleMarcus",
+    "time": "13:19:13",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 45,
+    "number": 84,
+    "name": "Sm0knGT",
+    "time": "13:22:00",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 46,
+    "number": 112,
+    "name": "The Two Tone Tonys",
+    "time": "13:23:10",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 47,
+    "number": 118,
+    "name": "",
+    "time": "13:23:33",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 48,
+    "number": 55,
+    "name": "CNC",
+    "time": "13:27:51",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 49,
+    "number": 49,
+    "name": "Rock Hardwell the 3rd",
+    "time": "13:27:58",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 50,
+    "number": 5,
+    "name": "Lion Leaves",
+    "time": "13:32:32",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 51,
+    "number": 106,
+    "name": "Jfiveisdead",
+    "time": "13:42:24",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 52,
+    "number": 57,
+    "name": "Surprise!Hamilton",
+    "time": "13:42:30",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 53,
+    "number": 34,
+    "name": "Sharpieguy",
+    "time": "13:52:03",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 54,
+    "number": 62,
+    "name": "TBBB",
+    "time": "13:53:19",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 55,
+    "number": 129,
+    "name": "",
+    "time": "13:54:53",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 56,
+    "number": 88,
+    "name": "Smashin Good Bike Times",
+    "time": "13:56:17",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 57,
+    "number": 6,
+    "name": "Vaughn",
+    "time": "13:56:33",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 58,
+    "number": 2,
+    "name": "Westbound",
+    "time": "14:06:18",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 59,
+    "number": 90,
+    "name": "TeamShohei",
+    "time": "14:06:24",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 60,
+    "number": 95,
+    "name": "Andrew!",
+    "time": "14:14:28",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 61,
+    "number": 91,
+    "name": "Maybr mark",
+    "time": "14:14:54",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 62,
+    "number": 117,
+    "name": "Juniper’s Big Day Out",
+    "time": "14:18:23",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 63,
+    "number": 80,
+    "name": "Rabout",
+    "time": "14:37:08",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 64,
+    "number": 122,
+    "name": "",
+    "time": "14:46:37",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 65,
+    "number": 105,
+    "name": "Bre and Kyle",
+    "time": "15:01:30",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 66,
+    "number": 51,
+    "name": "PNP",
+    "time": "15:16:31",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 67,
+    "number": 14,
+    "name": "Mich",
+    "time": "15:24:12",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 68,
+    "number": 97,
+    "name": "slow and unsteady",
+    "time": "16:35:33",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 33,
+    "name": "Adamisonfire",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 40,
+    "name": "Auj",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 124,
+    "name": "Ben c",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 94,
+    "name": "Corona shirts",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 37,
+    "name": "Edspeed",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 4,
+    "name": "Fixed M8",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 104,
+    "name": "Ory",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 68,
+    "name": "RileyS",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 138,
+    "name": "Sharpieguy",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 73,
+    "name": "Team Sminch",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 53,
+    "name": "Team Valemount",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 31,
+    "name": "The Biking Lawyer",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 19,
+    "name": "The Biking Vet",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 93,
+    "name": "The Biking Vet",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 29,
+    "name": "The Two Tone Tonys",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 42,
+    "name": "thena smokes",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 64,
+    "name": "Vikram",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 2,
+    "place": 0,
+    "number": 36,
+    "name": "Worst Pace Scenario",
+    "time": 0,
+    "complete": "FALSE"
+  },
+  {
+    "sca": 1,
+    "place": 1,
+    "number": 14,
+    "name": "",
+    "time": "12:38:35",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 2,
+    "number": 22,
+    "name": "",
+    "time": "12:42:20",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 3,
+    "number": 19,
+    "name": "",
+    "time": "12:49:05",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 4,
+    "number": 31,
+    "name": "",
+    "time": "12:50:45",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 5,
+    "number": 27,
+    "name": "",
+    "time": "12:52:47",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 6,
+    "number": 4,
+    "name": "",
+    "time": "12:55:08",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 7,
+    "number": 6,
+    "name": "",
+    "time": "12:57:35",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 8,
+    "number": 10,
+    "name": "",
+    "time": "12:57:47",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 9,
+    "number": 17,
+    "name": "",
+    "time": "12:58:20",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 10,
+    "number": 8,
+    "name": "",
+    "time": "12:59:29",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 11,
+    "number": 23,
+    "name": "",
+    "time": "13:03:42",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 12,
+    "number": 29,
+    "name": "",
+    "time": "13:03:47",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 13,
+    "number": 26,
+    "name": "",
+    "time": "13:04:02",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 14,
+    "number": 21,
+    "name": "",
+    "time": "13:05:07",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 15,
+    "number": 5,
+    "name": "",
+    "time": "13:05:25",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 16,
+    "number": 68,
+    "name": "",
+    "time": "13:13:11",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 17,
+    "number": 71,
+    "name": "",
+    "time": "13:13:18",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 18,
+    "number": 24,
+    "name": "",
+    "time": "13:14:47",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 19,
+    "number": 11,
+    "name": "",
+    "time": "13:15:09",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 20,
+    "number": 62,
+    "name": "",
+    "time": "13:16:28",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 21,
+    "number": 35,
+    "name": "",
+    "time": "13:19:06",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 22,
+    "number": 40,
+    "name": "",
+    "time": "13:20:18",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 23,
+    "number": 58,
+    "name": "",
+    "time": "13:22:12",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 24,
+    "number": 72,
+    "name": "",
+    "time": "13:22:54",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 25,
+    "number": 41,
+    "name": "",
+    "time": "13:23:26",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 26,
+    "number": 28,
+    "name": "",
+    "time": "13:28:01",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 27,
+    "number": 42,
+    "name": "",
+    "time": "13:33:28",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 28,
+    "number": 18,
+    "name": "",
+    "time": "13:33:33",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 29,
+    "number": 49,
+    "name": "",
+    "time": "13:35:50",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 30,
+    "number": 50,
+    "name": "",
+    "time": "13:42:27",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 31,
+    "number": 9,
+    "name": "",
+    "time": "13:43:41",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 32,
+    "number": 12,
+    "name": "",
+    "time": "13:47:17",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 33,
+    "number": 65,
+    "name": "",
+    "time": "13:51:23",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 34,
+    "number": 73,
+    "name": "",
+    "time": "14:07:48",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 35,
+    "number": 63,
+    "name": "",
+    "time": "14:08:15",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 36,
+    "number": 33,
+    "name": "",
+    "time": "14:09:00",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 37,
+    "number": 69,
+    "name": "",
+    "time": "14:09:48",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 38,
+    "number": 7,
+    "name": "",
+    "time": "14:25:14",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 1,
+    "place": 39,
+    "number": 32,
+    "name": "",
+    "time": "14:31:18",
+    "complete": "TRUE"
+  }
 ]
