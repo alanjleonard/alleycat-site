@@ -4,7 +4,7 @@ html {
 
 body {
   height: 100dvh;
-  background: $callout;
+  background: $white;
   &,
   a,
   button,
@@ -26,8 +26,9 @@ body {
 
 main {
   color: $black;
-  background: $white;
+  // background: $white;
   max-width: $max-width;
+  margin: 0 auto;
 
   header {
     align-items: center;
@@ -43,7 +44,7 @@ main {
     h1 {
       padding: 0.25rem;
       color: $callout;
-      text-shadow: 2px 2px 0 $black;
+      text-shadow: $text-shadow;
       width: 100%;
       line-height: 1;
       margin: 1rem 0 0 0;
@@ -131,8 +132,7 @@ main {
         font-size: clamp(40px, 14vw, 80px);
         line-height: 0.9;
         padding: 4rem 2rem;
-        position: relative;
-        text-shadow: 2px 2px 0 $black;
+        text-shadow: $text-shadow;
         letter-spacing: 1px;
         color: $callout;
       }

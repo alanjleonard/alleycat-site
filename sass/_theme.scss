@@ -1,13 +1,15 @@
-// $callout: #DD6305;
+// $callout: #dd6305;
 // $black: hsl(0, 5.56%, 14.12%);
-// $callout: hsl(136.15, 23.21%, 56.08%);//#75a983;
+$callout: hsl(136.15, 23.21%, 56.08%);//#75a983;
 // $white: hsl(30, 14.29%, 97.25%);
 
-// $hue: 201.13;
-$hue: 5;
-$black: hsl($hue, 15.56%, 14.12%);
-$callout:hsl($hue, 85.54%, 48.82%);
-$white: hsl($hue, 18.29%, 90.25%);
+$hue: 20;
+// $hue: 5;
+$black: hsl($hue, 5.56%, 14.12%);
+$white: hsl($hue, 2.29%, 90.25%);
+// $callout:$black;
+$text-shadow: -2px -2px 0 mix($white, $callout, 50%),
+  2px 2px 0 mix($black, $callout, 50%);
 
 $border-width: 8px;
 $padding: calc(1rem + #{$border-width});
