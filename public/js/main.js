@@ -43,13 +43,12 @@ fetch("../results/all-results.json")
     racers.forEach((racer) => {
       if (race === racer.sca) {
         --race;
-        console.log(`show header ${racer.sca}`);
         if (race !== 4) {
           table += "</table>";
         }
         table += `
           <div class='results-header'>
-            <h3>${races[racer.sca].title}</h3>
+            <h3 id='SCA${racer.sca}'>${races[racer.sca].title}</h3>
             <p class='date'>${races[racer.sca].date}</p>
             <p class='finish-location'>Finish line: ${
               races[racer.sca].finish

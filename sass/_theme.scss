@@ -50,7 +50,7 @@ $table-row-hover: mix($black, white, 15%);
   color: $white;
 }
 *:focus {
-  outline: solid 2px $white;
+  // outline: solid 2px $white;
 }
 
 html {
@@ -60,12 +60,46 @@ html {
 p {
   max-width: $max-width;
 }
-
-a {
-  color: $text-color;
+a{
   @include Hover {
     color: $callout;
+    text-decoration: none;
   }
+}
+.body-text  {
+  a {
+	text-decoration: none;
+	color: $text-color;
+  position: relative;
+  display:inline-block;
+}
+
+a::before {
+  content: '';
+  background-color:$callout;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3px;
+  height: 8px;
+  z-index: -1;
+  transition: all .1s ease-in-out;
+}
+
+a:hover::before {
+  bottom: 0;
+  height: 100%;
+}
+  /////
+  // color: $text-color;
+  // box-shadow: 0 1px 10px $callout;
+  // text-decoration: none;;
+  // @include Hover {
+  //   background: $callout;
+  //   color: $white;
+  //   text-decoration: none;
+  //   // color: $callout;
+  // }
 }
 
 @function BoxShadowColor($color) {

@@ -16,7 +16,6 @@ body {
 
   ul,
   ol {
-    padding-left: 2rem;
   }
 
   ul {
@@ -26,14 +25,11 @@ body {
 
 main {
   color: $black;
-  // background: $white;
   max-width: $max-width;
   margin: 0 auto;
 
   header {
-    align-items: center;
     text-align: center;
-    gap: 3rem;
     padding: 7rem 0;
     margin: 0 0 20px 0;
 
@@ -103,7 +99,6 @@ main {
     .header-wrapper {
       background-size: cover;
       background-position: center center;
-      // mix-blend-mode: luminosity;
       &#what {
         background-image: url("/images/headers/what.jpg");
       }
@@ -131,7 +126,7 @@ main {
         margin: 0;
         font-size: clamp(40px, 14vw, 80px);
         line-height: 0.9;
-        padding: 4rem 2rem;
+        padding: 6rem 2rem;
         text-shadow: $text-shadow;
         letter-spacing: 1px;
         color: $callout;
@@ -144,8 +139,9 @@ main {
       margin-top: 1rem;
     }
     p.body-text {
-      padding: 4rem 1rem 8rem 2rem;
+      padding: 1rem 6rem 2rem 2rem;
       max-width: 52ch;
+      text-align: justify;
     }
 
     .results-wrapper {

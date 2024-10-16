@@ -17,10 +17,6 @@
   color: #e7e6e6;
 }
 
-*:focus {
-  outline: solid 2px #e7e6e6;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -29,13 +25,33 @@ p {
   max-width: 550px;
 }
 
-a {
-  color: #262322;
-}
 @media (hover: hover) {
   a:hover {
     color: #75a983;
+    text-decoration: none;
   }
+}
+
+.body-text a {
+  text-decoration: none;
+  color: #262322;
+  position: relative;
+  display: inline-block;
+}
+.body-text a::before {
+  content: "";
+  background-color: #75a983;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3px;
+  height: 8px;
+  z-index: -1;
+  transition: all 0.1s ease-in-out;
+}
+.body-text a:hover::before {
+  bottom: 0;
+  height: 100%;
 }
 
 @font-face {
@@ -64,6 +80,9 @@ body {
   font-variant-ligatures: common-ligatures;
   color: #262322;
 }
+body strong {
+  font-weight: 800;
+}
 
 h1, h2, h3, h4 {
   color: #262322;
@@ -85,10 +104,6 @@ body select,
 body textarea {
   color: #262322;
 }
-body ul,
-body ol {
-  padding-left: 2rem;
-}
 body ul {
   list-style-type: " ✖ ";
 }
@@ -99,9 +114,7 @@ main {
   margin: 0 auto;
 }
 main header {
-  align-items: center;
   text-align: center;
-  gap: 3rem;
   padding: 7rem 0;
   margin: 0 0 20px 0;
 }
@@ -193,7 +206,7 @@ main section .header-wrapper h2 {
   margin: 0;
   font-size: clamp(40px, 14vw, 80px);
   line-height: 0.9;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   text-shadow: -2px -2px 0 #aec8b5, 2px 2px 0 #4e6653;
   letter-spacing: 1px;
   color: #75a983;
@@ -204,8 +217,9 @@ main section ol {
   margin-top: 1rem;
 }
 main section p.body-text {
-  padding: 4rem 1rem 8rem 2rem;
+  padding: 1rem 6rem 2rem 2rem;
   max-width: 52ch;
+  text-align: justify;
 }
 main section .results-wrapper {
   max-width: 78ch;
