@@ -144,6 +144,7 @@ main header p.about {
 main .sticky {
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 main nav.side-nav {
   position: absolute;
@@ -352,7 +353,6 @@ main section ul.faq li details ul li {
 
 p[name] {
   position: relative;
-  z-index: 99;
 }
 @media (hover: hover) {
   p[name]:hover::after {

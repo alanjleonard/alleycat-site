@@ -58,6 +58,7 @@ main {
   .sticky {
     position: sticky;
     top: 0;
+    z-index: 100;
   }
   nav.side-nav {
     position: absolute;
@@ -276,7 +277,7 @@ main {
 }
 p[name] {
   position: relative;
-  z-index: 99;
+  // z-index: 99;
   @include Hover {
     &::after {
       content: attr(name);
