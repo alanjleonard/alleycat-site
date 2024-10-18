@@ -30,6 +30,7 @@ const races = {
     finish: "Eastwood Park",
   },
 };
+
 fetch("../results/all-results.json")
   .then((response) => response.json())
   .then((data) => {

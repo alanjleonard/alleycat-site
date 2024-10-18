@@ -58,36 +58,37 @@ main {
   .sticky {
     position: sticky;
     top: 0;
-
-    nav {
-      position: absolute;
-    }
   }
-
-  nav {
-    padding: 1rem;
-    width: $side-bar-width;
+  nav.side-nav {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    height: 100dvh;
-    border-width: 0 1px 0 0;
-    border-style: solid;
-    border-color: $black;
-    hr {
-      width: 100%;
-    }
-    img,
-    svg {
-      width: 100%;
-    }
-    a {
-      svg {
-        fill: $black;
-      }
-    }
+    height: 100vh;
+    border-right: solid 1px $black;
+    align-items: center;
+    gap: 4rem;
+    width: $side-bar-width;
     p {
       margin: 0;
+    }
+    img {
+      width: calc(#{$side-bar-width} - 5px);
+    }
+    svg{
+      width: 90%;
+    }
+    p.results-link {
+      @include blackout-midnight;
+      transform: rotate(-90deg);
+      // transform-origin: center;
+      margin: 2rem 0 4rem 0;
+      a {
+        text-decoration: none;
+        font-size: 4rem;
+        @include Hover{
+          color: $callout;
+        }
+      }
     }
   }
 
@@ -139,7 +140,7 @@ main {
       margin-top: 1rem;
     }
     p.body-text {
-      padding: 1rem 0.5rem 2rem 2rem;
+      padding: 1rem 2rem;
       max-width: 52ch;
       text-align: justify;
     }
@@ -151,6 +152,16 @@ main {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+      }
+    }
+    .scroll-to-results{
+      display: flex;
+      justify-content: space-around;
+        font-size: 3.3rem;
+        @include blackout-twoam;
+      a{
+        text-decoration: none;;
+        color: $callout;
       }
     }
     .results-header {

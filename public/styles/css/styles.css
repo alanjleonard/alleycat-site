@@ -32,13 +32,13 @@ p {
   }
 }
 
-.body-text a {
+.body-text a, .body-text li a {
   text-decoration: none;
   color: #262322;
   position: relative;
   display: inline-block;
 }
-.body-text a::before {
+.body-text a::before, .body-text li a::before {
   content: "";
   background-color: #75a983;
   position: absolute;
@@ -145,32 +145,38 @@ main .sticky {
   position: sticky;
   top: 0;
 }
-main .sticky nav {
+main nav.side-nav {
   position: absolute;
-}
-main nav {
-  padding: 1rem;
-  width: 5rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  height: 100dvh;
-  border-width: 0 1px 0 0;
-  border-style: solid;
-  border-color: #262322;
+  height: 100vh;
+  border-right: solid 1px #262322;
+  align-items: center;
+  gap: 4rem;
+  width: 5rem;
 }
-main nav hr {
-  width: 100%;
-}
-main nav img,
-main nav svg {
-  width: 100%;
-}
-main nav a svg {
-  fill: #262322;
-}
-main nav p {
+main nav.side-nav p {
   margin: 0;
+}
+main nav.side-nav img {
+  width: calc(5rem - 5px);
+}
+main nav.side-nav svg {
+  width: 90%;
+}
+main nav.side-nav p.results-link {
+  font-family: "blackout_midnight", "Impact", Arial;
+  transform: rotate(-90deg);
+  margin: 2rem 0 4rem 0;
+}
+main nav.side-nav p.results-link a {
+  text-decoration: none;
+  font-size: 4rem;
+}
+@media (hover: hover) {
+  main nav.side-nav p.results-link a:hover {
+    color: #75a983;
+  }
 }
 main .section-wrapper {
   margin-left: 5rem;
@@ -217,7 +223,7 @@ main section ol {
   margin-top: 1rem;
 }
 main section p.body-text {
-  padding: 1rem 0.5rem 2rem 2rem;
+  padding: 1rem 2rem;
   max-width: 52ch;
   text-align: justify;
 }
@@ -229,6 +235,16 @@ main section .results-wrapper div {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+main section .scroll-to-results {
+  display: flex;
+  justify-content: space-around;
+  font-size: 3.3rem;
+  font-family: "blackout_2am", "Impact", Arial;
+}
+main section .scroll-to-results a {
+  text-decoration: none;
+  color: #75a983;
 }
 main section .results-header {
   position: sticky;
